@@ -1,0 +1,771 @@
+Je veux aller depuis <Dep>Paris<EndDep> vers <Arr>Monaco<EndArr>.
+Je suis actuellement à <Dep>Lyon<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Avec Albert, on voudrait partir de <Dep>Nice<EndDep> pour aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Albertville<EndDep> pour voir <Arr>Paris<EndArr>.
+Je veux aller à <Arr>Paris<EndArr> depuis <Dep>Monaco<EndDep>.
+Je suis actuellement à <Dep>Marseille<EndDep> et je veux aller à <Arr>Lyon<EndArr>.
+Avec Albert, on voudrait partir de <Dep>Bordeaux<EndDep> pour aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Monaco<EndDep> pour voir <Arr>Paris<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Paris<EndArr>.
+Je veux voyager vers <Arr>Nice<EndArr> depuis <Dep>Marseille<EndDep>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Lyon<EndDep>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Paris<EndDep> pour voir <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Lyon<EndArr> depuis <Dep>Monaco<EndDep> pour un rendez-vous.
+Je suis à <Dep>Paris<EndDep>, et je dois aller à <Arr>Marseille<EndArr> pour une réunion.
+Je voudrais aller à <Arr>Monaco<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je voudrais aller voir <Arr>Paris<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Lille<EndArr> depuis <Dep>Paris<EndDep>.
+Je suis actuellement à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Avec Marie, on voudrait partir de <Dep>Strasbourg<EndDep> pour aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Grenoble<EndDep> pour voir <Arr>Lyon<EndArr>.
+Je veux aller à <Arr>Toulouse<EndArr> depuis <Dep>Nantes<EndDep>.
+Je suis actuellement à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Avec Marie, on voudrait partir de <Dep>Lille<EndDep> pour aller à <Arr>Grenoble<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Rennes<EndDep> pour voir <Arr>Lyon<EndArr>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Paris<EndArr>.
+Je veux voyager vers <Arr>Toulouse<EndArr> depuis <Dep>Nantes<EndDep>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Grenoble<EndDep> pour voir <Arr>Lyon<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Montpellier<EndDep> pour un rendez-vous.
+Je suis à <Dep>Paris<EndDep>, et je dois aller à <Arr>Lille<EndArr> pour une réunion.
+Je voudrais aller à <Arr>Toulouse<EndArr> depuis <Dep>Nantes<EndDep>.
+Je voudrais aller voir <Arr>Lyon<EndArr> depuis <Dep>Rennes<EndDep>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis actuellement à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Lyon<EndArr>.
+Avec Albert, on voudrait partir de <Dep>Paris<EndDep> pour aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Bordeaux<EndDep> pour voir <Arr>Paris<EndArr>.
+Je veux aller à <Arr>Lyon<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis actuellement à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Avec Albert, on voudrait partir de <Dep>Paris<EndDep> pour aller à <Arr>Lyon<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Nice<EndDep> pour voir <Arr>Paris<EndArr>.
+Je suis à <Dep>Lyon<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux voyager vers <Arr>Paris<EndArr> depuis <Dep>Marseille<EndDep>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Lyon<EndDep>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Paris<EndDep> pour voir <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Lyon<EndDep> pour un rendez-vous.
+Je suis à <Dep>Nice<EndDep>, et je dois aller à <Arr>Paris<EndArr> pour une réunion.
+Je voudrais aller à <Arr>Lyon<EndArr> depuis <Dep>Marseille<EndDep>.
+Je voudrais aller voir <Arr>Nice<EndArr> depuis <Dep>Paris<EndDep>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Paris<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Avec Sophie, on voudrait partir de <Dep>Strasbourg<EndDep> pour aller à <Arr>Paris<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je suis actuellement à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Avec Sophie, on voudrait partir de <Dep>Montpellier<EndDep> pour aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Lyon<EndDep>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux voyager vers <Arr>Grenoble<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je veux aller à <Arr>Lille<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je voudrais aller à <Arr>Strasbourg<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je voudrais aller voir <Arr>Monaco<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis actuellement à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Paris<EndArr>.
+Avec Sophie, on voudrait partir de <Dep>Toulouse<EndDep> pour aller à <Arr>Grenoble<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Rennes<EndDep>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Lyon<EndDep>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux voyager vers <Arr>Paris<EndArr> depuis <Dep>Albertville<EndDep>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Marseille<EndDep>.
+Je veux aller à <Arr>Lille<EndArr> depuis <Dep>Rennes<EndDep>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Nantes<EndDep>.
+Je suis à <Dep>Lyon<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Avec Albert, on voudrait partir de <Dep>Monaco<EndDep> pour aller à <Arr>Paris<EndArr>.
+Je veux aller à <Arr>Toulouse<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis actuellement à <Dep>Nice<EndDep> et je veux aller à <Arr>Lyon<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux voyager vers <Arr>Rennes<EndArr> depuis <Dep>Marseille<EndDep>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Monaco<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Rennes<EndDep>.
+Je voudrais aller à <Arr>Lyon<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je voudrais aller voir <Arr>Nantes<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Paris<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Monaco<EndDep>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Lille<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Monaco<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Paris<EndArr> depuis <Dep>Lille<EndDep>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Albertville<EndDep>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je veux aller à <Arr>Toulouse<EndArr> depuis <Dep>Paris<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Paris<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Nantes<EndDep>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Paris<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Lille<EndArr> depuis <Dep>Marseille<EndDep>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Rennes<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux aller à <Arr>Toulouse<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Lyon<EndArr> depuis <Dep>Paris<EndDep>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Paris<EndDep>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Monaco<EndDep>.
+Je suis à <Dep>Paris<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Lyon<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Rennes<EndDep>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Albertville<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Rennes<EndDep>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Toulouse<EndDep> et je veux aller à <Arr>Paris<EndArr>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Paris<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Rennes<EndDep>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Albertville<EndDep>.
+Je suis à <Dep>Paris<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux aller à <Arr>Lyon<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Monaco<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Nantes<EndDep>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Lille<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Paris<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Lyon<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Monaco<EndDep>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Lille<EndDep>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Paris<EndDep>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Rennes<EndDep>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Paris<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Lyon<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Nantes<EndDep>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Monaco<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Lyon<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Lille<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Albertville<EndDep>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Rennes<EndDep>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Rennes<EndDep>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je veux aller à <Arr>Lyon<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Monaco<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Monaco<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Albertville<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Toulouse<EndArr> depuis <Dep>Marseille<EndDep>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Monaco<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Nice<EndDep>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Albertville<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Toulouse<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Monaco<EndDep>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Toulouse<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Monaco<EndDep>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Monaco<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Rennes<EndDep>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Strasbourg<EndDep>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Lille<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Rennes<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je veux aller à <Arr>Albertville<EndArr> depuis <Dep>Monaco<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Lille<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Bordeaux<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Lille<EndDep>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Albertville<EndDep> et je veux aller à <Arr>Lyon<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Albertville<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Lille<EndDep>.
+Je veux aller à <Arr>Rennes<EndArr> depuis <Dep>Monaco<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Monaco<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Nice<EndDep>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je veux aller à <Arr>Toulouse<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Strasbourg<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Lille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Marseille<EndDep>.
+Je veux aller à <Arr>Montpellier<EndArr> depuis <Dep>Grenoble<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je veux aller à <Arr>Nantes<EndArr> depuis <Dep>Montpellier<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Monaco<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je veux aller à <Arr>Strasbourg<EndArr> depuis <Dep>Nantes<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je veux aller à <Arr>Nice<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je veux aller à <Arr>Marseille<EndArr> depuis <Dep>Nantes<EndDep>.
+Je veux aller à <Arr>Grenoble<EndArr> depuis <Dep>Nantes<EndDep>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je veux aller à <Arr>Bordeaux<EndArr> depuis <Dep>Marseille<EndDep>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Lille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Albertville<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Strasbourg<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Montpellier<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Montpellier<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Toulouse<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Rennes<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Marseille<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Nantes<EndArr>.
+Je suis à <Dep>Nice<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>.
+Je suis à <Dep>Rennes<EndDep> et je veux aller à <Arr>Grenoble<EndArr>.
+Je suis à <Dep>Bordeaux<EndDep> et je veux aller à <Arr>Nice<EndArr>.
+Je suis à <Dep>Nantes<EndDep> et je veux aller à <Arr>Marseille<EndArr>.
+Je suis à <Dep>Grenoble<EndDep> et je veux aller à <Arr>Bordeaux<EndArr>
