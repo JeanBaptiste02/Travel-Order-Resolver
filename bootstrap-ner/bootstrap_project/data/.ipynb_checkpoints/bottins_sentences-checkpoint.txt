@@ -1,0 +1,48 @@
+Je veux aller à Monaco depuis Paris.
+Je suis actuellement à Lyon et je veux aller à Marseille.
+Avec Albert, on voudrait partir de Nice pour aller à Bordeaux.
+Je veux aller à Monaco depuis Albertville pour voir Paris.
+Je veux aller à Paris depuis Monaco.
+Je suis actuellement à Marseille et je veux aller à Lyon.
+Avec Albert, on voudrait partir de Bordeaux pour aller à Nice.
+Je veux aller à Albertville depuis Monaco pour voir Paris.
+Je suis à Bordeaux et je veux aller à Paris.
+Je veux voyager vers Nice depuis Marseille.
+Je veux aller à Bordeaux depuis Lyon.
+Je veux aller à Albertville depuis Paris pour voir Nice.
+Je veux aller à Lyon depuis Monaco pour un rendez-vous.
+Je suis à Paris, et je dois aller à Marseille pour une réunion.
+Je voudrais aller à Monaco depuis Bordeaux.
+Je voudrais aller voir Paris depuis Nice.
+Je veux aller à Lille depuis Paris.
+Je suis actuellement à Nantes et je veux aller à Toulouse.
+Avec Marie, on voudrait partir de Strasbourg pour aller à Montpellier.
+Je veux aller à Rennes depuis Grenoble pour voir Lyon.
+Je veux aller à Toulouse depuis Nantes.
+Je suis actuellement à Montpellier et je veux aller à Strasbourg.
+Avec Marie, on voudrait partir de Lille pour aller à Grenoble.
+Je veux aller à Grenoble depuis Rennes pour voir Lyon.
+Je suis à Lille et je veux aller à Paris.
+Je veux voyager vers Toulouse depuis Nantes.
+Je veux aller à Montpellier depuis Strasbourg.
+Je veux aller à Rennes depuis Grenoble pour voir Lyon.
+Je veux aller à Strasbourg depuis Montpellier pour un rendez-vous.
+Je suis à Paris, et je dois aller à Lille pour une réunion.
+Je voudrais aller à Toulouse depuis Nantes.
+Je voudrais aller voir Lyon depuis Rennes.
+Je veux aller à Marseille depuis Nice.
+Je suis actuellement à Bordeaux et je veux aller à Lyon.
+Avec Albert, on voudrait partir de Paris pour aller à Marseille.
+Je veux aller à Nice depuis Bordeaux pour voir Paris.
+Je veux aller à Lyon depuis Bordeaux.
+Je suis actuellement à Nice et je veux aller à Marseille.
+Avec Albert, on voudrait partir de Paris pour aller à Lyon.
+Je veux aller à Marseille depuis Nice pour voir Paris.
+Je suis à Lyon et je veux aller à Bordeaux.
+Je veux voyager vers Paris depuis Marseille.
+Je veux aller à Nice depuis Lyon.
+Je veux aller à Marseille depuis Paris pour voir Nice.
+Je veux aller à Bordeaux depuis Lyon pour un rendez-vous.
+Je suis à Nice, et je dois aller à Paris pour une réunion.
+Je voudrais aller à Lyon depuis Marseille.
+Je voudrais aller voir Nice depuis Paris.
