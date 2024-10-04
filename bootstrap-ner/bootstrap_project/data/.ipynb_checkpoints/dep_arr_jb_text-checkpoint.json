@@ -1,0 +1,728 @@
+{
+  "classes": ["dep", "arr"],
+  "annotations": [
+    [
+      "Je voudrais aller de Toulouse à Bordeaux.\r",
+      {
+        "entities": [
+          [21, 29, "dep"],
+          [32, 40, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Port-Boulet depuis la gare de Tours ?\r",
+      {
+        "entities": [
+          [20, 31, "arr"],
+          [50, 55, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Tours en partant de Bordeaux.\r",
+      {
+        "entities": [
+          [36, 41, "arr"],
+          [56, 64, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Nantes à Montaigu ?\r",
+      {
+        "entities": [
+          [23, 29, "dep"],
+          [32, 40, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Lyon à Nice.\r",
+      {
+        "entities": [
+          [19, 23, "dep"],
+          [26, 30, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Marseille à Strasbourg ?\r",
+      {
+        "entities": [
+          [27, 35, "dep"],
+          [38, 48, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Paris à Lille pour le week-end.\r",
+      {
+        "entities": [
+          [6, 11, "dep"],
+          [14, 19, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Bordeaux à Toulouse.\r",
+      {
+        "entities": [
+          [29, 36, "dep"],
+          [39, 46, "arr"]
+        ]
+      }
+    ],
+    [
+      "Une phrase sans origine ni destination.\r",
+      {
+        "entities": []
+      }
+    ],
+    [
+      "Si pas de numéro de séquence, on considère que c'est zéro\r",
+      {
+        "entities": []
+      }
+    ],
+    [
+      "Je dois aller de Lille à Bruxelles demain matin.\r",
+      {
+        "entities": [
+          [15, 20, "dep"],
+          [23, 31, "arr"]
+        ]
+      }
+    ],
+    [
+      "Quel est le meilleur itinéraire de Lyon à Marseille ?\r",
+      {
+        "entities": [
+          [30, 34, "dep"],
+          [37, 45, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je pars de Nantes pour aller à Rennes.\r",
+      {
+        "entities": [
+          [8, 14, "dep"],
+          [29, 35, "arr"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il un bus de Bordeaux à La Rochelle ?\r",
+      {
+        "entities": [
+          [18, 25, "dep"],
+          [28, 39, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je veux voyager de Paris à Lyon en train.\r",
+      {
+        "entities": [
+          [17, 22, "dep"],
+          [25, 29, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment aller de Nice à Cannes en voiture ?\r",
+      {
+        "entities": [
+          [14, 18, "dep"],
+          [21, 27, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un vol de Toulouse à Paris.\r",
+      {
+        "entities": [
+          [19, 27, "dep"],
+          [30, 35, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Lille à Dunkerque ?\r",
+      {
+        "entities": [
+          [27, 32, "dep"],
+          [35, 44, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Bordeaux à Toulouse pour le travail.\r",
+      {
+        "entities": [
+          [6, 13, "dep"],
+          [16, 24, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Marseille à Lyon.\r",
+      {
+        "entities": [
+          [29, 37, "dep"],
+          [40, 44, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Paris à Bruxelles.\r",
+      {
+        "entities": [
+          [21, 26, "dep"],
+          [29, 38, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Lille depuis la gare de Paris ?\r",
+      {
+        "entities": [
+          [20, 25, "arr"],
+          [44, 49, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Bordeaux en partant de Toulouse.\r",
+      {
+        "entities": [
+          [36, 44, "arr"],
+          [59, 67, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Lyon à Marseille ?\r",
+      {
+        "entities": [
+          [23, 27, "dep"],
+          [30, 38, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Paris à Lille.\r",
+      {
+        "entities": [
+          [19, 24, "dep"],
+          [27, 32, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Bordeaux à Toulouse ?\r",
+      {
+        "entities": [
+          [27, 34, "dep"],
+          [37, 45, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Marseille à Lyon pour le week-end.\r",
+      {
+        "entities": [
+          [6, 14, "dep"],
+          [17, 21, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Paris à Lille.\r",
+      {
+        "entities": [
+          [29, 34, "dep"],
+          [37, 42, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Lyon à Nice.\r",
+      {
+        "entities": [
+          [21, 25, "dep"],
+          [28, 32, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Marseille depuis la gare de Lyon ?\r",
+      {
+        "entities": [
+          [20, 28, "arr"],
+          [47, 51, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Lille en partant de Paris.\r",
+      {
+        "entities": [
+          [36, 41, "arr"],
+          [56, 61, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Bordeaux à Toulouse ?\r",
+      {
+        "entities": [
+          [23, 30, "dep"],
+          [33, 41, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Marseille à Lyon.\r",
+      {
+        "entities": [
+          [19, 27, "dep"],
+          [30, 34, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Paris à Lille ?\r",
+      {
+        "entities": [
+          [27, 32, "dep"],
+          [35, 40, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Lyon à Nice pour le travail.\r",
+      {
+        "entities": [
+          [6, 10, "dep"],
+          [13, 17, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Lille à Bruxelles.\r",
+      {
+        "entities": [
+          [29, 34, "dep"],
+          [37, 45, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Marseille à Lyon.\r",
+      {
+        "entities": [
+          [21, 29, "dep"],
+          [32, 36, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Bordeaux depuis la gare de Toulouse ?\r",
+      {
+        "entities": [
+          [20, 28, "arr"],
+          [47, 55, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Nice en partant de Lyon.\r",
+      {
+        "entities": [
+          [36, 40, "arr"],
+          [55, 59, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Paris à Bruxelles ?\r",
+      {
+        "entities": [
+          [23, 28, "dep"],
+          [31, 40, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Lille à Dunkerque.\r",
+      {
+        "entities": [
+          [19, 24, "dep"],
+          [27, 36, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je dois prendre un train de Lyon à Grenoble.\r",
+      {
+        "entities": [
+          [21, 25, "dep"],
+          [28, 36, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment aller de Bordeaux à Biarritz en voiture ?\r",
+      {
+        "entities": [
+          [14, 21, "dep"],
+          [24, 32, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un vol de Paris à Londres.\r",
+      {
+        "entities": [
+          [19, 24, "dep"],
+          [27, 33, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Nantes à Angers ?\r",
+      {
+        "entities": [
+          [27, 33, "dep"],
+          [36, 42, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Marseille à Montpellier pour le week-end.\r",
+      {
+        "entities": [
+          [6, 14, "dep"],
+          [17, 28, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Lille à Calais.\r",
+      {
+        "entities": [
+          [29, 34, "dep"],
+          [37, 43, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Strasbourg à Metz.\r",
+      {
+        "entities": [
+          [21, 31, "dep"],
+          [34, 38, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Dijon depuis la gare de Lyon ?\r",
+      {
+        "entities": [
+          [20, 25, "arr"],
+          [44, 48, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Grenoble en partant de Lyon.\r",
+      {
+        "entities": [
+          [36, 44, "arr"],
+          [59, 63, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Paris à Marseille ?\r",
+      {
+        "entities": [
+          [23, 28, "dep"],
+          [31, 39, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Lille à Paris.\r",
+      {
+        "entities": [
+          [19, 24, "dep"],
+          [27, 32, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Lyon à Grenoble ?\r",
+      {
+        "entities": [
+          [27, 31, "dep"],
+          [34, 42, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Bordeaux à La Rochelle pour le travail.\r",
+      {
+        "entities": [
+          [6, 13, "dep"],
+          [16, 27, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Paris à Strasbourg.\r",
+      {
+        "entities": [
+          [29, 34, "dep"],
+          [37, 47, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Nantes à Brest.\r",
+      {
+        "entities": [
+          [21, 27, "dep"],
+          [30, 35, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Lyon depuis la gare de Marseille ?\r",
+      {
+        "entities": [
+          [20, 24, "arr"],
+          [43, 51, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Strasbourg en partant de Paris.\r",
+      {
+        "entities": [
+          [36, 46, "arr"],
+          [61, 66, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Lille à Dunkerque ?\r",
+      {
+        "entities": [
+          [23, 28, "dep"],
+          [31, 40, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Marseille à Nice.\r",
+      {
+        "entities": [
+          [19, 27, "dep"],
+          [30, 34, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Paris à Lyon ?\r",
+      {
+        "entities": [
+          [27, 32, "dep"],
+          [35, 39, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Nantes à Rennes pour le week-end.\r",
+      {
+        "entities": [
+          [6, 12, "dep"],
+          [15, 21, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Bordeaux à La Rochelle.\r",
+      {
+        "entities": [
+          [29, 36, "dep"],
+          [39, 50, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Paris à Lille.\r",
+      {
+        "entities": [
+          [21, 26, "dep"],
+          [29, 34, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Marseille depuis la gare de Bordeaux ?\r",
+      {
+        "entities": [
+          [20, 28, "arr"],
+          [47, 55, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Lyon en partant de Marseille.\r",
+      {
+        "entities": [
+          [36, 40, "arr"],
+          [55, 63, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Paris à Strasbourg ?\r",
+      {
+        "entities": [
+          [23, 28, "dep"],
+          [31, 41, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Lille à Bruxelles.\r",
+      {
+        "entities": [
+          [19, 24, "dep"],
+          [27, 35, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Nantes à Rennes ?\r",
+      {
+        "entities": [
+          [27, 33, "dep"],
+          [36, 42, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Paris à Londres pour le travail.\r",
+      {
+        "entities": [
+          [6, 11, "dep"],
+          [14, 20, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Lyon à Grenoble.\r",
+      {
+        "entities": [
+          [29, 33, "dep"],
+          [36, 44, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Marseille à Montpellier.\r",
+      {
+        "entities": [
+          [21, 29, "dep"],
+          [32, 43, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Bordeaux depuis la gare de La Rochelle ?\r",
+      {
+        "entities": [
+          [20, 28, "arr"],
+          [47, 58, "dep"]
+        ]
+      }
+    ],
+    [
+      "Je veux aller voir mon ami Albert à Brest en partant de Nantes.\r",
+      {
+        "entities": [
+          [36, 41, "arr"],
+          [56, 62, "dep"]
+        ]
+      }
+    ],
+    [
+      "Y a-t-il des trains de Paris à Lille ?\r",
+      {
+        "entities": [
+          [23, 28, "dep"],
+          [31, 36, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je cherche un train de Marseille à Strasbourg.\r",
+      {
+        "entities": [
+          [19, 27, "dep"],
+          [30, 40, "arr"]
+        ]
+      }
+    ],
+    [
+      "Peux-tu me dire comment aller de Lyon à Nice ?\r",
+      {
+        "entities": [
+          [27, 31, "dep"],
+          [34, 38, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je vais de Bordeaux à Biarritz pour le week-end.\r",
+      {
+        "entities": [
+          [6, 13, "dep"],
+          [16, 24, "arr"]
+        ]
+      }
+    ],
+    [
+      "Il y a un train direct de Nantes à Rennes.\r",
+      {
+        "entities": [
+          [29, 35, "dep"],
+          [38, 44, "arr"]
+        ]
+      }
+    ],
+    [
+      "Je voudrais aller de Paris à Grenoble.\r",
+      {
+        "entities": [
+          [21, 26, "dep"],
+          [29, 37, "arr"]
+        ]
+      }
+    ],
+    [
+      "Comment me rendre à Lille depuis la gare de Bruxelles ?\r",
+      {
+        "entities": [
+          [20, 25, "arr"],
+          [44, 53, "dep"]
+        ]
+      }
+    ]
+  ]
+}
