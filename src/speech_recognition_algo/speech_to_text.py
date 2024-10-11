@@ -1,12 +1,18 @@
-import speech_recognition as sr
+import speech_recognition as sr 
+import pyttsx3 
 
 r = sr.Recognizer()
+engine = pyttsx3.init()
+
+def speak_text(text):
+    engine.say(text)
+    engine.runAndWait()
 
 def record_text():
     while True:
         try:
             with sr.Microphone() as source2:
-                r.adjust_for_ambient_noise(source2, duration=0.2)                
+                r.adjust_for_ambient_noise(source2, duration=0.2)
                 print("En écoute...")
                 audio2 = r.listen(source2)
                 MyText = r.recognize_google(audio2, language="fr-FR")
@@ -18,7 +24,7 @@ def record_text():
     return
 
 def output_text(text):
-    with open("output.txt", "a") as f:
+    with open("output.txt", "a", encoding="utf-8") as f:
         f.write(text)
         f.write("\n")
     return
