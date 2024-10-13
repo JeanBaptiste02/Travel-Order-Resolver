@@ -1,5 +1,5 @@
-import speech_recognition as sr 
-import pyttsx3 
+import speech_recognition as sr  # type: ignore
+import pyttsx3  # type: ignore
 
 r = sr.Recognizer()
 engine = pyttsx3.init()
@@ -13,6 +13,7 @@ def record_text():
         try:
             with sr.Microphone() as source2:
                 r.adjust_for_ambient_noise(source2, duration=0.2)
+                speak_text("Je vous écoute")
                 print("En écoute...")
                 audio2 = r.listen(source2)
                 MyText = r.recognize_google(audio2, language="fr-FR")
@@ -29,10 +30,18 @@ def output_text(text):
         f.write("\n")
     return
 
+# Initial message
+speak_text("Je suis Yatra GPT. Je vais répéter tout ce que vous dites")
+
 try:
     while True:
         text = record_text()
+        if "arrête" in text.lower():
+            speak_text("Programme interrompu")
+            print("\nProgramme interrompu")
+            break
         output_text(text)
+        speak_text(f"Vous avez dit: {text}")
         print(f"Texte: {text}")
 
 except KeyboardInterrupt:
