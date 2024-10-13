@@ -4,7 +4,7 @@ from tqdm import tqdm # type: ignore
 
 # Charger la liste des villes
 print("Chargement de la liste des villes...")
-with open('../utils/extra_datas/urban_geodata_masterlist_v1.0.txt', 'r', encoding='utf-8') as f:
+with open('../utils/extra_datas/urban_geodata_basic_v1.0.txt', 'r', encoding='utf-8') as f:
     villes = [line.strip() for line in f.readlines() if line.strip()]
 print(f"{len(villes)} villes chargées.\n")
 
