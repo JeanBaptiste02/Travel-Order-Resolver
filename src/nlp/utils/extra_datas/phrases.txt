@@ -1,54 +1,426 @@
-Je voudrais aller de {} à {}  
-Comment me rendre à {} depuis {}  
-Y a-t-il des trains de {} à {}  
-Je souhaite me rendre à {} en partant de {}  
-Je quitte {} pour aller à {}  
-Peux-tu me dire le meilleur moyen d'aller de {} à {}  
-Combien de temps faut-il pour aller de {} à {}  
-Est-ce que je peux prendre un bus de {} à {}  
-Quelles sont les options de transport entre {} et {}  
-Quel est le prix d'un billet de {} à {}  
-Avez-vous des recommandations pour voyager de {} à {}  
-Je prévois un voyage de {} à {} Avez-vous des conseils  
-Est-ce que ça vaut le coup de visiter {} après être allé à {}  
-À quelle heure part le dernier train de {} à {}  
-Quels sites touristiques visiter en allant de {} à {}  
-Y a-t-il des offres spéciales pour voyager entre {} et {}  
-Je dois réserver un vol de {} à {} Quel est le meilleur moment  
-Comment faire pour rejoindre {} depuis {}  
-Est-il facile de trouver un taxi de {} à {}  
-Peut-on faire du covoiturage de {} à {}  
-Quelles sont les distances entre {} et {}  
-Je vais faire une escale à {} avant d'arriver à {}  
-Est-ce que tu sais si le train est direct de {} à {}  
-Comment est la route de {} à {}  
-J'aimerais planifier un itinéraire de {} à {}  
-As-tu déjà visité {} en partant de {}  
-Y a-t-il des restrictions de voyage entre {} et {}  
-Quel est le meilleur moment de l'année pour visiter {} depuis {}  
-Peux-tu me donner des astuces pour voyager de {} à {}  
-Quelles sont les meilleures compagnies pour aller de {} à {}  
-Je cherche un hébergement à {} pour mon voyage depuis {}  
-Les vols de {} à {} sont-ils fréquents  
-Quelle est la meilleure période pour aller de {} à {}  
-Est-ce que le ferry est une option pour aller de {} à {}  
-J'ai besoin d'informations sur les transports publics entre {} et {}  
-Est-ce que le train est en retard de {} à {}  
-Peut-on louer une voiture à {} pour aller à {}  
-Y a-t-il des visites guidées disponibles à {}  
-Y a-t-il des réductions pour les étudiants sur les trajets de {} à {}  
-Quels sont les moyens de transport les plus rapides entre {} et {}  
-Est-il préférable de prendre un vol ou le train de {} à {}  
-Y a-t-il des compagnies de bus recommandées pour aller de {} à {}  
-Quel est le temps de trajet habituel en voiture de {} à {}  
-Est-ce que des bus de nuit circulent entre {} et {}  
-Quel est le meilleur moment pour éviter les foules entre {} et {}  
-Y a-t-il des transports adaptés aux personnes à mobilité réduite entre {} et {}  
-Peux-tu me recommander un trajet pittoresque de {} à {}  
-Est-ce que les trains sont souvent en retard entre {} et {}  
-Y a-t-il des cartes de transport à prix réduit pour les voyageurs fréquents entre {} et {}  
-Quels sont les moyens de transport les plus écologiques pour aller de {} à {}  
-Comment se rendre à l'aéroport de {} depuis {}  
-Peut-on faire des excursions d'une journée à partir de {} vers {}  
-Peux-tu me donner des conseils pour éviter le trafic entre {} et {}  
-Y a-t-il des applications utiles pour planifier mon voyage entre {} et {}
+je voudrais aller de {} à {}.
+comment me rendre à port-boulet depuis la gare de {} ?
+je veux aller voir mon ami albert à {} en partant de {}.
+y a-t-il des trains de {} à montaigu ?
+une phrase sans origine ni destination.
+si pas de numéro de séquence, on considère que c'est zéro
+is there any train going from {} to {} ?
+je souhaite me rendre à {} en partant de {}
+je quitte {} pour aller à {}
+en partant de {}, je veux me rendre à {}
+{} est ma ville de départ pour rejoindre {}
+je pars de {} pour me rendre à {}
+{} est d'où je pars pour aller à {}
+en partant de {}, je veux rejoindre {}
+je quitte {} pour me rendre à {}
+je souhaite me rendre à {} en partant de {}
+je pars de {} pour rejoindre {}
+{} est ma ville de départ pour aller à {}
+je quitte {} pour me rendre à {}
+en partant de {}, je veux me rendre à {}
+je pars de {} pour rejoindre {}
+je souhaite me rendre à {} en partant de {}
+je quitte {} pour aller à {}
+en partant d'{}, je veux me rendre à {}
+je pars de {} pour rejoindre {}
+{} est ma ville de départ pour aller à {}
+je quitte {} pour me rendre à {}
+je désire me rendre à la majestueuse ville de {}, en émanant de la belle cité de {}
+je quitte la splendide cité de {} en vue de gagner la magnifique ville de {}
+en provenance de la prestigieuse métropole bordelaise, je souhaite me diriger vers la charmante cité de {}
+la ville de {} est mon point d'origine pour rejoindre la vénérable ville de {}
+mon intention est de partir de la pittoresque ville de {} pour rejoindre la séduisante cité de {}
+j'entame mon périple depuis la distinguée ville de {} en direction de la ravissante cité de {}
+en provenance de la historique cité de {}, je désire me rendre à la distinguée ville d'{}
+j'entame mon voyage depuis la charmante cité de {} en vue de me rendre à la pittoresque ville de {}
+je souhaite me rendre à la noble ville de {} en quittant la belle cité de {}
+je pars de la glorieuse ville de {} en vue de rejoindre la prestigieuse cité de {}
+{} est ma ville de départ, où je démarre mon voyage en direction de la vénérable cité de {}
+je quitte la somptueuse ville de {} en vue de gagner la belle cité de {}
+en provenance de la charmante cité de {}, je désire me rendre à la magnifique ville de {}
+je m'éclipse de la ravissante cité de {} en direction de la distinguée ville de {}
+je souhaite me rendre à la prestigieuse cité de {} en partant de la séduisante ville de {}
+je quitte la noble ville de {} en vue de me rendre à la pittoresque ville de {}
+en provenance de la distinguée ville d'{}, je désire me rendre à la prestigieuse cité de {}
+je pars de la charmante cité de {} en vue de rejoindre la majestueuse ville de {}
+la ville de {} est mon point de départ pour me rendre à la vénérable cité de {}
+je quitte la magnifique ville de {} en vue de me rendre à la pittoresque ville de {}
+je souhaite me transporter de {} à {}
+j'entends migrer de {} à {}
+je prévois de voyager de {} à {}
+je désire me déplacer de {} à {}
+mon intention est de cheminer de {} à {}
+je projette de transiter de {} à {}
+je compte me déplacer de {} à {}
+j'envisage de transférer mon lieu de résidence de {} à {}
+je médite sur un déplacement de {} à {}
+je songe à me rendre de {} à {}
+je prévois de me rendre à {} depuis {} pour assister à une conférence sur l'intelligence artificielle
+mon ami pierre et moi quittons {} pour une escapade à {} ce week-end
+en tant que représentant de l'entreprise {} transport, je pars de {} pour rencontrer nos partenaires à {}
+j'ai réservé un vol depuis {} pour me rendre à {} et rencontrer m. {}.
+je m'envole depuis {} pour {} afin de participer à un événement caritatif
+dans le cadre de mon travail, je dois quitter {} pour {} afin d'inspecter nos installations
+en partant de {}, je vais à {} pour une réunion importante avec l'équipe de développement
+mon collègue et moi quittons {} pour {} afin de participer à une formation
+je souhaite me rendre à {} depuis {} pour visiter le musée d'art contemporain
+j'ai réservé un billet de train depuis {} pour {}, où je retrouverai l'écrivain célèbre jean clermont
+le club de randonnée organise un voyage, et je pars de {} pour rejoindre {} avec le groupe {} hiking
+je quitte {} pour {} afin de célébrer le mariage de ma sœur {}
+en tant que membre de l'orchestre, je pars de {} pour {}, où nous donnerons un concert
+j'ai été invité à une conférence à {}, alors je pars de {} pour m'y rendre
+en partant de {}, je vais à {} pour rencontrer le fondateur de notre startup
+je prévois de quitter {} pour {} et rendre visite à mon ami d'enfance
+je suis ravi de me rendre à {} depuis {} pour participer à la course caritative
+j'ai un rendez-vous à {} avec l'équipe de design, alors je quitte {} pour la capitale
+en partant de {}, je vais à {} pour rencontrer le consultant en marketing, mme martin
+je souhaite me rendre à {} depuis {} pour assister à la pièce de théâtre de la compagnie théâtrale locale
+comment partir de {} pour aller à {} en train ?
+quel est le meilleur moyen de se rendre de {} à {} en train ?
+comment faire pour me rendre de {} à {} en train ?
+existe-t-il un train direct de {} à {} ?
+comment se rendre de {} à {} en train ?
+quels sont les tarifs pour un billet de train de {} à {} ?
+comment planifier un voyage en train de {} à {} ?
+y a-t-il des trains rapides de {} à {} ?
+comment puis-je rejoindre la gare de {} depuis le centre de {} ?
+quelles options de transport en train sont disponibles de {} à {} ?
+je découvre les musées de {}
+j'apprécie une soirée à {}
+je me détends sur la plage de {}
+je visite les monuments historiques de {}
+je me balade dans les rues de {}
+je profite de la vie nocturne de {}
+j'admire la vue depuis la tour eiffel à {}
+je me perds dans les quartiers animés de {}
+je flâne le long de la promenade des anglais à {}
+j'explore les parcs de {}
+i wish to go from {} to {}
+verlasse {}, um nach {} zu gehen
+salgo de burdeos para ir a estrasburgo
+sto partendo da nizza per andare a {}
+verlaat {} om naar {} te gaan
+ich möchte von {} nach {} reisen
+estoy saliendo de {} para ir a {}
+sono in partenza da marsiglia per andare a {}
+jag lämnar {} för att åka till {}
+j'adore passer du temps à lire
+les voyages forment la jeunesse
+la musique apaise mon âme
+les amis sont comme une deuxième famille
+le sport est une excellente façon de rester en forme
+la nature est belle et apaisante
+la cuisine française est réputée pour sa délicatesse
+apprendre une nouvelle langue est enrichissant
+rire est le meilleur remède
+la technologie a transformé nos vies
+peut-être que ce week-end je prendrais un train {} - {}.
+je vais faire le trajet {} / {} demain.
+mon parcours {} - bretagne est déjà planifié.
+voici mon prochain voyage : {} {}.
+faire {} - {} en voiture me semble long.
+je prends la voiture demain pour l'itinéraire {} / {}.
+mon frère va conduire le trajet {} / {} pour se rendre à une conférence.
+est-ce qu'il y a un train {} - {} la semaine prochaine ?
+je fais {} cologne pour le travail.
+mon ami a quitté {} pour aller s'acheter un nouvel iphone de la marque apple à {}
+je me prépare pour le grand marathon {} {}.
+courir à pieds {} {} va me prendre beaucoup de temps.
+je compte quitter {} pour me rendre à {} acheter un pc de la marque lenovo.
+en partant de {}, je veux rejoindre {} en passant par {}.
+je quitte {} pour me rendre à {} en faisant une escale à {}.
+je souhaite me rendre à {} en partant de {} avec un arrêt à {}.
+je pars de {}, je passe par {} et je m'arrête à {}.
+{} est ma ville de départ pour aller à {} en passant par {}.
+je quitte {} pour me rendre à {}, puis à {}.
+en partant de {}, je veux me rendre {} puis à {}.
+je pars de {} pour rejoindre {} en passant par {}.
+je souhaite me rendre à {} en passant par {} et en partant de {}.
+je quitte {} pour aller à {} en faisant une escale à {}.
+en partant d'{}, je veux me rendre à {} après avoir séjourné chez ma sœur à {}.
+je pars de {}, je récupère mon frère à {} et on se rend à {}.
+je veux me rendre à rome en quittant {}.
+je veux aller à {} en démarrant de {}.
+je compte visiter un musée à {} en quittant {}.
+je dois regarder les trains {} - {} pour aller voir mon ami albert.
+je dois planifier un voyage {} {} pour les prochaines vacances.
+je dois planifier un voyage {} {} en passant par {} pour les prochaines vacances.
+une réunion de travail m'oblige à faire {} - {} en m'arrêtant à {} la semaine prochaine.
+je pars de {} pour aller à {}.
+en voyageant de {} à {}, je vais faire une escale à {}.
+je quitte {} pour rejoindre {} en passant par {}.
+mon trajet de {} à {} inclut une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je quitte {} pour aller à {} en faisant une escale à {}.
+je pars de {} pour {}, en passant par {}.
+je souhaite me rendre de {} à {} avec un arrêt à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} en passant par {}.
+je pars de {} pour visiter {}, avec une escale à {}.
+je souhaite aller de {} à {} en m'arrêtant à {}.
+je vais de {} à {} en faisant une escale à {}.
+je pars de {} pour {}, avec un arrêt à {}.
+je voyage de {} à {}, en passant par {}.
+je quitte {} pour aller à {}, avec une escale à {}.
+je pars de {} pour {}, en faisant une escale à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {}, avec une escale à {}.
+je pars de {} pour rejoindre {} en m'arrêtant à {}.
+je voyage de {} à {} avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je pars de {} pour {} avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je voyage de {} à {}, avec une escale à {}.
+je souhaite aller de {} à {} en passant par {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {} en passant par {}.
+je souhaite aller de {} à {}, avec une escale à {}.
+je pars de {} pour rejoindre {} en faisant une escale à {}.
+je quitte {} pour aller à {}, avec un arrêt à {}.
+je vais de {} à {} en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je souhaite aller de {} à {} avec un arrêt à {}.
+je pars de {} pour {} en faisant une escale à {}.
+je vais de {} à {}, avec un arrêt à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {} en faisant une escale à {}.
+je quitte {} pour aller à {}, en passant par {}.
+je souhaite voyager de {} à {} avec une escale à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je quitte {} pour rejoindre {}, avec un arrêt à {}.
+je pars de {} à {}, en passant par {}.
+je voyage de {} à {}, avec une escale à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je souhaite aller de {} à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, avec un arrêt à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {}, en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {}, en m'arrêtant à {}.
+je quitte {} pour rejoindre {}, avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {}, en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je souhaite voyager de {} à {}, en m'arrêtant à {}.
+je pars de {} pour rejoindre {}, avec une escale à {}.
+je vais de {} à {} avec un arrêt à {}.
+je pars de {} pour aller à {} en m'arrêtant à {}.
+je vais de {} à {}, avec une escale à {}.
+je pars de {} pour rejoindre {} avec un arrêt à {}.
+je quitte {} pour aller à {} en passant par {}.
+je voyage de {} à {} avec une escale à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je pars de {} pour rejoindre {}, en m'arrêtant à {}.
+je vais de {} à {} en passant par {}.
+je voyage de {} à {} avec un arrêt à {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je pars de {} pour rejoindre {} en m'arrêtant à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour rejoindre {} en m'arrêtant à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {} avec un arrêt à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {} en m'arrêtant à {}.
+je quitte {} pour rejoindre {} avec une escale à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour aller à {} avec un arrêt à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {} en m'arrêtant à {}.
+je pars de {} pour rejoindre {} avec un arrêt à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour rejoindre {} en m'arrêtant à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour rejoindre {} avec un arrêt à {}.
+je vais de {} à {} en passant par {}.
+je quitte {} pour aller à {} avec une escale à {}.
+je voyage de {} à {} en passant par {}.
+je pars de {} pour aller à {} avec une escale à {}.
+je vais de {} à {} en passant par {}.

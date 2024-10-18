@@ -1,74 +1,72 @@
-import json
 import pandas as pd # type: ignore
 import random
-from tqdm import tqdm # type: ignore
+import csv 
+from tqdm import tqdm  # type: ignore 
 
 # on charge la liste des villes
 print("Chargement de la liste des villes...")
 with open('../utils/extra_datas/urban_geodata_basic_v1.0.txt', 'r', encoding='utf-8') as f:
-    villes = [line.strip() for line in f.readlines() if line.strip()]
-print(f"{len(villes)} villes chargées.\n")
+    villes = [line.strip().title() for line in f.readlines() if line.strip()]  # majuscule les noms des villes
+print(f"{len(villes)} villes chargées\n")
 
-# on charge les phrases
+# Charger les phrases
 print("Chargement des phrases...")
 with open('../utils/extra_datas/phrases.txt', 'r', encoding='utf-8') as f:
     phrases = [line.strip() for line in f.readlines() if line.strip()]
-print(f"{len(phrases)} phrases chargées.\n")
+print(f"{len(phrases)} phrases chargées\n")
 
-# on verifie les phrases
-print("Vérification des phrases...")
-for idx, phrase in enumerate(phrases):
-    try:
-        phrase.format('ville1', 'ville2')
-    except IndexError as e:
-        print(f"Erreur dans la phrase {idx+1} : {phrase} -> {e}")
-print("Vérification des phrases terminée.\n")
+# Liste pour stocker les résultats
+results = []
 
-# liste pour stocker les annotations
-annotations = []
+print("Génération des phrases...\n")
 
-print("Génération des combinaisons de phrases...\n")
-total_combinations = (len(villes) * (len(villes) - 1))
-progress_bar = tqdm(total=total_combinations, desc="Progression", ncols=100)
+# on parcours chaque phrase avec tqdm pour la barre de progression
+for phrase in tqdm(phrases, desc="En cours", ncols=100):
+    # on check combien de fois {} apparait dans chaque phrase
+    placeholders = phrase.count('{}')
 
-for i in range(len(villes)):
-    for j in range(len(villes)):
-        if i != j:  # on verifie si le depart et la destination ne sont pas les memes
-            departure = villes[i]
-            destination = villes[j]
-            phrase = random.choice(phrases).format(departure, destination)
+    # si dans la phrase y'a {} et moins de 2 villes, on continue
+    if placeholders == 0:
+        results.append((phrase.capitalize(), "[]"))  # majuscule la phrase
+        continue
 
-            # positions des entités
-            entity_departure = {
-                "start": phrase.find(departure),
-                "end": phrase.find(departure) + len(departure),
-                "label": "DEPARTURE"
-            }
+    # on chousi des villes au hasard en fonction du nombre de {} dans la phrase
+    selected_villes = random.sample(villes, min(placeholders, len(villes)))
 
-            entity_destination = {
-                "start": phrase.find(destination),
-                "end": phrase.find(destination) + len(destination),
-                "label": "DESTINATION"
-            }
+    # on remplace les {} par les noms des villes
+    formatted_phrase = phrase.format(*selected_villes)
 
-            # ajout de l'annotation au format json
-            annotations.append({
-                "sentence": phrase,
-                "entities": [entity_departure, entity_destination]
-            })
+    # on màj la 1ere lettre de la phrase formatee en majuscule
+    formatted_phrase = formatted_phrase[0].upper() + formatted_phrase[1:]
 
-            progress_bar.update(1)
+    # on calcul les positions des entites
+    entities = []
+    
+    # on determine le nb de villes pour les labels
+    departure_found = False
+    for ville in selected_villes:
+        start = formatted_phrase.find(ville)
+        end = start + len(ville)
+        
+        # on determine le label en fonction de la position
+        if not departure_found:
+            label = "DEPARTURE"
+            departure_found = True
+        else:
+            # Si c'est la dernière ville, elle est la destination
+            if ville == selected_villes[-1]:
+                label = "DESTINATION"
+            else:
+                label = "ESCALE"  # sinon, c'est une escale
+                
+        entities.append(f"[{start}, {end}, '{label}']")
 
-progress_bar.close()
+    # on cree l'entree pour le fichier CSV
+    entities_str = f"[{', '.join(entities)}]"
+    results.append((formatted_phrase, entities_str))
 
-# structure finale au format json
-dataset = {
-    "classes": ["DEPARTURE", "DESTINATION"],
-    "annotations": annotations
-}
+# on cree un DataFrame et l'enregistrer dans un fichier CSV
+df = pd.DataFrame(results, columns=["Phrase", "Entities"])
+df.to_csv('../dataset/raw/initial_training_data.csv', index=False, quoting=csv.QUOTE_NONNUMERIC)
 
-# on sauvegarde en fichier json
-print("\nSauvegarde du dataset en format JSON...")
-with open('../dataset/raw/initial_training_data.json', 'w', encoding='utf-8') as f:
-    json.dump(dataset, f, ensure_ascii=False, indent=4)
-print("Sauvegarde terminée.\n")
+print("Fichier CSV généré avec succès\n")
