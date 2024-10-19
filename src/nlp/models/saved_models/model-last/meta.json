@@ -22,7 +22,8 @@
     ],
     "ner":[
       "DEPARTURE",
-      "DESTINATION"
+      "DESTINATION",
+      "ESCALE"
     ]
   },
   "pipeline":[
@@ -37,22 +38,27 @@
 
   ],
   "performance":{
-    "ents_f":0.5016982224,
-    "ents_p":0.5,
-    "ents_r":0.5034080199,
+    "ents_f":1.0,
+    "ents_p":1.0,
+    "ents_r":1.0,
     "ents_per_type":{
       "DEPARTURE":{
-        "p":0.5,
-        "r":0.8425210421,
-        "f":0.6275663589
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "ESCALE":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
       },
       "DESTINATION":{
-        "p":0.5,
-        "r":0.1579564106,
-        "f":0.2400712389
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
       }
     },
-    "tok2vec_loss":122.4769831773,
-    "ner_loss":16292.5311634861
+    "tok2vec_loss":55.6275158405,
+    "ner_loss":7.8885285469
   }
 }
