@@ -42,12 +42,12 @@
     "ents_p":1.0,
     "ents_r":1.0,
     "ents_per_type":{
-      "DEPARTURE":{
+      "DESTINATION":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       },
-      "DESTINATION":{
+      "DEPARTURE":{
         "p":1.0,
         "r":1.0,
         "f":1.0
@@ -58,7 +58,7 @@
         "f":1.0
       }
     },
-    "tok2vec_loss":120.278665007,
-    "ner_loss":14.3230282425
+    "tok2vec_loss":117.7712960092,
+    "ner_loss":17.8162386898
   }
 }
