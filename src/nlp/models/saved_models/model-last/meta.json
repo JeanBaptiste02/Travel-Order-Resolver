@@ -47,18 +47,18 @@
         "r":1.0,
         "f":1.0
       },
-      "ESCALE":{
+      "DESTINATION":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       },
-      "DESTINATION":{
+      "ESCALE":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       }
     },
-    "tok2vec_loss":55.6275158405,
-    "ner_loss":7.8885285469
+    "tok2vec_loss":120.278665007,
+    "ner_loss":14.3230282425
   }
 }
