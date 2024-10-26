@@ -1,0 +1,61 @@
+Rapport d'analyse comparative des modèles SpaCy
+==================================================
+
+Performances des modèles :
+SM: {'Total des lieux identifiés': 13, 'Total des personnes identifiées': 0, 'Total des organisations identifiées': 4, 'Total des dates identifiées': 0, 'Total de phrases': 14}
+MD: {'Total des lieux identifiés': 13, 'Total des personnes identifiées': 0, 'Total des organisations identifiées': 4, 'Total des dates identifiées': 0, 'Total de phrases': 14}
+LG: {'Total des lieux identifiés': 13, 'Total des personnes identifiées': 0, 'Total des organisations identifiées': 4, 'Total des dates identifiées': 0, 'Total de phrases': 15}
+
+Données analysées :
+
+Résultats pour le modèle SM :
+                                                                Phrase Lieux de départ Lieux d'arrivée                             Autres entités
+    Demain, je prends le train de Paris à Londres pour une conférence.           Paris         Londres                                           
+En partant de Bordeaux, je me rends à Marseille pour visiter des amis.        Bordeaux       Marseille                                           
+Je dois atteindre Lyon depuis Toulouse pour un rendez-vous d'affaires.        Toulouse                                                           
+     J'adore la glace que je mange à Paris, surtout celle au chocolat.                           Paris                                           
+          En marchant vers la mer, je pense à mes prochaines vacances.                                                                           
+                       Aujourd'hui, je n'ai pas mangé depuis ce matin.                                                                           
+                    Marie Curie a découvert le radium à Paris en 1898.                           Paris                                           
+                 La société Renault est située à Boulogne-Billancourt.                        Boulogne                                    Renault
+       J'ai rencontré Jean-Claude Van Damme à Bruxelles l'été dernier.                       Bruxelles                                           
+       L'Organisation mondiale de la santé (OMS) a son siège à Genève.                          Genève Organisation; mondiale; de; la; santé; OMS
+                          Le festival de Cannes aura lieu en mai 2024.                                                                           
+Steve Jobs était le co-fondateur d'Apple, une entreprise emblématique.                                                                      Apple
+      La Tour Eiffel est l'un des monuments les plus visités au monde.                                                                           
+        Je suis membre du club de tennis de Bordeaux depuis trois ans.        Bordeaux                                                           
+
+Résultats pour le modèle MD :
+                                                                Phrase Lieux de départ Lieux d'arrivée                             Autres entités
+    Demain, je prends le train de Paris à Londres pour une conférence.           Paris         Londres                                           
+En partant de Bordeaux, je me rends à Marseille pour visiter des amis.        Bordeaux       Marseille                                           
+Je dois atteindre Lyon depuis Toulouse pour un rendez-vous d'affaires.        Toulouse                                                           
+     J'adore la glace que je mange à Paris, surtout celle au chocolat.                           Paris                                           
+          En marchant vers la mer, je pense à mes prochaines vacances.                                                                           
+                       Aujourd'hui, je n'ai pas mangé depuis ce matin.                                                                           
+                    Marie Curie a découvert le radium à Paris en 1898.                           Paris                                           
+                 La société Renault est située à Boulogne-Billancourt.                        Boulogne                                    Renault
+       J'ai rencontré Jean-Claude Van Damme à Bruxelles l'été dernier.                       Bruxelles                                           
+       L'Organisation mondiale de la santé (OMS) a son siège à Genève.                          Genève Organisation; mondiale; de; la; santé; OMS
+                          Le festival de Cannes aura lieu en mai 2024.                                                                           
+Steve Jobs était le co-fondateur d'Apple, une entreprise emblématique.                                                                      Apple
+      La Tour Eiffel est l'un des monuments les plus visités au monde.                                                                           
+        Je suis membre du club de tennis de Bordeaux depuis trois ans.        Bordeaux                                                           
+
+Résultats pour le modèle LG :
+                                                                Phrase Lieux de départ Lieux d'arrivée                             Autres entités
+                                                                Demain                                                                           
+          , je prends le train de Paris à Londres pour une conférence.           Paris         Londres                                           
+En partant de Bordeaux, je me rends à Marseille pour visiter des amis.        Bordeaux       Marseille                                           
+Je dois atteindre Lyon depuis Toulouse pour un rendez-vous d'affaires.        Toulouse                                                           
+     J'adore la glace que je mange à Paris, surtout celle au chocolat.                           Paris                                           
+          En marchant vers la mer, je pense à mes prochaines vacances.                                                                           
+                       Aujourd'hui, je n'ai pas mangé depuis ce matin.                                                                           
+                    Marie Curie a découvert le radium à Paris en 1898.                           Paris                                           
+                 La société Renault est située à Boulogne-Billancourt.                        Boulogne                                    Renault
+       J'ai rencontré Jean-Claude Van Damme à Bruxelles l'été dernier.                       Bruxelles                                           
+       L'Organisation mondiale de la santé (OMS) a son siège à Genève.                          Genève Organisation; mondiale; de; la; santé; OMS
+                          Le festival de Cannes aura lieu en mai 2024.                                                                           
+Steve Jobs était le co-fondateur d'Apple, une entreprise emblématique.                                                                      Apple
+      La Tour Eiffel est l'un des monuments les plus visités au monde.                                                                           
+        Je suis membre du club de tennis de Bordeaux depuis trois ans.        Bordeaux                                                           
