@@ -1,0 +1,60 @@
+<header class="header">
+  <div id="nav-bar">
+    <input id="nav-toggle" type="checkbox" />
+    <div id="nav-header">
+      <!-- Title reflecting a GPT-based service -->
+      <a id="nav-title" href="#" target="_blank">Yatra AI</a>
+      <hr />
+    </div>
+    <div id="nav-content">
+      <!-- Home button with a relevant icon -->
+      <div class="nav-button" (click)="goToHome()">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <!-- Button to start a chat session -->
+      <div class="nav-button" (click)="startChat()">
+        <i class="fas fa-comments"></i>
+        <span>Start Chat</span>
+      </div>
+      <!-- Button for exploring AI models or instructions -->
+      <div class="nav-button" (click)="goToModelsAbout()">
+        <i class="fas fa-cogs"></i>
+        <span>AI Models</span>
+      </div>
+      <hr />
+      <!-- Section for additional resources or information about AI -->
+      <div class="nav-button">
+        <i class="fas fa-info-circle"></i>
+        <span>About AI</span>
+      </div>
+      <hr />
+      <!-- Button for help, FAQ, or documentation access -->
+      <div class="nav-button">
+        <i class="fas fa-question-circle"></i>
+        <span>Help & FAQ</span>
+      </div>
+      <div id="nav-content-highlight"></div>
+    </div>
+    <!-- Footer section of the menu -->
+    <input id="nav-footer-toggle" type="checkbox" />
+    <div id="nav-footer">
+      <div id="nav-footer-heading">
+        <div id="nav-footer-avatar">
+          <img
+            src="https://www.pinkvilla.com/images/2024-11/1214180104_shah-rukh-khan.jpg"
+            alt="Shah Rukh Khan"
+          />
+        </div>
+        <div id="nav-footer-titlebox">
+          <a id="nav-footer-title" href="" target="_blank"> ShahRukhKhan </a>
+        </div>
+      </div>
+      <div id="nav-footer-content"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

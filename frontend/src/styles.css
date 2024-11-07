@@ -1,0 +1,18 @@
+:root {
+  --background: #0f0f0f;
+  --navbar-width: 256px;
+  --navbar-width-min: 80px;
+  --navbar-dark-primary: #000000;
+  --navbar-dark-secondary: #171717;
+  --navbar-light-primary: #f5f6fa;
+  --navbar-light-secondary: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--background);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
