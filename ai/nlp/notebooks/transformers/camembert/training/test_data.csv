@@ -1,0 +1,13 @@
+text,entities
+Je souhaite me rendre à Lyon en partant de Marseille,"[{'start': 25, 'end': 29, 'label': 'DESTINATION'}, {'start': 44, 'end': 53, 'label': 'DEPARTURE'}]"
+Je veux me rendre à Rome en quittant Paris.,"[{'start': 20, 'end': 24, 'label': 'DESTINATION'}, {'start': 37, 'end': 42, 'label': 'DEPARTURE'}]"
+Je compte visiter un musée à Lille en quittant Angers.,"[{'start': 29, 'end': 34, 'label': 'DESTINATION'}, {'start': 47, 'end': 53, 'label': 'DEPARTURE'}]"
+Je pars de Lyon pour rejoindre Rennes,"[{'start': 12, 'end': 16, 'label': 'DEPARTURE'}, {'start': 32, 'end': 38, 'label': 'DESTINATION'}]"
+Je quitte la noble ville de Clermont-Ferrand en vue de me rendre à la pittoresque ville de Nîmes,"[{'start': 29, 'end': 45, 'label': 'DEPARTURE'}, {'start': 92, 'end': 97, 'label': 'DESTINATION'}]"
+Je souhaite me rendre à Lyon en partant de Bordeaux,"[{'start': 25, 'end': 29, 'label': 'DESTINATION'}, {'start': 44, 'end': 52, 'label': 'DEPARTURE'}]"
+Mon collègue et moi quittons Grenoble pour Clermont-Ferrand afin de participer à une formation,"[{'start': 30, 'end': 38, 'label': 'DEPARTURE'}, {'start': 44, 'end': 60, 'label': 'DESTINATION'}]"
+Je pars de Lyon pour rejoindre Lille,"[{'start': 12, 'end': 16, 'label': 'DEPARTURE'}, {'start': 32, 'end': 37, 'label': 'DESTINATION'}]"
+Je souhaite me rendre à Bordeaux en partant de Marseille avec un arrêt à Toulon.,"[{'start': 25, 'end': 33, 'label': 'DESTINATION'}, {'start': 48, 'end': 57, 'label': 'DEPARTURE'}, {'start': 74, 'end': 80, 'label': 'ESCALE'}]"
+"En partant de Bordeaux, je veux me rendre à Lille","[{'start': 15, 'end': 23, 'label': 'DEPARTURE'}, {'start': 45, 'end': 50, 'label': 'DESTINATION'}]"
+Je prévois de me rendre à Paris depuis Toulouse pour assister à une conférence sur l'intelligence artificielle,"[{'start': 27, 'end': 32, 'label': 'DESTINATION'}, {'start': 40, 'end': 48, 'label': 'DEPARTURE'}]"
+Je pars de Lyon pour rejoindre Paris,"[{'start': 12, 'end': 16, 'label': 'DEPARTURE'}, {'start': 32, 'end': 37, 'label': 'DESTINATION'}]"
