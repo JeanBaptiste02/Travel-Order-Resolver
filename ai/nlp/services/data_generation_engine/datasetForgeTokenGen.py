@@ -7,9 +7,8 @@ class TokenClassificationGenerator:
     def __init__(self, files: dict):
         self.files = files
         self.ner_labels = ["O", "B-DEP", "I-DEP", "B-ARR", "I-ARR"]
-        self.nlp = spacy.load("fr_core_news_sm")  # Utilisation de SpaCy pour la tokenisation
+        self.nlp = spacy.load("fr_core_news_sm") 
 
-        # Chargement des fichiers
         self.sentences_data = pd.read_csv(files["sentences_csv"], delimiter=";")
         self.random_sentences = pd.read_csv(files["random_sentences_csv"], delimiter=";")
         self.correct_sentences = self._load_sentences(files["correct_sentences_txt"])
@@ -32,7 +31,6 @@ class TokenClassificationGenerator:
 
     def generate(self, steps: dict) -> None:
         sentences = self.prepare_sentences()
-        # Ajoute des entités NER et des tokens
         df = self.generate_ner_tags_from_sentences(steps, sentences)
         df.to_csv("generated_dataset.csv", index=False)
 
@@ -45,14 +43,12 @@ class TokenClassificationGenerator:
     def generate_ner_tags_from_sentences(self, steps: dict, sentences: List[str]) -> pd.DataFrame:
         data = []
         for x, sentence in enumerate(sentences):
-            # Remplacer {departure} et {arrival} par des villes réelles
             departure_city = random.choice(self.french_cities)  # Ville de départ aléatoire
             arrival_city = random.choice(self.french_cities)  # Ville d'arrivée aléatoire
             alt_sentence = sentence.format(departure=departure_city, arrival=arrival_city)
 
             formatted_sentence = self.split_sentence(alt_sentence)
 
-            # Initialisation des tags NER
             tags_sentence = [self.ner_labels.index("O")] * len(formatted_sentence)
 
             for i, word in enumerate(formatted_sentence):
@@ -61,7 +57,6 @@ class TokenClassificationGenerator:
                 if word == arrival_city:
                     tags_sentence[i] = self.ner_labels.index("B-ARR")
 
-            # Génération des tags NER
             data.append({
                 "text": sentence.format(departure=departure_city, arrival=arrival_city),
                 "tokens": formatted_sentence,
@@ -74,7 +69,6 @@ class TokenClassificationGenerator:
     def get_spacy_ner_tags(self, sentence: str, departure_city: str, arrival_city: str) -> List[dict]:
         spacy_tags = []
         
-        # Trouver les positions des entités 'departure' et 'arrival'
         if departure_city in sentence:
             dep_start = sentence.find(departure_city)
             dep_end = dep_start + len(departure_city)
@@ -87,7 +81,6 @@ class TokenClassificationGenerator:
 
         return spacy_tags
 
-# Définition des chemins vers les fichiers
 files = {
     "sentences_csv": "C:/Users/vikne/Desktop/sentences_1/sentences/sentences.csv",
     "random_sentences_csv": "C:/Users/vikne/Desktop/sentences_1/sentences/random_sentences.csv",
@@ -98,14 +91,11 @@ files = {
     "french_national_names_csv": "C:/Users/vikne/Desktop/sentences_1/french_national_names.csv",
 }
 
-# Création du générateur
 generator = TokenClassificationGenerator(files)
 
-# Définition des départs et arrivées pour les tests
 steps = {
     "departure": "Paris",
     "arrival": "Lyon",
 }
 
-# Génération du dataset
 generator.generate(steps)
