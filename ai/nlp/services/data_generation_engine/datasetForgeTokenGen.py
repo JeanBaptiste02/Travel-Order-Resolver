@@ -7,13 +7,13 @@ class TokenClassificationGenerator:
     def __init__(self, files: dict):
         self.files = files
         self.ner_labels = ["O", "B-DEP", "I-DEP", "B-ARR", "I-ARR"]
-        self.nlp = spacy.load("fr_core_news_sm") 
+        self.nlp = spacy.load("fr_core_news_sm")
 
-        self.sentences_data = pd.read_csv(files["sentences_csv"], delimiter=";")
-        self.random_sentences = pd.read_csv(files["random_sentences_csv"], delimiter=";")
-        self.correct_sentences = self._load_sentences(files["correct_sentences_txt"])
-        self.wrong_sentences_departure = self._load_sentences(files["wrong_sentences_departure_txt"])
-        self.wrong_sentences_arrival = self._load_sentences(files["wrong_sentences_arrival_txt"])
+        self.sentences_data = pd.read_csv(files["sentences_samples_csv"], delimiter=";")
+        self.random_sentences = pd.read_csv(files["stochastic_sentence_collection_csv"], delimiter=";")
+        self.correct_sentences = self._load_sentences(files["validated_text_sequences_txt"])
+        self.wrong_sentences_departure = self._load_sentences(files["departure_statements_without_arrivals_txt"])
+        self.wrong_sentences_arrival = self._load_sentences(files["arrival_statements_without_departures_txt"])
         self.french_cities = self._load_cities(files["french_cities_txt"])
         self.names = pd.read_csv(files["french_national_names_csv"], header=None).iloc[:, 0].tolist()
 
@@ -43,8 +43,8 @@ class TokenClassificationGenerator:
     def generate_ner_tags_from_sentences(self, steps: dict, sentences: List[str]) -> pd.DataFrame:
         data = []
         for x, sentence in enumerate(sentences):
-            departure_city = random.choice(self.french_cities)  # Ville de départ aléatoire
-            arrival_city = random.choice(self.french_cities)  # Ville d'arrivée aléatoire
+            departure_city = random.choice(self.french_cities) 
+            arrival_city = random.choice(self.french_cities)
             alt_sentence = sentence.format(departure=departure_city, arrival=arrival_city)
 
             formatted_sentence = self.split_sentence(alt_sentence)
@@ -57,6 +57,7 @@ class TokenClassificationGenerator:
                 if word == arrival_city:
                     tags_sentence[i] = self.ner_labels.index("B-ARR")
 
+            # Génération des tags NER
             data.append({
                 "text": sentence.format(departure=departure_city, arrival=arrival_city),
                 "tokens": formatted_sentence,
@@ -82,13 +83,13 @@ class TokenClassificationGenerator:
         return spacy_tags
 
 files = {
-    "sentences_csv": "C:/Users/vikne/Desktop/sentences_1/sentences/sentences.csv",
-    "random_sentences_csv": "C:/Users/vikne/Desktop/sentences_1/sentences/random_sentences.csv",
-    "correct_sentences_txt": "C:/Users/vikne/Desktop/sentences_1/sentences/correct_sentences/correct_sentences.txt",
-    "wrong_sentences_departure_txt": "C:/Users/vikne/Desktop/sentences_1/sentences/wrong_sentences/wrong_sentences_only_departure.txt",
-    "wrong_sentences_arrival_txt": "C:/Users/vikne/Desktop/sentences_1/sentences/wrong_sentences/wrong_sentences_ony_arrival.txt",
-    "french_cities_txt": "C:/Users/vikne/Desktop/sentences_1/french_cities.txt",
-    "french_national_names_csv": "C:/Users/vikne/Desktop/sentences_1/french_national_names.csv",
+    "sentences_samples_csv": "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/sentences_samples_dataset.csv",
+    "stochastic_sentence_collection_csv": "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/stochastic_sentence_collection.csv",
+    "validated_text_sequences_txt": "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/validated_text_sequences/validated_text_sequences.txt",
+    "departure_statements_without_arrivals_txt": "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/departure_statements_without_arrivals.txt",
+    "arrival_statements_without_departures_txt": "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/arrival_statements_without_departures.txt",
+    "french_cities_txt": "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/urban_geodata_basic_v1.0.txt",
+    "french_national_names_csv": "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/fr_personal_identifiers_dataset_v1.0.csv",
 }
 
 generator = TokenClassificationGenerator(files)
