@@ -37,7 +37,7 @@ class TokenClassificationGenerator:
         path = "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/dataset/raw/generated_dataset/"
         os.makedirs(path, exist_ok=True) 
 
-        df.to_csv(f"{path}generated_dataset.csv", index=False, sep=";")
+        df.to_csv(f"{path}token.csv", index=False, sep=";")
         print("Dataset generated and saved to:", f"{path}token.csv")
 
     def prepare_sentences(self) -> List[str]:
