@@ -11,29 +11,29 @@ class TextClassificationGenerator:
         self.load_files()
 
     def load_files(self):
-        self.departures = self.load_departures('C:/Users/vikne/Desktop/sentences_1/french_cities.txt')
+        self.departures = self.load_departures('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/sentences_samples_dataset.csv')
         self.arrivals = self.departures.copy()
-        self.random_sentences = self.load_random_sentences('C:/Users/vikne/Desktop/sentences_1/sentences/random_sentences.csv')
-        self.correct_sentences = self.load_sentences('C:/Users/vikne/Desktop/sentences_1/sentences/correct_sentences/correct_sentences.txt')
+        self.random_sentences = self.load_random_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/stochastic_sentence_collection.csv')
+        self.correct_sentences = self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/validated_text_sequences/validated_text_sequences.txt')
         self.wrong_sentences = {
-            "only_departure_fr": self.load_sentences('C:/Users/vikne/Desktop/sentences_1/sentences/wrong_sentences/wrong_sentences_only_departure.txt'),
-            "only_arrival_fr": self.load_sentences('C:/Users/vikne/Desktop/sentences_1/sentences/wrong_sentences/wrong_sentences_ony_arrival.txt'),
+            "only_departure_fr": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/departure_statements_without_arrivals.txt'),
+            "only_arrival_fr": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/arrival_statements_without_departures.txt'),
         }
-        self.names = self.load_names('C:/Users/vikne/Desktop/sentences_1/french_national_names.csv')
-        self.error_phrases = self.load_error_phrases('C:/Users/vikne/Desktop/sentences_1/sentences/wrong_sentences/error_phrases.txt')
+        self.names = self.load_names('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/urban_geodata_basic_v1.0.txt')
+        self.error_phrases = self.load_error_phrases('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/anomalous_text_sequences.txt')
+        
 
     def load_sentences(self, filepath):
         with open(filepath, 'r', encoding='utf-8') as f:
             return [line.strip() for line in f.readlines()]
 
     def load_departures(self, filepath):
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return [line.strip() for line in f.readlines()]
+        df = pd.read_csv(filepath, sep=';', header=None, dtype={0: str})
+        return df[0].tolist()
 
     def load_random_sentences(self, filepath):
         df = pd.read_csv(filepath, sep=';', header=None, dtype={0: str})
         return df[0].tolist()
-
 
     def load_names(self, filepath):
         df = pd.read_csv(filepath)
@@ -84,7 +84,7 @@ class TextClassificationGenerator:
         correct_sentences = []
         wrong_sentences = []
 
-        correct_sentences.extend([
+        correct_sentences.extend([ 
             self.create_object_text_label(sentence, departure, arrival, "", "", 1, 0, 0, 0)
             for sentence in self.correct_sentences
         ])
@@ -95,12 +95,12 @@ class TextClassificationGenerator:
             for i, sentence in enumerate(self.correct_sentences)
         ])
 
-        wrong_sentences.extend([
+        wrong_sentences.extend([ 
             self.create_object_text_label(sentence, departure, "", "", "", 0, 0, 1, 0)
             for sentence in self.wrong_sentences["only_departure_fr"]
         ])
 
-        wrong_sentences.extend([
+        wrong_sentences.extend([ 
             self.create_object_text_label(sentence, "", arrival, "", "", 0, 0, 1, 0)
             for sentence in self.wrong_sentences["only_arrival_fr"]
         ])
@@ -120,6 +120,7 @@ class TextClassificationGenerator:
             return language != 'fr'
         except:
             return True 
+
     def get_batch_sentences(self, departure, arrival):
         data = []
         for _ in range(1):
@@ -127,7 +128,8 @@ class TextClassificationGenerator:
         return data
 
     def generate(self, regenerate=False):
-        path = "C:/Users/vikne/Desktop/sentences_1/dataset_classification/"
+        path = "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/dataset/raw/generated_dataset/"
+
         if os.path.exists(path) and not regenerate:
             print("Folder already exists, skipping generation.")
             return
@@ -157,7 +159,7 @@ class TextClassificationGenerator:
 
         number_files = 4
         for id, df_i in enumerate(np.array_split(df, number_files)):
-            df_i.to_csv(f"{path}dataset_text_classification_{id + 1}.csv", index=False, sep=";")
+            df_i.to_csv(f"{path}text{id + 1}.csv", index=False, sep=";")
             print(f"File {id + 1} saved.")
         print(f"Dataset generated with {len(df)} sentences.")
 

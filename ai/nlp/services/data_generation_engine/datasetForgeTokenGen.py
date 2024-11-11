@@ -2,6 +2,7 @@ import pandas as pd
 import random
 import spacy
 from typing import List
+import os
 
 class TokenClassificationGenerator:
     def __init__(self, files: dict):
@@ -32,7 +33,12 @@ class TokenClassificationGenerator:
     def generate(self, steps: dict) -> None:
         sentences = self.prepare_sentences()
         df = self.generate_ner_tags_from_sentences(steps, sentences)
-        df.to_csv("generated_dataset.csv", index=False)
+
+        path = "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/dataset/raw/generated_dataset/"
+        os.makedirs(path, exist_ok=True) 
+
+        df.to_csv(f"{path}generated_dataset.csv", index=False, sep=";")
+        print("Dataset generated and saved to:", f"{path}token.csv")
 
     def prepare_sentences(self) -> List[str]:
         final_sentences = []
