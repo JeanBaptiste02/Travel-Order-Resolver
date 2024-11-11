@@ -1,0 +1,22 @@
+I want to arrive at {arrival}.
+My journey ends at {arrival}.
+Head towards {arrival} from another city.
+I'm looking for a way to arrive at {arrival}.
+Find a way to reach {arrival}.
+Meet at {arrival}, it's my destination.
+Arrive at {arrival}, that's where I want to go.
+The arrival at {arrival} is scheduled.
+I'm planning an arrival at {arrival}.
+Let's head towards {arrival}, that's where I want to be.
+Je veux arriver à {arrival}.
+Mon trajet se termine à {arrival}.
+Dirigez-vous vers {arrival} depuis une autre ville.
+Je cherche un moyen d'arriver à {arrival}.
+Trouve un moyen d'atteindre {arrival}.
+Rendez-vous à {arrival}, c'est ma destination.
+Arrivez à {arrival}, c'est là que je veux aller.
+L'arrivée à {arrival} est prévue.
+Je suis en train de planifier une arrivée à {arrival}.
+Allons vers {arrival}, c'est là où je souhaite être.
+Comment aller à {arrival} ?
+Comment se rendre à {arrival} ?

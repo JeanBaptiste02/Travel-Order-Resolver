@@ -1,0 +1,421 @@
+Aller de {departure} à {arrival}.
+Comment aller à {arrival} depuis {departure} ?
+Comment atteindre {arrival} depuis {departure} ?
+Comment atteindre {arrival} en partant de {departure} le plus rapidement ?
+Comment atteindre {arrival} à partir de {departure} ?
+Comment me rendre de {departure} à {arrival} ?
+Comment me rendre à {arrival} depuis {departure} ?
+Comment puis-je aller à {arrival} en venant de {departure} ?
+Comment puis-je me rendre de {departure} à {arrival} ?
+Comment puis-je me rendre de {departure} à {arrival} le plus rapidement ?
+Comment puis-je me rendre à {arrival} en partant de {departure} ?
+Comment puis-je rejoindre {arrival} depuis {departure} ?
+Comment puis-je rejoindre {arrival} à partir de {departure} ?
+De {departure} vers {arrival}.
+De {departure} à {arrival}.
+Depuis {departure} vers {arrival}.
+Dirigez-vous vers {arrival} en partant de {departure}.
+Il y a-t-il des trains de {departure} à {arrival} ?
+Il y a-t-il des trains vers {arrival} depuis {departure} ?
+Indique-moi le chemin depuis {departure} jusqu'à {arrival}.
+Indique-moi le trajet de {departure} à {arrival}.
+Indique-moi le trajet le plus simple de {departure} vers {arrival}.
+Indique-moi le trajet le plus simple depuis {departure} vers {arrival}.
+J'aimerais aller à {arrival} en partant de {departure}.
+J'aimerais connaître le chemin pour aller de {departure} à {arrival}.
+J'aimerais connaître le chemin pour aller à {arrival} depuis {departure}.
+J'aimerais me rendre de {departure} à {arrival}.
+Je cherche le chemin pour aller à {arrival} depuis {departure}.
+Je cherche un moyen d'aller de {departure} à {arrival}.
+Je cherche à me déplacer de {departure} à {arrival}. Comment procéder ?
+Je cherche à me déplacer vers {arrival} depuis {departure}. Comment procéder ?
+Je cherche à me déplacer vers {arrival} depuis {departure}. Peux-tu m'aider ?
+Je désire aller de {departure} à {arrival}. Comment faire ?
+Je désire aller à {arrival} depuis {departure}. Peux-tu aider ?
+Je pars de {departure} en direction de {arrival}.
+Je pars de {departure} pour aller à {arrival}.
+Je pars de {departure} vers {arrival}.
+Je prévois un voyage de {departure} à {arrival}.
+Je recherche un itinéraire de {departure} à {arrival}.
+Je recherche un itinéraire pour aller à {arrival} en partant de {departure}.
+Je souhaite aller de {departure} à {arrival}, s'il te plaît.
+Je souhaite aller à {arrival} en partant de {departure}. Comment faire ?
+Je souhaite aller à {arrival} en partant de {departure}. Comment faire ?
+Je souhaite me déplacer vers {arrival} à partir de {departure}.
+Je souhaite me rendre de {departure} jusqu'à {arrival}.
+Je souhaiterais aller à {arrival} depuis {departure}.
+Je souhaiterais me déplacer de {departure} à {arrival}, si c'est réalisable.
+Je suis en train de planifier un déplacement de {departure} à {arrival}.
+Je vais de {departure} à {arrival}.
+Je vais de {departure} vers {arrival}.
+Je vais à {arrival} depuis {departure}.
+Je vais à {arrival} en partant de {departure}.
+Je veux aller de {departure} à {arrival}.
+Je veux aller à {arrival} depuis {departure}.
+Je voudrais savoir comment me rendre de {departure} à {arrival}, s'il te plaît.
+Je voudrais savoir comment me rendre de {departure} à {arrival}.
+Je voudrais savoir comment me rendre à {arrival} depuis {departure}, s'il te plaît.
+Je voudrais savoir comment me rendre à {arrival} depuis {departure}.
+Le voyage de {departure} à {arrival} est ce que je recherche.
+Mon trajet va de {departure} à {arrival}.
+Montre-moi le chemin pour aller à {arrival} à partir de {departure}.
+Montre-moi le chemin pour me rendre de {departure} à {arrival}.
+Montre-moi le chemin pour passer de {departure} à {arrival}.
+Montre-moi le trajet pour aller à {arrival} en partant de {departure}.
+Partez pour {arrival} en partant de {departure}.
+Peux-tu m'aider à planifier le trajet depuis {departure} jusqu'à {arrival} ?
+Peux-tu m'aider à trouver mon chemin de {departure} à {arrival} ?
+Peux-tu m'aider à trouver mon chemin de {departure} à {arrival} ?
+Peux-tu m'aider à trouver mon chemin vers {arrival} en partant de {departure} ?
+Peux-tu me diriger vers {arrival} depuis {departure} ?
+Peux-tu me guider de {departure} jusqu'à {arrival} ?
+Peux-tu me guider de {departure} vers {arrival} ?
+Pourrais-tu m'aider à planifier le trajet de {departure} vers {arrival} ?
+Pourrais-tu m'aider à rejoindre {arrival} depuis {departure} ?
+Pourrais-tu m'indiquer comment aller de {departure} à {arrival} ?
+Pourrais-tu me diriger de {departure} vers {arrival} ?
+Pourrais-tu me donner les indications pour aller de {departure} à {arrival} ?
+Pourrais-tu me donner les indications pour rejoindre {arrival} depuis {departure} ?
+Pourrais-tu me guider vers {arrival} depuis {departure} ?
+Pourrais-tu me guider vers {arrival} depuis {departure} ?
+Pourriez-vous m'indiquer comment aller de {departure} à {arrival}, je vous prie ?
+Recherche le chemin entre {departure} et {arrival}.
+Recherche le chemin le plus court entre {departure} et {arrival}.
+Recherche le trajet le plus court vers {arrival} à partir de {departure}.
+Rendez-vous à {arrival} depuis {departure}.
+Serait-il possible de me rendre de {departure} à {arrival}, s'il vous plaît ?
+Trouve le meilleur itinéraire de {departure} à {arrival}.
+Trouve un itinéraire de {departure} à {arrival}.
+Trouve un itinéraire pour aller de {departure} à {arrival}.
+Trouve un itinéraire pour aller à {arrival} depuis {departure}.
+Trouve un itinéraire pour aller à {arrival} en partant de {departure}.
+Trouve un moyen d'atteindre {arrival} depuis {departure}.
+Trouve-moi le chemin de {departure} à {arrival}.
+Trouve-moi un itinéraire de {arrival} vers {departure}.
+Trouve-moi un itinéraire pour aller de {departure} à {arrival}.
+Trouve-moi un moyen de transport de {departure} jusqu'à {arrival}.
+Trouve-moi un moyen de transport de {departure} vers {arrival}.
+Trouver un moyen d'atteindre {arrival} depuis {departure} est mon objectif.
+Y a-t-il un moyen d'aller de {departure} à {arrival} ?
+Y a-t-il un moyen d'atteindre {arrival} depuis {departure} ?
+Quel est le meilleur moyen d’aller de {departure} à {arrival} ?
+Y a-t-il une façon rapide de rejoindre {arrival} depuis {departure} ?
+Comment trouver un itinéraire simple de {departure} à {arrival} ?
+Est-il possible de faire le trajet de {departure} à {arrival} ?
+Quel chemin prendre pour aller à {arrival} depuis {departure} ?
+Comment se déplacer de {departure} jusqu’à {arrival} ?
+As-tu un conseil pour un trajet efficace de {departure} à {arrival} ?
+Peux-tu me conseiller un itinéraire pour aller à {arrival} en partant de {departure} ?
+Comment me déplacer rapidement de {departure} vers {arrival} ?
+Existe-t-il un itinéraire simple de {departure} à {arrival} ?
+Quels transports sont disponibles de {departure} à {arrival} ?
+Quelles sont les options de trajet de {departure} à {arrival} ?
+Où dois-je aller pour atteindre {arrival} depuis {departure} ?
+Peux-tu m’aider à choisir le meilleur trajet de {departure} vers {arrival} ?
+Est-ce que tu connais un bon itinéraire pour rejoindre {arrival} en partant de {departure} ?
+Quelles étapes dois-je suivre pour aller à {arrival} depuis {departure} ?
+Montre-moi la route la plus simple entre {departure} et {arrival}.
+Je veux savoir quel trajet prendre pour aller de {departure} à {arrival}.
+Montre-moi les options de transport de {departure} vers {arrival}.
+Est-ce qu’il y a une ligne directe entre {departure} et {arrival} ?
+J’aimerais avoir des conseils pour voyager de {departure} à {arrival}.
+Y a-t-il une route directe de {departure} à {arrival} ?
+As-tu un itinéraire précis de {departure} à {arrival} ?
+Puis-je rejoindre {arrival} facilement depuis {departure} ?
+Est-ce que tu peux trouver un trajet qui passe par {arrival} depuis {departure} ?
+Je souhaite me rendre de {departure} à {arrival} par le chemin le plus rapide.
+Quel est le moyen de transport le plus rapide de {departure} à {arrival} ?
+Comment faire pour aller à {arrival} à partir de {departure} de manière efficace ?
+Je veux les étapes précises pour aller de {departure} jusqu'à {arrival}.
+Trouve-moi la façon la plus rapide de me rendre de {departure} à {arrival}.
+Y a-t-il un bus ou un train de {departure} vers {arrival} ?
+Quel est l’itinéraire le plus sûr pour aller à {arrival} depuis {departure} ?
+Peux-tu m’aider avec un trajet simple entre {departure} et {arrival} ?
+Est-il possible de rejoindre {arrival} sans détour depuis {departure} ?
+Quels sont les meilleurs itinéraires pour voyager de {departure} à {arrival} ?
+Indique-moi les directions de {departure} à {arrival} étape par étape.
+Quel moyen de transport me conseillez-vous pour aller de {departure} à {arrival} ?
+Quel est le parcours le plus rapide entre {departure} et {arrival} ?
+Puis-je facilement accéder à {arrival} en partant de {departure} ?
+Aide-moi à trouver le moyen de transport idéal de {departure} à {arrival}.
+Y a-t-il une connexion directe entre {departure} et {arrival} ?
+Montre-moi les directions exactes pour aller de {departure} à {arrival}.
+Comment puis-je me rendre le plus simplement possible de {departure} à {arrival} ?
+Quelles sont les étapes principales pour rejoindre {arrival} depuis {departure} ?
+Puis-je rejoindre {arrival} depuis {departure} sans trop de correspondances ?
+Quel est le parcours le plus rapide pour atteindre {arrival} en partant de {departure} ?
+Quels moyens de transport sont disponibles de {departure} jusqu’à {arrival} ?
+Trouve-moi les indications nécessaires pour aller de {departure} à {arrival}.
+Puis-je utiliser le transport public pour aller de {departure} à {arrival} ?
+Aide-moi à organiser mon trajet de {departure} vers {arrival}.
+Est-ce que tu connais un trajet direct de {departure} à {arrival} ?
+Peux-tu me dire comment aller à {arrival} si je pars de {departure} ?
+Où dois-je me diriger pour aller à {arrival} depuis {departure} ?
+Je cherche un chemin rapide de {departure} à {arrival}, as-tu des conseils ?
+Quels sont les transports les plus pratiques de {departure} à {arrival} ?
+Est-ce que je peux voyager sans escale de {departure} à {arrival} ?
+Je souhaite les détails d'un trajet de {departure} jusqu'à {arrival}.
+Montre-moi la route la plus directe entre {departure} et {arrival}.
+Est-ce qu’il y a un itinéraire qui ne fait pas de détour entre {departure} et {arrival} ?
+Quel serait le trajet le moins encombré entre {departure} et {arrival} ?
+Puis-je me rendre à {arrival} sans changer de ligne depuis {departure} ?
+Je recherche la meilleure façon de rejoindre {arrival} depuis {departure}.
+Quel est le trajet le moins coûteux de {departure} à {arrival} ?
+Peux-tu m’indiquer le moyen le plus économique pour aller de {departure} à {arrival} ?
+Quels sont les horaires disponibles pour aller de {departure} à {arrival} ?
+Quels transports en commun sont disponibles pour aller de {departure} à {arrival} ?
+Montre-moi les étapes pour aller de {departure} à {arrival} par les transports en commun.
+Est-ce que je peux prendre un taxi de {departure} pour rejoindre {arrival} ?
+Trouve-moi les correspondances pour un trajet de {departure} à {arrival}.
+Montre-moi le parcours optimal pour aller de {departure} à {arrival}.
+À quelle heure part le prochain train de {departure} vers {arrival} ?
+Combien de temps faut-il pour se rendre de {departure} à {arrival} ?
+Est-ce qu'il y a un vol direct entre {departure} et {arrival} ?
+Peut-on facilement accéder à {arrival} depuis {departure} sans trop de correspondances ?
+Je cherche des options pour un voyage direct entre {departure} et {arrival}.
+Quel est le trajet le moins rapide de {departure} à {arrival} ?
+Montre-moi un trajet sans escale entre {departure} et {arrival}.
+Quels sont les itinéraires alternatifs de {departure} à {arrival} ?
+Peux-tu vérifier s'il existe un bus direct entre {departure} et {arrival} ?
+Comment rejoindre {arrival} en partant de {departure} sans trop de correspondances ?
+Quels sont les services de transport en commun de {departure} à {arrival} ?
+Peux-tu me suggérer un itinéraire de {departure} à {arrival} qui évite les autoroutes ?
+Y a-t-il des trains rapides de {departure} à {arrival} ?
+Montre-moi les étapes pour aller de {departure} à {arrival} par les transports publics.
+Quelle est la fréquence des trains entre {departure} et {arrival} ?
+Combien de correspondances y a-t-il entre {departure} et {arrival} ?
+Combien coûte un billet pour aller de {departure} à {arrival} ?
+Quels sont les moyens les plus écologiques pour voyager de {departure} à {arrival} ?
+Peux-tu vérifier les tarifs des trajets de {departure} à {arrival} ?
+Quels sont les horaires des transports de {departure} à {arrival} ?
+Quelle ligne de bus permet d'aller de {departure} à {arrival} ?
+Comment aller à {arrival} depuis {departure} avec le moins de changements possible ?
+Quel est le moyen de transport le plus économique de {departure} vers {arrival} ?
+Est-il préférable de prendre le train ou le bus pour aller de {departure} à {arrival} ?
+Comment rejoindre {arrival} de nuit en partant de {departure} ?
+Montre-moi un trajet de {departure} à {arrival} avec le moins d'attente.
+Quels sont les horaires des transports publics entre {departure} et {arrival} ?
+Puis-je me rendre de {departure} à {arrival} sans correspondance ?
+Trouve-moi le moyen de transport le plus économique pour aller de {departure} à {arrival}.
+Combien de temps dure le trajet entre {departure} et {arrival} en voiture ?
+Est-ce qu'un itinéraire direct existe entre {departure} et {arrival} ?
+Quel est le trajet le plus agréable pour se rendre de {departure} à {arrival} ?
+Puis-je prendre un taxi de {departure} à {arrival} directement ?
+Y a-t-il des trajets disponibles entre {departure} et {arrival} dans la soirée ?
+Quel est le chemin le plus simple pour atteindre {arrival} depuis {departure} en train ?
+Est-ce qu'une navette circule entre {departure} et {arrival} ?
+Puis-je facilement prendre un vélo de {departure} à {arrival} ?
+Montre-moi le trajet en covoiturage pour aller de {departure} à {arrival}.
+Quels trains nocturnes desservent le trajet entre {departure} et {arrival} ?
+Comment puis-je accéder à {arrival} à pied en partant de {departure} ?
+Montre-moi un chemin touristique pour aller de {departure} à {arrival}.
+Puis-je prendre une correspondance rapide entre {departure} et {arrival} ?
+Quels sont les horaires de covoiturage pour un trajet de {departure} à {arrival} ?
+Puis-je accéder directement à {arrival} depuis {departure} avec un vélo ?
+Y a-t-il un bateau pour se rendre de {departure} à {arrival} ?
+Quels moyens de transport disponibles pour voyager de {departure} à {arrival} le dimanche ?
+Combien de temps me prendra un trajet de {departure} à {arrival} en scooter ?
+Comment puis-je éviter les péages entre {departure} et {arrival} ?
+Trouve-moi un chemin pittoresque de {departure} à {arrival}.
+Existe-t-il une liaison en bus entre {departure} et {arrival} de nuit ?
+Quel est le trajet en train le plus rapide pour aller de {departure} à {arrival} ?
+Y a-t-il une voie cyclable entre {departure} et {arrival} ?
+Puis-je me rendre de {departure} à {arrival} en transport en commun sans correspondance ?
+Comment aller à {arrival} depuis {departure} en voiture partagée ?
+Quels sont les itinéraires en bus de {departure} à {arrival} avec moins de trafic ?
+Y a-t-il des options de covoiturage pour aller de {departure} à {arrival} aujourd’hui ?
+Comment aller de {departure} à {arrival} sans payer de frais supplémentaires ?
+Y a-t-il une ligne directe entre {departure} et {arrival} pour un départ en soirée ?
+Quels trajets évitent les embouteillages entre {departure} et {arrival} ?
+Peux-tu m’aider à trouver un trajet panoramique de {departure} à {arrival} ?
+Y a-t-il des trains directs de nuit de {departure} à {arrival} ?
+Peux-tu me conseiller une heure pour éviter le trafic entre {departure} et {arrival} ?
+Existe-t-il une liaison directe de {departure} à {arrival} le dimanche ?
+Quel est le trajet le plus simple en covoiturage de {departure} à {arrival} ?
+Puis-je emprunter un itinéraire court de {departure} à {arrival} sans embouteillages ?
+Quels sont les moyens de transport disponibles entre {departure} et {arrival} les jours fériés ?
+Peux-tu me conseiller le meilleur itinéraire entre {departure} et {arrival} pour éviter les péages ?
+Combien de temps dure le trajet en vélo de {departure} à {arrival} ?
+Montre-moi un chemin sans encombre de {departure} à {arrival}.
+Quels sont les moyens de transport pour aller de {departure} à {arrival} le soir ?
+Quels sont les itinéraires pour rejoindre {arrival} depuis {departure} en passant par un point intermédiaire ?
+Y a-t-il des bus directs entre {departure} et {arrival} avec peu d’arrêts ?
+Puis-je voyager de nuit entre {departure} et {arrival} en bus ?
+Peux-tu m’indiquer les options de trajet pour aller de {departure} à {arrival} un dimanche ?
+Comment éviter les correspondances entre {departure} et {arrival} ?
+Puis-je rejoindre {arrival} depuis {departure} en évitant les autoroutes ?
+Y a-t-il des bus qui passent régulièrement entre {departure} et {arrival} ?
+Peux-tu me trouver un itinéraire de {departure} à {arrival} en évitant les axes principaux ?
+Comment aller de {departure} à {arrival} en minimisant les correspondances ?
+Peux-tu trouver un trajet avec moins de marche de {departure} à {arrival} ?
+Y a-t-il une ligne de tramway de {departure} vers {arrival} ?
+Quels sont les horaires de départ pour les bus entre {departure} et {arrival} ?
+Puis-je voyager en navette entre {departure} et {arrival} sans trop d’attente ?
+Quel est le trajet le plus confortable pour aller de {departure} à {arrival} ?
+Comment se rendre de {departure} à {arrival} en évitant les routes nationales ?
+Puis-je accéder à {arrival} en prenant un bus direct depuis {departure} ?
+Trouve-moi les options de transports pour aller de {departure} à {arrival} en fin de semaine.
+Est-ce qu'il y a des itinéraires fréquents entre {departure} et {arrival} ?
+Quel est le trajet le moins polluant de {departure} à {arrival} ?
+Y a-t-il des options pour rejoindre {arrival} depuis {departure} en mode éco ?
+Quels sont les horaires de trains fréquents entre {departure} et {arrival} ?
+Montre-moi les options de covoiturage pour aller de {departure} à {arrival}.
+Comment puis-je voyager de {departure} à {arrival} en limitant les émissions ?
+Puis-je rejoindre {arrival} depuis {departure} en utilisant uniquement le tramway ?
+Est-ce que je peux aller de {departure} à {arrival} en un trajet direct de bus ?
+Quels sont les meilleurs horaires pour aller de {departure} à {arrival} sans embouteillages ?
+Trouve-moi un trajet pratique pour aller de {departure} à {arrival} en soirée.
+Comment faire pour éviter les détours entre {departure} et {arrival} ?
+Est-ce que des services privés opèrent entre {departure} et {arrival} ?
+Peux-tu m'aider à organiser un trajet sans escale de {departure} à {arrival} ?
+Comment voyager de {departure} à {arrival} en prenant un minimum de correspondances ?
+Quels sont les moyens de transport de {departure} vers {arrival} avec des correspondances rapides ?
+Est-il possible d'aller de {departure} à {arrival} sans prendre d'autoroute ?
+Peux-tu me montrer un trajet sans escale entre {departure} et {arrival} ?
+Puis-je rejoindre {arrival} en train depuis {departure} sans changer de ligne ?
+Quels sont les itinéraires simples de {departure} à {arrival} en transport public ?
+Peux-tu trouver un itinéraire peu fréquenté de {departure} à {arrival} ?
+Puis-je accéder facilement à {arrival} depuis {departure} en vélo ?
+Montre-moi les options de transports durables de {departure} à {arrival}.
+Puis-je voyager entre {departure} et {arrival} avec un vélo ?
+Montre-moi le chemin pour aller de {departure} à {arrival} à pied.
+Quels sont les itinéraires les moins chers entre {departure} et {arrival} ?
+Peux-tu m'indiquer le trajet le plus rapide entre {departure} et {arrival} en bus ?
+Quels sont les itinéraires peu coûteux de {departure} à {arrival} en covoiturage ?
+Est-ce que je peux aller de {departure} à {arrival} sans payer de péages ?
+Combien coûte un trajet de {departure} à {arrival} en taxi ?
+Trouve-moi une option rapide de {departure} à {arrival} en bus.
+Est-ce que je peux voyager de {departure} à {arrival} sans changer de ligne de métro ?
+Puis-je prendre une correspondance directe entre {departure} et {arrival} ?
+Comment me rendre de {departure} à {arrival} en évitant les zones à fort trafic ?
+Quels sont les horaires des trams pour aller de {departure} à {arrival} ?
+Quels sont les trajets en vélo disponibles entre {departure} et {arrival} ?
+Y a-t-il des trajets touristiques entre {departure} et {arrival} ?
+Quels sont les moyens de transport alternatifs de {departure} à {arrival} ?
+Comment puis-je atteindre {arrival} depuis {departure} avec un vélo électrique ?
+Quels sont les trajets disponibles de {departure} à {arrival} de façon durable ?
+Puis-je aller de {departure} à {arrival} en transport public sans changement ?
+Quels sont les trajets économiques de {departure} à {arrival} ?
+Quels sont les trajets les plus rapides de {departure} à {arrival} en heure de pointe ?
+Comment aller de {departure} à {arrival} avec un accès facilité pour personnes à mobilité réduite ?
+Est-ce qu’il y a un bus express entre {departure} et {arrival} ?
+Peux-tu me trouver un itinéraire de {departure} à {arrival} sans détour ?
+Quels sont les meilleurs moyens de rejoindre {arrival} depuis {departure} la nuit ?
+Combien coûte un billet pour un trajet direct entre {departure} et {arrival} ?
+Quels sont les trajets disponibles entre {departure} et {arrival} avec un transfert rapide ?
+Puis-je utiliser une voie réservée pour aller de {departure} à {arrival} ?
+Quels sont les meilleurs trajets pour aller de {departure} à {arrival} en mode rapide ?
+Quels moyens de transport sont les plus sûrs pour un trajet de {departure} à {arrival} ?
+Puis-je me rendre de {departure} à {arrival} avec une navette écolo ?
+Quels sont les trajets à faible coût pour aller de {departure} à {arrival} en semaine ?
+Quels sont les moyens de transport avec une connexion Wi-Fi de {departure} à {arrival} ?
+Puis-je aller de {departure} à {arrival} sans correspondance en heure creuse ?
+Quels trajets incluent des options de restauration entre {departure} et {arrival} ?
+Quels sont les trajets en transports partagés pour aller de {departure} à {arrival} ?
+Combien de temps dure un trajet direct de bus de {departure} à {arrival} ?
+Quels sont les trajets directs en bus de {departure} à {arrival} avec moins d'arrêts ?
+Peux-tu trouver un itinéraire de {departure} à {arrival} pour éviter les péages ?
+Quels sont les trajets en covoiturage entre {departure} et {arrival} en milieu de journée ?
+Combien coûte un ticket de métro pour aller de {departure} à {arrival} ?
+Montre-moi le trajet le plus sûr pour aller de {departure} à {arrival} en transports publics.
+Comment rejoindre {arrival} en partant de {departure} sans payer de supplément ?
+Puis-je aller de {departure} à {arrival} sans faire d'escales dans les zones embouteillées ?
+Quels sont les horaires disponibles pour aller de {departure} à {arrival} en covoiturage ?
+Peux-tu me guider vers {arrival} depuis {departure} sans traverser les zones urbaines ?
+Quels sont les moyens de transport entre {departure} et {arrival} en soirée avec peu de marche ?
+Puis-je prendre un trajet direct de {departure} à {arrival} en tram ?
+Quels sont les trajets rapides de {departure} à {arrival} avec un arrêt pour dîner ?
+Quels trajets de nuit desservent de {departure} à {arrival} sans correspondances ?
+Y a-t-il un bus sans arrêt entre {departure} et {arrival} ?
+Quels trajets sont disponibles entre {departure} et {arrival} le soir ?
+Peux-tu m’aider à trouver un transport direct de {departure} vers {arrival} ?
+Montre-moi un itinéraire de {departure} à {arrival} sans correspondance.
+Quels sont les horaires de trains pour aller de {departure} à {arrival} ?
+Puis-je rejoindre {arrival} depuis {departure} avec un bus rapide ?
+Quels sont les trajets en bus sans correspondance de {departure} à {arrival} ?
+Est-ce qu'il y a un vol qui va de {departure} à {arrival} sans escale ?
+Comment éviter les routes encombrées pour aller de {departure} à {arrival} ?
+Peux-tu me montrer un chemin simple de {departure} à {arrival} en transport public ?
+Quels trajets de covoiturage passent par {departure} pour aller à {arrival} ?
+Y a-t-il une ligne ferroviaire directe entre {departure} et {arrival} ?
+Combien de temps dure le trajet en voiture de {departure} à {arrival} sans arrêt ?
+Comment se rendre à {arrival} depuis {departure} sans utiliser les grands axes ?
+Est-ce qu’un train express relie {departure} et {arrival} ?
+Combien coûte un billet de bus pour aller de {departure} à {arrival} directement ?
+Quel itinéraire éviter pour un trajet de {departure} à {arrival} en période de pointe ?
+Quels sont les trajets en navette disponibles entre {departure} et {arrival} ?
+Peux-tu trouver une route sans péages entre {departure} et {arrival} ?
+Comment se rendre à {arrival} en partant de {departure} en minimisant les correspondances ?
+Y a-t-il des trajets courts de {departure} à {arrival} en transports en commun ?
+Quels sont les trajets de jour disponibles entre {departure} et {arrival} ?
+Peux-tu trouver un train sans escale entre {departure} et {arrival} ?
+Quels sont les itinéraires directs en métro de {departure} à {arrival} ?
+Comment aller de {departure} à {arrival} avec un accès vélo sécurisé ?
+Est-ce que je peux aller de {departure} à {arrival} en covoiturage le matin ?
+Combien de correspondances sont nécessaires entre {departure} et {arrival} ?
+Peux-tu vérifier les tarifs pour un trajet de {departure} à {arrival} le week-end ?
+Quels sont les trajets les plus rapides pour aller de {departure} à {arrival} en voiture ?
+Y a-t-il des vols le dimanche entre {departure} et {arrival} ?
+Puis-je aller de {departure} à {arrival} en train sans correspondance nocturne ?
+Montre-moi un trajet court entre {departure} et {arrival} pour éviter la fatigue.
+Quels sont les horaires des trains sans correspondance entre {departure} et {arrival} ?
+Peux-tu m’aider à trouver un vol direct de {departure} à {arrival} en journée ?
+Comment puis-je aller de {departure} à {arrival} sans passer par des zones industrielles ?
+Quels trajets économiques sont disponibles entre {departure} et {arrival} le soir ?
+Puis-je rejoindre {arrival} de {departure} en utilisant un moyen de transport éco-responsable ?
+Comment aller de {departure} à {arrival} avec des arrêts touristiques ?
+Combien de correspondances pour un trajet en train de {departure} à {arrival} ?
+Peux-tu m'indiquer les lignes de métro entre {departure} et {arrival} sans changement ?
+Quel est le trajet de nuit le plus rapide entre {departure} et {arrival} ?
+Y a-t-il des trains directs pour aller de {departure} à {arrival} en semaine ?
+Quel est le coût d'un trajet de {departure} à {arrival} en transport public ?
+Quels sont les trajets disponibles de {departure} à {arrival} sans changements fréquents ?
+Montre-moi les lignes de bus qui relient directement {departure} à {arrival}.
+Y a-t-il des itinéraires en bus express de {departure} vers {arrival} ?
+Comment aller de {departure} à {arrival} en utilisant les transports les moins polluants ?
+Quels sont les trajets directs en bus entre {departure} et {arrival} pendant les heures creuses ?
+Quels trajets sont disponibles en transport collectif de {departure} à {arrival} ?
+Comment rejoindre {arrival} depuis {departure} avec le moins d’étapes ?
+Quels moyens de transport sont disponibles entre {departure} et {arrival} la nuit ?
+Comment se rendre de {departure} à {arrival} en évitant les routes encombrées ?
+Est-il possible de voyager de {departure} à {arrival} sans payer de supplément pour le confort ?
+Quels sont les trajets en transport en commun entre {departure} et {arrival} le week-end ?
+Puis-je prendre un vol entre {departure} et {arrival} avec une connexion rapide ?
+Montre-moi les options de covoiturage pour aller de {departure} à {arrival} à petit prix.
+Peux-tu me guider sur un trajet de {departure} à {arrival} avec peu de marche ?
+Quels trajets directs relient {departure} et {arrival} en train durant les heures creuses ?
+Est-il possible de rejoindre {arrival} depuis {departure} sans correspondance ?
+Comment éviter les zones d'embouteillage pour aller de {departure} à {arrival} ?
+Quels sont les meilleurs trajets directs entre {departure} et {arrival} pour éviter la foule ?
+Y a-t-il des itinéraires alternatifs en bus pour aller de {departure} à {arrival} ?
+Comment faire pour se rendre de {departure} à {arrival} en minimisant les coûts ?
+Quel est le trajet le plus rapide pour aller de {departure} à {arrival} sans changement ?
+Quels sont les trajets disponibles entre {departure} et {arrival} en transport partagé ?
+Comment aller de {departure} à {arrival} sans dévier vers d'autres arrêts ?
+Puis-je voyager de nuit de {departure} à {arrival} en transport direct ?
+Quels sont les meilleurs trajets pour aller de {departure} à {arrival} sans changement ?
+Quels sont les horaires de covoiturage entre {departure} et {arrival} sans arrêt ?
+Combien de temps faut-il pour aller de {departure} à {arrival} sans s’arrêter ?
+Est-ce qu'il y a une liaison régulière de {departure} à {arrival} en tram ?
+Quels sont les trajets de {departure} vers {arrival} avec peu d’embouteillages ?
+Puis-je accéder à {arrival} depuis {departure} avec une correspondance rapide ?
+Comment voyager de {departure} à {arrival} en transport public avec un itinéraire direct ?
+Quels trajets directs de {departure} à {arrival} permettent de limiter les changements ?
+Y a-t-il un bus qui fait la liaison entre {departure} et {arrival} en ligne directe ?
+Quels sont les itinéraires en vélo entre {departure} et {arrival} ?
+Est-il possible de prendre un tram direct de {departure} à {arrival} ?
+Quel est le trajet de {departure} à {arrival} avec le moins d'attente ?
+Peux-tu trouver un trajet sans frais supplémentaires de {departure} à {arrival} ?
+Quels sont les trajets disponibles entre {departure} et {arrival} avec peu de correspondances ?
+Puis-je aller de {departure} à {arrival} en transport public avec Wi-Fi ?
+Y a-t-il des trains directs entre {departure} et {arrival} pendant la nuit ?
+Comment aller de {departure} à {arrival} en évitant les routes nationales ?
+Combien coûte un trajet direct en taxi de {departure} à {arrival} ?
+Quels sont les trajets directs en bus entre {departure} et {arrival} avec moins d'arrêts ?
+Puis-je voyager de {departure} à {arrival} avec un minimum de changement ?
+Quels sont les trajets avec un accès facile de {departure} à {arrival} ?
+Y a-t-il des trajets directs pour aller de {departure} à {arrival} en fin de semaine ?
+Quel est le coût d'un trajet de nuit de {departure} à {arrival} ?
+Quels sont les horaires de transports partagés pour aller de {departure} à {arrival} ?
+Peux-tu m'indiquer les trajets sans correspondance de {departure} à {arrival} ?
+Puis-je prendre un trajet de {departure} à {arrival} sans escale durant les heures de pointe ?

@@ -1,0 +1,21 @@
+I want to depart from {departure}.
+My journey starts at {departure}.
+Head towards another city from {departure}.
+I'm looking for a way to depart from {departure}.
+Find a way to leave {departure}.
+Meet somewhere starting from {departure}.
+Leave from {departure}, it's the beginning of the adventure.
+The departure from {departure} is imminent.
+I'm planning a departure from {departure}.
+Let's go somewhere other than {departure}.
+Je veux partir de {departure}.
+Mon trajet commence à {departure}.
+Dirigez-vous vers une autre ville à partir de {departure}.
+Je cherche un moyen de partir de {departure}.
+Trouve un moyen de quitter {departure}.
+Rendez-vous quelque part en partant de {departure}.
+Partez de {departure}, c'est le début de l'aventure.
+Le départ de {departure} est imminent.
+Je suis en train de planifier un départ de {departure}.
+Allons ailleurs que {departure}.
+Comment partir de {departure} ?

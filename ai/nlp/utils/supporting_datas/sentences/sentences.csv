@@ -1,0 +1,574 @@
+id;Language;Text
+1;eng;Is there a train from New York City to Washington, D.C.?
+2;ita;Esiste un treno diretto da Firenze a Roma?
+3;eng;How do I travel from Berlin to Amsterdam?
+4;fr;Quel est le moyen le plus rapide pour aller à Marseille ?
+5;ita;Come posso arrivare a Roma da Milano?
+6;fr;Est-ce qu'il y a un train entre Paris et Bruxelles ?
+7;eng;What’s the best route to drive from Madrid to Lisbon?
+8;fr;Y a-t-il un train direct entre Bordeaux et Nantes ?
+9;ita;Qual è il percorso più veloce per arrivare a Firenze?
+10;eng;Is there a direct train from Chicago to Boston?
+11;fr;Quel est le meilleur trajet pour aller de Marseille à Lille ?
+12;ita;Come posso arrivare a Napoli partendo da Bologna?
+13;eng;How can I get from Paris to London?
+14;fr;Puis-je marcher de Nice à Cannes ?
+15;eng;Can I walk from Los Angeles to San Francisco?
+16;fr;Comment puis-je voyager de Paris à Toulouse ?
+17;ita;Qual è il modo più rapido per arrivare a Torino da Roma?
+18;eng;How do I get from Tokyo to Osaka by train?
+19;fr;Quel est le meilleur moyen pour aller de Nantes à Rennes ?
+20;fr;Pouvez-vous me dire comment aller de Lyon à Grenoble ?
+21;ita;Come arrivo a Venezia partendo da Milano?
+22;eng;What's the fastest way to get to New York?
+23;fr;Comment puis-je aller de Paris à Lyon ?
+24;eng;Can you tell me how to go from Sydney to Melbourne?
+25;ita;Qual è la distanza tra Napoli e Palermo?
+26;eng;What’s the quickest way to travel from Rome to Venice?
+27;fr;Quel est le chemin le plus rapide entre Lille et Bordeaux ?
+28;ita;Come posso arrivare a Genova da Torino in treno?
+29;eng;How can I travel from Toronto to Vancouver?
+30;fr;Comment faire pour aller de Bordeaux à Paris ?
+31;ita;Come posso arrivare a Milano da Firenze?
+32;eng;Can I travel from Los Angeles to San Diego by bus?
+33;fr;Est-ce que je peux aller de Lyon à Marseille en train ?
+34;ita;Qual è il percorso migliore per arrivare a Bologna da Roma?
+35;eng;Is there a ferry from Vancouver to Victoria?
+36;fr;Y a-t-il un ferry entre Marseille et Nice ?
+37;ita;C’è un treno da Torino a Milano?
+38;eng;How do I get from San Francisco to Las Vegas?
+39;fr;Comment aller de Paris à Marseille en train ?
+40;ita;Come si arriva a Napoli da Roma?
+41;eng;What’s the most convenient way to travel from Prague to Budapest?
+42;fr;Quel est le moyen le plus pratique pour aller de Paris à Lille ?
+43;ita;Come posso andare da Firenze a Roma con un treno?
+44;eng;How long does it take to get from London to Manchester?
+45;fr;Combien de temps faut-il pour aller de Lyon à Paris en train ?
+46;ita;Quanto tempo ci vuole per arrivare a Roma da Milano?
+47;eng;How do I get from Hong Kong to Singapore by plane?
+48;fr;Comment puis-je me rendre de Paris à Berlin ?
+49;ita;Qual è il modo migliore per arrivare a Milano da Roma in treno?
+50;eng;Can you help me get from Tokyo to Kyoto by bus?
+51;fr;Comment aller de Toulouse à Montpellier en voiture ?
+52;ita;C’è un treno diretto tra Milano e Torino?
+53;eng;Is there a direct flight from New York to Los Angeles?
+54;fr;Est-ce qu'il y a un vol direct de Paris à Barcelone ?
+55;ita;Qual è la distanza tra Roma e Napoli in treno?
+56;eng;What’s the fastest way to get from Berlin to Munich?
+57;fr;Quel est le meilleur moyen pour aller de Paris à Lille ?
+58;ita;Come posso arrivare a Firenze da Bologna?
+59;eng;How long does it take to get from Chicago to New York?
+60;fr;Combien de temps faut-il pour aller de Nantes à Bordeaux ?
+61;ita;Quanto ci vuole per andare da Torino a Milano?
+62;eng;How do I get from San Francisco to Yosemite National Park?
+63;fr;Quel est le moyen le plus rapide pour aller de Paris à Toulouse ?
+64;ita;Come posso andare a Firenze da Venezia?
+65;eng;What’s the easiest way to get from London to Edinburgh?
+66;fr;Comment aller de Lyon à Paris en avion ?
+67;ita;Come faccio ad arrivare da Roma a Napoli in macchina?
+68;eng;How can I get from Dallas to Houston by car?
+69;fr;Quel est le meilleur moyen de se rendre de Marseille à Paris ?
+70;ita;Come arrivo a Roma da Torino in treno?
+71;eng;How do I get from Melbourne to Sydney by plane?
+72;fr;Comment se rendre de Bordeaux à Toulouse en train ?
+73;ita;Qual è il percorso più rapido per andare da Roma a Milano in macchina?
+74;eng;What’s the best route from Madrid to Barcelona by car?
+75;fr;Comment aller de Paris à Montpellier en train ?
+76;ita;Come posso arrivare da Bologna a Venezia in treno?
+77;eng;How do I travel from Miami to Orlando by bus?
+78;fr;Est-ce que je peux aller de Toulouse à Nice en train ?
+79;ita;Come si arriva a Roma da Napoli con un autobus?
+80;eng;Is there a train from San Francisco to Los Angeles?
+81;fr;Quel est le trajet le plus rapide entre Paris et Lyon ?
+82;ita;Qual è il modo migliore per arrivare a Torino da Milano?
+83;eng;How can I get from Chicago to Los Angeles by plane?
+84;fr;Comment aller de Bordeaux à Lyon en train ?
+85;ita;Qual è il percorso migliore da Milano a Roma in treno?
+86;eng;Can I drive from Seattle to Portland?
+87;fr;Est-ce qu'il y a un train direct de Paris à Lille ?
+88;ita;Come posso andare da Milano a Roma in autobus?
+89;eng;What’s the best way to get from London to Paris by bus?
+90;fr;Quel est le moyen le plus rapide pour aller de Lyon à Paris ?
+91;ita;Come faccio ad arrivare da Torino a Milano in macchina?
+92;eng;How do I get from San Francisco to Yosemite by car?
+93;fr;Quel est le trajet le plus rapide entre Paris et Nantes ?
+94;ita;C’è un autobus da Torino a Milano?
+95;eng;What’s the best route to get from New York to Boston by train?
+96;fr;Comment aller de Lyon à Toulouse en voiture ?
+97;ita;Come si arriva a Bologna da Roma in treno?
+98;eng;How can I travel from Miami to Key West by car?
+99;fr;Comment se rendre de Paris à Lyon en voiture ?
+100;ita;Come posso arrivare a Milano da Bologna in treno?
+101;eng;How do I get from Madrid to Barcelona by train?
+102;fr;Comment aller de Paris à Nice en bus ?
+103;ita;Come posso arrivare a Palermo da Catania in macchina?
+104;eng;Is there a direct train from New York to Philadelphia?
+105;fr;Y a-t-il un moyen rapide pour aller de Lyon à Marseille ?
+106;ita;Qual è il percorso più veloce per arrivare a Genova da Torino?
+107;eng;Can I travel from Boston to Chicago by train?
+108;fr;Comment faire pour se rendre de Lille à Strasbourg ?
+109;ita;C’è un treno che collega Napoli a Salerno direttamente?
+110;eng;What’s the best way to go from San Diego to Las Vegas?
+111;fr;Quel est le trajet le plus rapide de Bordeaux à Toulouse ?
+112;ita;Come posso andare da Venezia a Verona in autobus?
+113;eng;How do I reach Manchester from London by bus?
+114;fr;Combien de temps faut-il pour aller de Nice à Lyon en voiture ?
+115;ita;Qual è il modo migliore per andare a Firenze da Pisa in treno?
+116;eng;Is there a bus from Miami to Tampa?
+117;fr;Est-ce qu'il y a un bus de Lyon à Bordeaux ?
+118;ita;Come arrivo a Torino partendo da Milano in macchina?
+119;eng;Can I walk from Rome to Florence?
+120;fr;Puis-je marcher de Marseille à Avignon ?
+121;ita;Come faccio ad arrivare a Catania da Palermo in treno?
+122;eng;What’s the best way to travel from Dallas to Austin?
+123;fr;Quel est le moyen le plus rapide pour aller de Bordeaux à Paris ?
+124;ita;C’è un treno diretto da Napoli a Firenze?
+125;eng;How do I travel from Philadelphia to Washington by train?
+126;fr;Comment voyager de Toulouse à Bordeaux en train ?
+127;ita;Qual è il percorso migliore per andare a Firenze da Roma in macchina?
+128;eng;How long does it take to drive from Orlando to Miami?
+129;fr;Combien de temps faut-il pour aller de Lyon à Marseille en voiture ?
+130;ita;Quanto tempo ci vuole per andare da Torino a Venezia in treno?
+131;eng;What’s the fastest route from San Francisco to San Jose?
+132;fr;Quel est le moyen le plus rapide pour aller de Paris à Strasbourg ?
+133;ita;Come posso andare a Firenze da Torino in treno?
+134;eng;Is there a ferry from Naples to Capri?
+135;fr;Y a-t-il un ferry entre Nice et Ajaccio ?
+136;ita;Esiste un traghetto da Genova a Palermo?
+137;eng;How do I get from Houston to New Orleans by train?
+138;fr;Comment aller de Lille à Reims en train ?
+139;ita;Come posso arrivare a Pisa da Firenze in autobus?
+140;eng;Can I travel by car from Chicago to St. Louis?
+141;fr;Puis-je voyager en voiture de Lyon à Marseille ?
+142;ita;Come faccio ad arrivare da Roma a Bari in treno?
+143;eng;What’s the quickest way to get from Los Angeles to Las Vegas?
+144;fr;Quel est le chemin le plus court entre Paris et Lyon ?
+145;ita;Qual è la via più veloce per andare a Napoli da Salerno?
+146;eng;Can I drive from Boston to New York in under four hours?
+147;fr;Est-il possible de se rendre de Marseille à Lyon en trois heures ?
+148;ita;Quanto tempo ci vuole per andare da Palermo a Catania in auto?
+149;eng;Is there a direct flight from San Francisco to Seattle?
+150;fr;Est-ce qu'il y a un vol direct entre Paris et Genève ?
+151;ita;Esiste un volo diretto da Napoli a Milano?
+152;eng;How do I get from Austin to Houston by bus?
+153;fr;Comment aller de Lyon à Clermont-Ferrand en bus ?
+154;ita;C’è un autobus che va da Torino a Genova?
+155;eng;What’s the best way to travel from Denver to Salt Lake City?
+156;fr;Quel est le moyen le plus pratique pour aller de Marseille à Nice ?
+157;ita;Qual è il miglior modo per arrivare a Napoli da Bari?
+158;eng;Can I reach Portland from Seattle by train?
+159;fr;Est-ce que je peux aller de Lille à Paris en train ?
+160;ita;Quanto tempo ci vuole per arrivare da Milano a Bologna in auto?
+161;eng;How long does it take to fly from New York to Miami?
+162;fr;Combien de temps dure le vol entre Paris et Madrid ?
+163;ita;Quanto dura il volo da Roma a Napoli?
+164;eng;What’s the easiest way to get from Brussels to Amsterdam?
+165;fr;Quel est le moyen le plus simple pour aller de Paris à Zurich ?
+166;ita;Qual è il miglior tragitto per andare da Firenze a Pisa?
+167;eng;Can I drive from Washington DC to Philadelphia?
+168;fr;Puis-je me rendre de Lyon à Nice en voiture ?
+169;ita;C’è una strada diretta tra Torino e Venezia?
+170;eng;Is there a direct train from Berlin to Vienna?
+171;fr;Y a-t-il un train direct entre Lyon et Genève ?
+172;ita;Esiste un treno diretto da Milano a Venezia?
+173;eng;How do I get from Glasgow to Edinburgh by train?
+174;fr;Comment aller de Paris à Bruxelles en train ?
+175;ita;Come posso arrivare a Torino da Roma in treno?
+176;eng;How far is it from Las Vegas to Phoenix by car?
+177;fr;Quelle est la distance entre Paris et Lyon en voiture ?
+178;ita;Qual è la distanza in auto tra Napoli e Roma?
+179;eng;What’s the best route from Chicago to Indianapolis?
+180;fr;Quel est le meilleur trajet pour aller de Bordeaux à Toulouse ?
+181;ita;Come posso arrivare a Bologna da Torino in macchina?
+182;eng;Can I fly from Miami to New York in less than three hours?
+183;fr;Est-ce que le vol entre Paris et Marseille dure moins de deux heures ?
+184;ita;Posso volare da Napoli a Milano in meno di un’ora?
+185;eng;How do I get from Phoenix to Tucson by train?
+186;fr;Comment aller de Lille à Bruxelles en train ?
+187;ita;C’è un treno diretto tra Roma e Napoli?
+188;eng;What’s the best way to travel from Houston to Dallas?
+189;fr;Quel est le meilleur moyen pour aller de Marseille à Avignon ?
+190;ita;Come si arriva a Palermo da Catania in macchina?
+191;eng;How do I reach Portland from San Francisco by train?
+192;fr;Comment aller de Bordeaux à Nice en bus ?
+193;ita;Qual è il tragitto migliore da Napoli a Salerno in treno?
+194;eng;Can I drive from Los Angeles to San Francisco in one day?
+195;fr;Puis-je faire Paris-Lyon en voiture en une journée ?
+196;ita;Posso andare da Milano a Torino in macchina in meno di due ore?
+197;eng;What’s the best way to get from Vancouver to Calgary?
+198;fr;Quel est le meilleur moyen de se rendre de Nice à Lyon ?
+199;ita;Qual è il percorso più rapido da Torino a Firenze?
+200;eng;How do I travel from Ottawa to Montreal by bus?
+201;fr;Comment faire pour aller de Nantes à Marseille en train ?
+202;ita;Come posso arrivare da Milano a Torino in treno?
+203;eng;What’s the quickest way to reach Boston from New York?
+204;fr;Quel est le moyen le plus rapide pour aller de Paris à Londres ?
+205;ita;Come faccio ad arrivare da Roma a Firenze in autobus?
+206;eng;Is there a bus from Orlando to Miami?
+207;fr;Est-ce qu'il y a un bus de Nice à Marseille ?
+208;ita;C’è un autobus che collega Bologna a Firenze?
+209;eng;Can I fly from San Francisco to Las Vegas in under two hours?
+210;fr;Est-il possible de voler de Paris à Lyon en une heure ?
+211;ita;Quanto dura il volo tra Roma e Milano?
+212;eng;How far is it from Dallas to Houston by car?
+213;fr;Quelle est la distance en voiture entre Lyon et Marseille ?
+214;ita;Qual è la distanza tra Torino e Milano in macchina?
+215;eng;Can I drive from Portland to Seattle in less than three hours?
+216;fr;Est-ce possible de rejoindre Genève depuis Paris en voiture en trois heures ?
+217;ita;Posso andare da Firenze a Bologna in macchina in meno di un’ora?
+218;eng;What’s the best route to drive from Denver to Boulder?
+219;fr;Quel est le trajet le plus simple pour aller de Marseille à Montpellier ?
+220;ita;Qual è il percorso più breve per arrivare a Napoli da Roma?
+221;fr;Quel est le moyen le plus rapide pour aller de Lyon à Genève ?
+222;fr;Combien de temps faut-il pour aller de Nice à Marseille en train ?
+223;fr;Est-il possible de se rendre de Bordeaux à Strasbourg en avion ?
+224;fr;Comment aller de Marseille à Nice en voiture ?
+225;fr;Quel est le meilleur itinéraire pour voyager de Paris à Rennes en voiture ?
+226;fr;Y a-t-il un bus entre Lyon et Grenoble ?
+227;fr;Est-ce que je peux prendre un ferry de Marseille à Ajaccio ?
+228;fr;Combien de temps dure le trajet en train de Bordeaux à Nantes ?
+229;fr;Puis-je me rendre de Toulouse à Montpellier en bus ?
+230;fr;Quel est le chemin le plus rapide entre Paris et Rouen ?
+231;fr;Y a-t-il un vol direct de Paris à Amsterdam ?
+232;fr;Quel est le moyen le plus simple pour aller de Strasbourg à Lyon en train ?
+233;fr;Combien de temps faut-il pour aller de Marseille à Toulouse en voiture ?
+234;fr;Comment voyager de Bordeaux à Pau en train ?
+235;fr;Est-il possible de prendre un bus de Lille à Bruxelles ?
+236;fr;Quel est le trajet le plus court entre Paris et Lille en voiture ?
+237;fr;Comment aller de Grenoble à Lyon en voiture ?
+238;fr;Quel est le moyen le plus rapide pour aller de Paris à Le Havre ?
+239;fr;Est-ce que je peux marcher de Toulouse à Perpignan ?
+240;fr;Y a-t-il un train direct entre Nice et Marseille ?
+241;fr;Comment se rendre de Strasbourg à Paris en avion ?
+242;fr;Quel est le moyen le plus pratique pour aller de Lyon à Chambéry ?
+243;fr;Est-il possible de faire Marseille-Nice en voiture en une journée ?
+244;fr;Combien de temps faut-il pour aller de Dijon à Lyon en train ?
+245;fr;Comment aller de Lyon à Genève en avion ?
+246;fr;Quel est le moyen le plus rapide pour se rendre de Nantes à Paris en train ?
+247;fr;Est-ce que je peux aller de Lille à Reims en bus ?
+248;fr;Y a-t-il un vol direct de Toulouse à Lyon ?
+249;fr;Combien de temps dure le trajet en voiture de Marseille à Perpignan ?
+250;fr;Puis-je me rendre de Bordeaux à Lille en voiture en une journée ?
+251;fr;Quel est le trajet le plus simple pour aller de Paris à Chartres ?
+252;fr;Y a-t-il un ferry de Marseille à Toulon ?
+253;fr;Combien de temps faut-il pour aller de Lyon à Avignon en train ?
+254;fr;Quel est le chemin le plus rapide pour se rendre de Marseille à Béziers ?
+255;fr;Comment voyager de Montpellier à Nîmes en bus ?
+256;fr;Est-il possible de prendre un bus de Nice à Menton ?
+257;fr;Combien de temps dure le trajet en train entre Strasbourg et Colmar ?
+258;fr;Y a-t-il un train entre Bordeaux et Biarritz ?
+259;fr;Est-ce que je peux voyager de Paris à Reims en train ?
+260;fr;Quel est le moyen le plus rapide pour aller de Lyon à Annecy ?
+261;fr;Puis-je aller de Nantes à Brest en voiture ?
+262;fr;Est-il possible de rejoindre Clermont-Ferrand depuis Lyon en train ?
+263;fr;Combien de temps faut-il pour aller de Rouen à Paris en voiture ?
+264;fr;Comment se rendre de Toulouse à Bordeaux en avion ?
+265;fr;Quel est le meilleur trajet entre Lille et Amiens en train ?
+266;fr;Est-il possible de faire Rennes-Paris en voiture en moins de quatre heures ?
+267;fr;Puis-je prendre un bus de Nice à Avignon ?
+268;fr;Combien de temps dure le vol de Marseille à Bordeaux ?
+269;fr;Quel est le moyen le plus rapide pour aller de Paris à Dijon ?
+270;fr;Y a-t-il un train direct entre Grenoble et Annecy ?
+271;fr;Comment aller de Marseille à Montpellier en train ?
+272;fr;Puis-je faire le trajet de Lille à Strasbourg en voiture en une journée ?
+273;fr;Quel est le chemin le plus rapide pour se rendre de Nantes à La Rochelle ?
+274;fr;Combien de temps faut-il pour aller de Paris à Nancy en train ?
+275;fr;Y a-t-il un ferry de Nice à Bastia ?
+276;fr;Quel est le moyen le plus rapide pour aller de Lyon à Turin ?
+277;fr;Puis-je voyager de Toulouse à Marseille en voiture ?
+278;fr;Comment aller de Paris à Biarritz en avion ?
+279;fr;Est-il possible de faire Marseille-Paris en train en moins de quatre heures ?
+280;fr;Y a-t-il un bus entre Lyon et Clermont-Ferrand ?
+281;fr;Combien de temps dure le trajet en voiture entre Lille et Paris ?
+282;fr;Puis-je me rendre de Nantes à Rennes en train ?
+283;fr;Quel est le meilleur moyen pour aller de Lyon à Avignon en bus ?
+284;fr;Comment se rendre de Nice à Toulon en voiture ?
+285;fr;Est-il possible de voyager de Bordeaux à Toulouse en avion ?
+286;fr;Y a-t-il un train direct entre Marseille et Montpellier ?
+287;fr;Puis-je marcher de Strasbourg à Colmar ?
+288;fr;Combien de temps faut-il pour aller de Lyon à Marseille en avion ?
+289;fr;Comment voyager de Paris à Lyon en voiture ?
+290;fr;Quel est le trajet le plus rapide entre Lille et Bruxelles ?
+291;fr;Est-ce que je peux prendre un bus de Marseille à Cannes ?
+292;fr;Combien de temps dure le vol entre Paris et Nice ?
+293;fr;Quel est le moyen le plus simple pour aller de Grenoble à Marseille ?
+294;fr;Comment aller de Bordeaux à La Rochelle en voiture ?
+295;fr;Est-il possible de faire Paris-Toulouse en train en moins de cinq heures ?
+296;fr;Y a-t-il un ferry de Toulon à Ajaccio ?
+297;fr;Puis-je me rendre de Lille à Luxembourg en train ?
+298;fr;Quel est le chemin le plus rapide entre Lyon et Marseille ?
+299;fr;Combien de temps dure le trajet en voiture entre Bordeaux et Montpellier ?
+300;fr;Est-ce que je peux aller de Nantes à Bordeaux en bus ?
+301;fr;Quel est le moyen le plus pratique pour aller de Paris à Metz ?
+302;fr;Comment se rendre de Nice à Marseille en train ?
+303;fr;Y a-t-il un vol direct de Paris à Bordeaux ?
+304;fr;Combien de temps faut-il pour aller de Lyon à Besançon en train ?
+305;fr;Puis-je voyager de Marseille à Lyon en voiture ?
+306;fr;Quel est le meilleur itinéraire entre Lille et Calais ?
+307;fr;Est-il possible de faire Paris-Strasbourg en moins de deux heures en avion ?
+308;fr;Comment aller de Lyon à Dijon en voiture ?
+309;fr;Y a-t-il un train direct entre Nantes et Paris ?
+310;fr;Combien de temps faut-il pour aller de Marseille à Nice en voiture ?
+311;fr;Quel est le moyen le plus rapide pour aller de Paris à Lyon en TGV ?
+312;fr;Puis-je prendre un bus de Bordeaux à Lyon ?
+313;fr;Est-il possible de voyager de Toulouse à Perpignan en voiture ?
+314;fr;Y a-t-il un ferry de Marseille à Calvi ?
+315;fr;Quel est le trajet le plus rapide entre Lille et Le Havre ?
+316;fr;Combien de temps dure le trajet en train entre Nice et Monaco ?
+317;fr;Comment se rendre de Lyon à Genève en voiture ?
+318;fr;Y a-t-il un bus entre Bordeaux et Toulouse ?
+319;fr;Puis-je aller de Paris à Saint-Malo en train ?
+320;fr;Quel est le moyen le plus simple pour aller de Nantes à Angers ?
+321;fr;Combien de temps dure le trajet en voiture entre Strasbourg et Colmar ?
+322;fr;Puis-je voyager de Toulouse à Limoges en train ?
+323;fr;Quel est le chemin le plus rapide pour aller de Paris à Clermont-Ferrand ?
+324;fr;Y a-t-il un vol direct de Nice à Nantes ?
+325;fr;Comment aller de Lyon à Paris en voiture ?
+326;fr;Est-il possible de voyager de Marseille à Barcelone en train ?
+327;fr;Quel est le moyen le plus rapide pour aller de Bordeaux à La Rochelle ?
+328;fr;Combien de temps dure le trajet en train entre Grenoble et Lyon ?
+329;fr;Puis-je prendre un ferry de Marseille à Bonifacio ?
+330;fr;Comment se rendre de Toulouse à Bordeaux en voiture ?
+331;fr;Y a-t-il un bus entre Strasbourg et Metz ?
+332;fr;Est-il possible de faire Lyon-Paris en avion en moins de deux heures ?
+333;fr;Combien de temps dure le vol de Marseille à Paris ?
+334;fr;Quel est le trajet le plus simple pour aller de Nantes à Poitiers ?
+335;fr;Y a-t-il un train entre Lille et Paris ?
+336;fr;Puis-je voyager de Nice à Toulon en train ?
+337;fr;Comment aller de Lyon à Annecy en voiture ?
+338;fr;Quel est le moyen le plus rapide pour aller de Paris à Grenoble ?
+339;fr;Combien de temps dure le trajet en voiture entre Bordeaux et Pau ?
+340;fr;Est-il possible de prendre un bus de Marseille à Toulon ?
+341;fr;Y a-t-il un vol direct de Paris à Genève ?
+342;fr;Comment se rendre de Nice à Avignon en voiture ?
+343;fr;Quel est le chemin le plus rapide entre Marseille et Montpellier ?
+344;fr;Combien de temps faut-il pour aller de Lille à Reims en train ?
+345;fr;Puis-je prendre un ferry de Toulon à Bastia ?
+346;fr;Est-il possible de voyager de Toulouse à Montpellier en voiture ?
+347;fr;Y a-t-il un bus entre Bordeaux et Bayonne ?
+348;fr;Comment aller de Paris à Rouen en voiture ?
+349;fr;Quel est le moyen le plus simple pour aller de Lyon à Grenoble en train ?
+350;fr;Combien de temps dure le trajet en voiture entre Strasbourg et Mulhouse ?
+351;fr;Est-il possible de rejoindre Marseille depuis Lyon sans passer par l’autoroute ?
+352;fr;Y a-t-il un train direct de Lille vers Londres ?
+353;fr;Quel est le meilleur moyen de faire un Paris-Rome sans avion ?
+354;fr;Est-ce que je peux louer une voiture pour aller de Bordeaux à San Sebastián ?
+355;fr;Y a-t-il une escale entre Nice et Amsterdam si je prends l’avion ?
+356;fr;Quel est le moyen le plus économique pour aller de Nantes à Bruxelles ?
+357;fr;Puis-je prendre un bateau entre Le Havre et Southampton ?
+358;fr;Est-il possible de faire Lyon-Turin à vélo ?
+359;fr;Combien de temps dure le trajet en train de Marseille à Genève ?
+360;fr;Comment puis-je me rendre de Montpellier à Toulouse en train ?
+361;fr;Est-il plus rapide d’aller de Marseille à Lyon en voiture ou en train ?
+362;fr;Y a-t-il des ferries qui relient Saint-Malo et les îles anglo-normandes ?
+363;fr;Quel est le trajet le moins cher de Paris à Strasbourg ?
+364;fr;Comment aller de Lille à Anvers en train ?
+365;fr;Est-il possible de faire Paris-Nantes en moins de deux heures en train ?
+366;fr;Quel est le moyen le plus simple pour aller de Strasbourg à Metz ?
+367;fr;Y a-t-il un moyen de transport direct entre Bordeaux et Poitiers ?
+368;fr;Combien de temps dure le trajet en train de Lille à Bruges ?
+369;fr;Puis-je voyager de Marseille à Barcelone en bus de nuit ?
+370;fr;Comment aller de Nice à Marseille sans passer par l’autoroute ?
+371;fr;Est-il possible de voyager de Paris à Tours en avion ?
+372;fr;Y a-t-il une liaison ferry entre Marseille et Nice ?
+373;fr;Combien de temps faut-il pour aller de Rennes à Nantes en voiture ?
+374;fr;Puis-je faire un aller-retour de Bordeaux à Paris en train dans la journée ?
+375;fr;Quel est le meilleur trajet pour aller de Toulouse à Albi en voiture ?
+376;fr;Est-il possible de voyager de Lyon à Marseille en moins de deux heures en train ?
+377;fr;Y a-t-il un ferry de Toulon à Porto-Vecchio ?
+378;fr;Combien de temps faut-il pour aller de Strasbourg à Mulhouse en train ?
+379;fr;Comment se rendre de Nantes à Brest sans voiture ?
+380;fr;Est-il possible de rejoindre Genève depuis Paris en moins de trois heures ?
+381;fr;Y a-t-il un bus entre Lyon et Saint-Étienne ?
+382;fr;Combien de temps dure le trajet en avion de Marseille à Lyon ?
+383;fr;Quel est le moyen le plus rapide pour aller de Bordeaux à Angoulême ?
+384;fr;Puis-je faire Lille-Bruxelles en une heure ?
+385;fr;Y a-t-il un train direct entre Rennes et Quimper ?
+386;fr;Est-il possible de faire Toulouse-Montpellier en bus ?
+387;fr;Combien de temps faut-il pour aller de Paris à Bordeaux en train de nuit ?
+388;fr;Comment aller de Marseille à Perpignan en avion ?
+389;fr;Y a-t-il un bus entre Strasbourg et Nancy ?
+390;fr;Puis-je marcher de Nice à Cannes ?
+391;fr;Quel est le trajet le plus court entre Paris et Dunkerque ?
+392;fr;Combien de temps dure le trajet en train de Bordeaux à Périgueux ?
+393;fr;Y a-t-il un moyen de transport rapide entre Grenoble et Genève ?
+394;fr;Comment se rendre de Toulouse à Albi sans voiture ?
+395;fr;Puis-je prendre un bus entre Dijon et Besançon ?
+396;fr;Est-il possible de faire un trajet en bateau de Marseille à Sète ?
+397;fr;Y a-t-il un vol direct entre Paris et La Rochelle ?
+398;fr;Combien de temps dure le trajet en voiture entre Limoges et Clermont-Ferrand ?
+399;fr;Puis-je faire Bordeaux-Biarritz en moins de deux heures en voiture ?
+400;fr;Quel est le moyen le plus rapide pour aller de Grenoble à Chambéry ?
+401;fr;Est-il possible de voyager de Lille à Metz en train ?
+402;fr;Y a-t-il un bus entre Toulouse et Tarbes ?
+403;fr;Combien de temps dure le trajet en avion entre Lyon et Nantes ?
+404;fr;Quel est le meilleur moyen pour aller de Marseille à Toulon en bus ?
+405;fr;Puis-je prendre un bus de Nice à Aix-en-Provence ?
+406;fr;Est-il possible de faire Bordeaux-La Rochelle en bateau ?
+407;fr;Combien de temps faut-il pour aller de Lille à Calais en train ?
+408;fr;Y a-t-il un vol direct de Toulouse à Brest ?
+409;fr;Comment se rendre de Nantes à Quimper en voiture ?
+410;fr;Est-il possible de faire un trajet en ferry entre Le Havre et Dublin ?
+411;fr;Quel est le moyen le plus rapide pour aller de Lyon à Grenoble en voiture ?
+412;fr;Combien de temps dure le trajet en bus de Marseille à Toulon ?
+413;fr;Y a-t-il un train direct entre Nice et Monaco ?
+414;fr;Comment voyager de Bordeaux à Agen en train ?
+415;fr;Puis-je me rendre de Montpellier à Perpignan en voiture en une heure ?
+416;fr;Est-il possible de faire Strasbourg-Mulhouse en vélo ?
+417;fr;Combien de temps dure le trajet en voiture entre Dijon et Besançon ?
+418;fr;Puis-je voyager de Toulouse à Brive en train ?
+419;fr;Quel est le meilleur moyen pour aller de Lyon à Perpignan ?
+420;fr;Y a-t-il un vol direct entre Nantes et Perpignan ?
+421;fr;Comment se rendre de Marseille à Gap en voiture ?
+422;fr;Puis-je faire un aller-retour entre Nice et Menton en bus dans la journée ?
+423;fr;Est-il possible de voyager de Bordeaux à Lourdes en bus ?
+424;fr;Combien de temps dure le trajet en train de Rennes à Lorient ?
+425;fr;Puis-je me rendre de Rouen à Paris en train en une heure ?
+426;fr;Comment aller de Dijon à Annecy sans voiture ?
+427;fr;Y a-t-il un bus entre Toulouse et Narbonne ?
+428;fr;Est-il possible de faire Marseille-Nice en bateau ?
+429;fr;Combien de temps dure le trajet en voiture entre Orléans et Tours ?
+430;fr;Puis-je prendre un ferry de Marseille à Alger ?
+431;fr;Y a-t-il un train direct de Lyon à Montpellier ?
+432;fr;Combien de temps dure le trajet en voiture entre Limoges et Poitiers ?
+433;fr;Est-il possible de faire Rennes-Brest en voiture en moins de deux heures ?
+434;fr;Comment se rendre de Clermont-Ferrand à Lyon en train ?
+435;fr;Puis-je voyager de Marseille à Arles en train ?
+436;fr;Y a-t-il un vol direct de Lille à Lyon ?
+437;fr;Combien de temps dure le trajet en voiture entre Nantes et Vannes ?
+438;fr;Est-il possible de faire Nice-Marseille en moins de deux heures en voiture ?
+439;fr;Comment aller de Lyon à Toulon en avion ?
+440;fr;Puis-je prendre un bus de Bordeaux à Dax ?
+441;fr;Quel est le moyen le plus simple pour aller de Lille à Lens ?
+442;fr;Y a-t-il un ferry entre Marseille et la Corse ?
+443;fr;Combien de temps faut-il pour aller de Paris à Lyon en voiture ?
+444;fr;Comment se rendre de Toulouse à Foix en train ?
+445;fr;Puis-je faire Marseille-Menton en voiture en moins de trois heures ?
+446;fr;Y a-t-il un vol direct entre Lyon et Figari ?
+447;fr;Est-il possible de voyager de Bordeaux à Pau en avion ?
+448;fr;Combien de temps dure le trajet en train entre Paris et Versailles ?
+449;fr;Puis-je marcher de Bordeaux à Arcachon ?
+450;fr;Quel est le meilleur moyen pour aller de Montpellier à Avignon ?
+451;fr;Y a-t-il un bus entre Dijon et Chalon-sur-Saône ?
+452;fr;Combien de temps dure le trajet en avion entre Nantes et Toulouse ?
+453;fr;Puis-je me rendre de Lille à Dunkerque en train ?
+454;fr;Quel est le chemin le plus rapide pour aller de Marseille à Narbonne ?
+455;fr;Est-il possible de faire Paris-Reims en moins d’une heure en train ?
+456;fr;Y a-t-il un train direct entre Strasbourg et Mulhouse ?
+457;fr;Combien de temps dure le trajet en voiture entre Marseille et Aix-en-Provence ?
+458;fr;Comment aller de Lyon à Bourg-en-Bresse en train ?
+459;fr;Puis-je prendre un ferry entre Toulon et Bastia ?
+460;fr;Y a-t-il un bus entre Bordeaux et Limoges ?  
+461;fr;Y a-t-il un train de Montpellier à Avignon tôt le matin ?
+462;en;Is there a train from Montpellier to Avignon early in the morning?
+463;fr;Puis-je prendre un ferry de Toulon à Ajaccio ?
+464;en;Can I take a ferry from Toulon to Ajaccio?
+465;fr;Quel est le moyen le plus rapide pour aller de Grenoble à Valence ?
+466;en;What is the fastest way to travel from Grenoble to Valence?
+467;fr;Combien de temps dure le trajet en voiture entre Orléans et Chartres ?
+468;en;How long is the drive from Orléans to Chartres?
+469;fr;Est-il possible de voyager de Tours à Blois en vélo ?
+470;en;Is it possible to bike from Tours to Blois?
+471;fr;Comment aller de Nice à Fréjus sans voiture ?
+472;en;How can I travel from Nice to Fréjus without a car?
+473;fr;Puis-je faire un aller-retour de Bordeaux à Pau en train dans la journée ?
+474;en;Can I do a round trip from Bordeaux to Pau by train in one day?
+475;fr;Quel est le meilleur moyen pour aller de Nancy à Metz ?
+476;en;What’s the best way to get from Nancy to Metz?
+477;fr;Combien de temps dure le trajet en train entre Bayonne et Pau ?
+478;en;How long is the train ride between Bayonne and Pau?
+479;fr;Est-il possible de rejoindre Clermont-Ferrand depuis Limoges sans passer par l’autoroute ?
+480;en;Is it possible to go from Clermont-Ferrand to Limoges without using the highway?
+481;fr;Y a-t-il un bus entre Rennes et Saint-Malo ?
+482;en;Is there a bus between Rennes and Saint-Malo?
+483;fr;Combien de temps faut-il pour aller de Toulouse à Auch en voiture ?
+484;en;How long does it take to drive from Toulouse to Auch?
+485;fr;Puis-je prendre un bateau de Marseille à Toulon ?
+486;en;Can I take a boat from Marseille to Toulon?
+487;fr;Y a-t-il un train direct entre Perpignan et Narbonne ?
+488;en;Is there a direct train from Perpignan to Narbonne?
+489;fr;Comment voyager de Nantes à Saint-Brieuc sans voiture ?
+490;en;How can I travel from Nantes to Saint-Brieuc without a car?
+491;fr;Puis-je me rendre de Lyon à Grenoble en moins d’une heure ?
+492;en;Can I get from Lyon to Grenoble in under an hour?
+493;fr;Est-il possible de faire un trajet en vélo entre Dijon et Beaune ?
+494;en;Is it possible to bike from Dijon to Beaune?
+495;fr;Combien de temps dure le trajet en voiture entre Rouen et Caen ?
+496;en;How long is the drive between Rouen and Caen?
+497;fr;Y a-t-il un vol entre Paris et Lille ?
+498;en;Is there a flight from Paris to Lille?
+499;fr;Quel est le moyen le moins cher pour aller de Strasbourg à Mulhouse ?
+500;en;What is the cheapest way to travel from Strasbourg to Mulhouse?
+501;fr;Puis-je prendre un train de Dijon à Macon en soirée ?
+502;en;Can I take a train from Dijon to Macon in the evening?
+503;fr;Comment aller de Lille à Amiens sans voiture ?
+504;en;How can I go from Lille to Amiens without a car?
+505;fr;Y a-t-il un ferry entre Nice et Monaco ?
+506;en;Is there a ferry between Nice and Monaco?
+507;fr;Combien de temps dure le trajet en train entre Nîmes et Arles ?
+508;en;How long is the train ride between Nîmes and Arles?
+509;fr;Est-il possible de faire un trajet direct en bus de Bordeaux à La Rochelle ?
+510;en;Is there a direct bus from Bordeaux to La Rochelle?
+511;fr;Quel est le moyen le plus rapide pour aller de Paris à Tours ?
+512;en;What’s the fastest way to travel from Paris to Tours?
+513;fr;Puis-je faire un trajet en vélo entre Toulouse et Albi ?
+514;en;Can I bike from Toulouse to Albi?
+515;fr;Combien de temps faut-il pour aller de Marseille à Avignon en train ?
+516;en;How long does it take to travel from Marseille to Avignon by train?
+517;fr;Est-il possible de faire Montpellier-Béziers en bateau ?
+518;en;Is it possible to travel from Montpellier to Béziers by boat?
+519;fr;Puis-je voyager de Lyon à Annecy en moins de deux heures ?
+520;en;Can I travel from Lyon to Annecy in under two hours?
+521;fr;Y a-t-il un bus direct entre Lille et Roubaix ?
+522;en;Is there a direct bus from Lille to Roubaix?
+523;fr;Comment se rendre de Rennes à Dinard en transport public ?
+524;en;How can I get from Rennes to Dinard by public transport?
+525;fr;Combien de temps dure le trajet en voiture entre Brest et Quimper ?
+526;en;How long is the drive from Brest to Quimper?
+527;fr;Est-il possible de faire un trajet en ferry de Marseille à Nice ?
+528;en;Is there a ferry from Marseille to Nice?
+529;fr;Quel est le trajet le plus rapide pour aller de Bordeaux à Bayonne ?
+530;en;What is the quickest way to go from Bordeaux to Bayonne?
+531;fr;Puis-je faire un aller-retour de Nice à Cannes dans la journée ?
+532;en;Can I do a round trip from Nice to Cannes in one day?
+533;fr;Y a-t-il un vol entre Nantes et Clermont-Ferrand ?
+534;en;Is there a flight from Nantes to Clermont-Ferrand?
+535;fr;Combien de temps faut-il pour aller de Strasbourg à Colmar en voiture ?
+536;en;How long does it take to drive from Strasbourg to Colmar?
+537;fr;Est-il possible de voyager de Lille à Dunkerque en vélo ?
+538;en;Is it possible to bike from Lille to Dunkerque?
+539;fr;Comment aller de Montpellier à Sète sans utiliser l’autoroute ?
+540;en;How can I go from Montpellier to Sète without using the highway?
+541;fr;Combien de temps dure le trajet en train entre Nice et Toulon ?
+542;en;How long is the train ride between Nice and Toulon?
+543;fr;Y a-t-il une route pittoresque entre Annecy et Chambéry ?
+544;en;Is there a scenic route between Annecy and Chambéry?
+545;fr;Est-il possible de faire le trajet Paris-Caen en moins de deux heures ?
+546;en;Is it possible to travel from Paris to Caen in under two hours?
+547;fr;Quel est le moyen le plus rapide pour aller de Lille à Douai ?
+548;en;What’s the fastest way to get from Lille to Douai?
+549;fr;Puis-je prendre un bateau entre Brest et Lorient ?
+550;en;Can I take a boat between Brest and Lorient?
+551;fr;Combien de temps dure le trajet en voiture entre Limoges et Tulle ?
+552;en;How long is the drive from Limoges to Tulle?
+553;fr;Y a-t-il un vol direct entre Paris et Deauville ?
+554;en;Is there a direct flight from Paris to Deauville?
+555;fr;Est-il possible de faire un trajet en vélo entre Nantes et Vannes ?
+556;en;Is it possible to bike from Nantes to Vannes?
+557;fr;Quel est le meilleur moyen de transport pour aller de Dijon à Dole ?
+558;en;What’s the best way to travel from Dijon to Dole?
+559;fr;Puis-je me rendre de Marseille à Aix-en-Provence en bus ?
+560;en;Can I get from Marseille to Aix-en-Provence by bus?
+561;fr;Y a-t-il un train direct entre Rennes et Fougères ?
+562;en;Is there a direct train from Rennes to Fougères?
+563;fr;Combien de temps faut-il pour aller de Tours à Angers en train ?
+564;en;How long does it take to travel from Tours to Angers by train?
+565;fr;Puis-je prendre un ferry entre Saint-Malo et Roscoff ?
+566;en;Can I take a ferry from Saint-Malo to Roscoff?
+567;fr;Est-il possible de faire Lyon-Valence en moins d’une heure en voiture ?
+568;en;Is it possible to drive from Lyon to Valence in under an hour?
+569;fr;Quel est le moyen le moins cher pour aller de Reims à Châlons-en-Champagne ?
+570;en;What is the cheapest way to travel from Reims to Châlons-en-Champagne?
+571;fr;Puis-je marcher de Nantes à Saint-Nazaire ?
+572;en;Can I walk from Nantes to Saint-Nazaire?
+573;fr;Combien de temps dure le trajet en voiture entre Strasbourg et Haguenau ?

@@ -1,0 +1,25 @@
+J'aimerais aller chez {name} qui habite à {arrival} en partant de {departure}.
+Pourrais-tu me trouver un itinéraire pour me rendre chez {name} situé à {arrival} en partant de {departure} ?
+Je souhaite organiser mon trajet pour me rendre chez {name}, qui réside à {arrival}, en débutant depuis {departure}.
+Trouve-moi le chemin pour rejoindre la résidence de {name} à {arrival} en partant de {departure}, s'il te plaît.
+Planifie un déplacement vers la maison de {name}, à {arrival}, en partant de {departure}.
+Je voudrais savoir comment me rendre chez {name}, qui habite à {arrival}, en partant de {departure}.
+{departure} est mon point de départ, pourrais-tu me guider jusqu'à chez {name} à {arrival} ?"
+En partant de {departure}, je souhaite me rendre chez {name} qui réside à {arrival}, peux-tu m'indiquer le chemin ?
+Je prévois un trajet depuis {departure} vers la résidence de {name} à {arrival}, pourrais-tu m'aider à planifier ?
+Pour rejoindre {name} situé à {arrival}, commençons depuis {departure}.
+En partant de {departure}, je voudrais savoir comment me rendre chez {name} à {arrival}, est-ce que tu peux m'aider ?
+En partant de {departure}, je voudrais savoir comment me rendre chez {name} à {arrival} ?
+Trouve-moi le chemin le plus rapide vers {arrival} depuis {departure} pour arriver chez {name}.
+Localise un itinéraire vers {arrival} en commençant par {departure}, afin d'atteindre {name}.
+Calculs pour me mener de {departure} à {arrival}, et me rapprocher de {name}.
+Trace un parcours de {departure} jusqu'à {arrival}, pour trouver {name}.
+Organise un trajet vers {arrival} en partant de {departure} pour rejoindre {name}.
+Dirige-moi de {departure} à {arrival} pour rencontrer {name}.
+Établis un chemin sûr de {departure} jusqu'à {arrival} pour que je puisse rejoindre {name}.
+Planifie un déplacement efficace vers {arrival} en partant de {departure} pour trouver {name}.
+Crée un itinéraire précis de {departure} à {arrival}, pour rencontrer {name}.
+Indique le meilleur chemin de {departure} vers {arrival}, pour retrouver {name}.
+Recherche un itinéraire de {departure} à {arrival} où habite {name}.
+Aller à {arrival} en partant de {departure} là où habite {name}.
+Je veux me rendre chez mon ami {name} qui habite à {arrival} en partant de {departure}.
