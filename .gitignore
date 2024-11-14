@@ -1,5 +1,2 @@
-./ai/nlp/dataset/raw/initial_training_data.csv
-./ai/nlp/dataset/raw/secours_training_data.csv
-./ai/nlp/models/transformers/camembert/token_classification/camembert_token_classification/camembert_token_classification_model.pt
-./ai/nlp/models/transformers/camembert/token_classification/checkpoint-15/optimizer.pt
-./ai/nlp/dataset/raw
+ai/nlp/dataset/raw
+ai/nlp/models
