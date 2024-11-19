@@ -1,3 +1,18 @@
+Je souhaite aller chez {name} qui vit à {arrival}, peux-tu m'aider à planifier le trajet depuis {departure} ?
+Aide-moi à trouver le chemin pour aller à {arrival} depuis {departure} et rendre visite à {name}.
+Peux-tu me guider de {departure} à {arrival} pour rencontrer {name} ?
+Je voudrais partir de {departure} pour aller chez {name} à {arrival}, pourrais-tu tracer l'itinéraire ?
+Je cherche un itinéraire qui part de {departure} et me mène à {arrival}, où réside {name}.
+Trouve-moi un parcours depuis {departure} pour arriver chez {name} à {arrival}.
+J'aimerais bien savoir comment rejoindre {name} à {arrival}, en partant de {departure}.
+Aide-moi à organiser mon trajet de {departure} à {arrival} pour rejoindre {name}.
+Indique-moi un chemin depuis {departure} pour aller chez {name} à {arrival}.
+Propose-moi un itinéraire pour que je puisse atteindre {arrival} depuis {departure}, où réside {name}.
+Je veux savoir quel est le meilleur moyen de partir de {departure} pour rejoindre {arrival} chez {name}.
+Pour aller chez {name} à {arrival}, comment dois-je m’y prendre en partant de {departure} ?
+Je pars de {departure} et je dois aller à {arrival}, où habite {name}, peux-tu m'aider ?
+Si je pars de {departure}, quel chemin devrais-je suivre pour arriver à {arrival} chez {name} ?
+Trouve-moi un itinéraire depuis {departure} jusqu’à chez {name} à {arrival}.
 J'aimerais aller chez {name} qui habite à {arrival} en partant de {departure}.
 Pourrais-tu me trouver un itinéraire pour me rendre chez {name} situé à {arrival} en partant de {departure} ?
 Je souhaite organiser mon trajet pour me rendre chez {name}, qui réside à {arrival}, en débutant depuis {departure}.
@@ -8,6 +23,24 @@ Je voudrais savoir comment me rendre chez {name}, qui habite à {arrival}, en pa
 En partant de {departure}, je souhaite me rendre chez {name} qui réside à {arrival}, peux-tu m'indiquer le chemin ?
 Je prévois un trajet depuis {departure} vers la résidence de {name} à {arrival}, pourrais-tu m'aider à planifier ?
 Pour rejoindre {name} situé à {arrival}, commençons depuis {departure}.
+Peux-tu calculer l'itinéraire pour me rendre chez {name} qui habite à {arrival} en partant de {departure} ?
+Je suis à {departure}, comment puis-je me rendre chez {name} à {arrival} ?
+J’ai besoin d'un itinéraire qui me mène de {departure} à {arrival} pour voir {name}.
+Tu peux me trouver un trajet rapide de {departure} à {arrival}, chez {name} ?
+Je voudrais planifier un trajet de {departure} vers {arrival}, où vit {name}.
+Je cherche un chemin de {departure} à {arrival}, comment puis-je atteindre {name} ?
+Quel est le meilleur itinéraire pour aller de {departure} à {arrival} chez {name} ?
+Peux-tu m'aider à trouver l'itinéraire le plus court de {departure} à {arrival} pour voir {name} ?
+Je veux me rendre chez {name} qui vit à {arrival}, et je pars de {departure}.
+Comment puis-je aller de {departure} à {arrival} chez {name} ?
+Est-ce que tu peux trouver un trajet pour que je me rende chez {name} à {arrival} en partant de {departure} ?
+Je cherche un parcours pour me rendre de {departure} à {arrival}, où vit {name}.
+Donne-moi l'itinéraire pour rejoindre {name} à {arrival} en partant de {departure}.
+J’ai prévu de partir de {departure}, peux-tu me guider jusqu’à chez {name} à {arrival} ?
+Aide-moi à tracer un chemin de {departure} jusqu'à chez {name} à {arrival}.
+Je dois partir de {departure} pour rejoindre {name} qui habite à {arrival}, quel est le meilleur itinéraire ?
+Je prévois un déplacement vers {arrival} chez {name}, en partant de {departure}, peux-tu m’aider ?
+Donne-moi un itinéraire de {departure} vers {arrival}, chez {name}.
 En partant de {departure}, je voudrais savoir comment me rendre chez {name} à {arrival}, est-ce que tu peux m'aider ?
 En partant de {departure}, je voudrais savoir comment me rendre chez {name} à {arrival} ?
 Trouve-moi le chemin le plus rapide vers {arrival} depuis {departure} pour arriver chez {name}.
@@ -18,6 +51,45 @@ Organise un trajet vers {arrival} en partant de {departure} pour rejoindre {name
 Dirige-moi de {departure} à {arrival} pour rencontrer {name}.
 Établis un chemin sûr de {departure} jusqu'à {arrival} pour que je puisse rejoindre {name}.
 Planifie un déplacement efficace vers {arrival} en partant de {departure} pour trouver {name}.
+Comment se rendre de {departure} à {arrival} où habite {name} ?
+Je souhaite un itinéraire pour me rendre chez {name}, à {arrival}, en partant de {departure}.
+Je prévois de partir de {departure} pour aller chez {name} à {arrival}, peux-tu me guider ?
+Je cherche le chemin le plus direct pour aller de {departure} à {arrival}, où réside {name}.
+Aide-moi à trouver un itinéraire depuis {departure} pour aller voir {name} à {arrival}.
+Comment aller à {arrival} depuis {departure} chez {name} ?
+Peux-tu me fournir l’itinéraire de {departure} à {arrival} pour rejoindre {name} ?
+Trouve-moi l’itinéraire qui part de {departure} et me mène à {arrival} chez {name}.
+Je vais partir de {departure}, peux-tu me guider pour arriver à {arrival}, chez {name} ?
+Organise mon trajet depuis {departure} jusqu’à {arrival} pour rencontrer {name}.
+Peux-tu m'indiquer l'itinéraire de {departure} à {arrival}, où habite {name} ?
+Je voudrais savoir comment me rendre de {departure} à {arrival}, chez {name}.
+Comment planifier un trajet de {departure} à {arrival} pour rencontrer {name} ?
+Je cherche un chemin de {departure} à {arrival} pour rendre visite à {name}.
+Je prévois de voyager de {departure} à {arrival} pour voir {name}, peux-tu m'aider à tracer le parcours ?
+Je veux aller de {departure} à {arrival}, où vit {name}, peux-tu me trouver un itinéraire ?
+Je cherche un trajet de {departure} vers {arrival} pour rencontrer {name}.
+Si je veux aller chez {name} à {arrival}, quel est l'itinéraire depuis {departure} ?
+Quel est le chemin le plus rapide pour aller de {departure} à {arrival} chez {name} ?
+J'ai besoin d’un plan de transport pour aller de {departure} à {arrival} chez {name}.
+Je veux savoir comment rejoindre {name} à {arrival} en partant de {departure}.
+Aide-moi à trouver l'itinéraire de {departure} à {arrival} pour rejoindre {name}.
+Peux-tu me proposer un parcours de {departure} à {arrival} pour que je rencontre {name} ?
+Je pars de {departure}, quel trajet dois-je suivre pour arriver chez {name} à {arrival} ?
+Peux-tu planifier mon trajet de {departure} à {arrival} où vit {name} ?
+Je cherche un itinéraire de {departure} à {arrival} pour rendre visite à {name}.
+Si je pars de {departure}, quel est l'itinéraire pour arriver chez {name} à {arrival} ?
+Aide-moi à trouver un itinéraire de {departure} vers {arrival}, où réside {name}.
+Je veux connaître l'itinéraire pour rejoindre {name} à {arrival}, partant de {departure}.
+Peux-tu me donner un itinéraire de {departure} à {arrival} pour voir {name} ?
+Je suis à {departure}, quel chemin suivre pour aller à {arrival}, chez {name} ?
+Je voudrais aller chez {name}, à {arrival}, en partant de {departure}, peux-tu m'indiquer la route ?
+Je prévois de partir de {departure} pour aller chez {name} à {arrival}, peux-tu m’aider ?
+J'aimerais avoir un itinéraire de {departure} à {arrival} pour retrouver {name}.
+Peux-tu m'indiquer le chemin le plus rapide de {departure} à {arrival} chez {name} ?
+Je veux savoir quel est le meilleur itinéraire pour aller de {departure} à {arrival}, où réside {name}.
+Trouve-moi un chemin pour aller de {departure} à {arrival} et rendre visite à {name}.
+Peux-tu tracer l'itinéraire pour me rendre chez {name} à {arrival} en partant de {departure} ?
+Je cherche un parcours de {departure} à {arrival}, où habite {name}, peux-tu m'aider ?
 Crée un itinéraire précis de {departure} à {arrival}, pour rencontrer {name}.
 Indique le meilleur chemin de {departure} vers {arrival}, pour retrouver {name}.
 Recherche un itinéraire de {departure} à {arrival} où habite {name}.
