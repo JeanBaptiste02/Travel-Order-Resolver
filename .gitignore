@@ -1,3 +1,3 @@
-ai/nlp/dataset/raw
+ai/nlp/dataset
 ai/nlp/models
-ai/nlp/utils/supporting_datas/sentences
+ai/nlp/utils/supporting_datas
