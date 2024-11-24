@@ -1,6 +1,0 @@
-text,entities
-Je pars de Lyon pour rejoindre Montpellier,"[{'start': 12, 'end': 16, 'label': 'DEPARTURE'}, {'start': 32, 'end': 43, 'label': 'DESTINATION'}]"
-Je m'éclipse de la ravissante cité de Lille en direction de la distinguée ville de Rennes,"[{'start': 39, 'end': 44, 'label': 'DEPARTURE'}, {'start': 84, 'end': 90, 'label': 'DESTINATION'}]"
-Mon intention est de cheminer de Lyon à Toulouse,"[{'start': 34, 'end': 38, 'label': 'DEPARTURE'}, {'start': 41, 'end': 49, 'label': 'DESTINATION'}]"
-Mon frère va conduire le trajet Amiens / Nancy pour se rendre à une conférence.,"[{'start': 32, 'end': 38, 'label': 'DEPARTURE'}, {'start': 41, 'end': 46, 'label': 'DESTINATION'}]"
-Je pars de Lyon pour rejoindre Angers,"[{'start': 12, 'end': 16, 'label': 'DEPARTURE'}, {'start': 32, 'end': 38, 'label': 'DESTINATION'}]"
