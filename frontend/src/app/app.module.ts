@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { YatraGptComponent } from './yatra-gpt/yatra-gpt.component';
@@ -19,7 +19,13 @@ import { ModelsComponent } from './models/models.component';
     AboutPageComponent,
     ModelsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, MatTooltipModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    MatTooltipModule,
+    HttpClientModule,
+  ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

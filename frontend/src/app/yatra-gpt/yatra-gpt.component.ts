@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { YatraService } from '../service/yatra.service';
 
 @Component({
   selector: 'app-yatra-gpt',
@@ -18,6 +19,8 @@ export class YatraGptComponent {
   timer: number = 0;
   interval: any;
   private mediaStream: MediaStream | null = null;
+
+  constructor(private yatraService: YatraService) {}
 
   // Ajoutez l'objet modelDescriptions
   modelDescriptions: { [key: string]: string } = {
@@ -40,18 +43,52 @@ export class YatraGptComponent {
 
   sendMessage() {
     if (this.userMessage.trim()) {
+      // Ajouter le message de l'utilisateur
       if (this.editingIndex !== null) {
         this.messages[this.editingIndex].user = this.userMessage;
         this.editingIndex = null;
       } else {
         this.messages.push({ user: this.userMessage, ai: '' });
       }
-      this.userMessage = '';
-      this.displayWarningMessage();
-      const aiResponse =
-        "Je suis une réponse de l'IA ! Je suis là pour vous aider à trouver des chemins plus courts pour vos voyages !";
-      this.isTyping = true;
-      this.simulateTyping(aiResponse, this.messages.length - 1);
+
+      // Formater le message pour l'API
+      const messageParts = this.userMessage
+        .split(';')
+        .map((part) => part.trim());
+      const depart = messageParts[0];
+      const arrivee = messageParts[1];
+
+      // Envoyer la requête à l'API
+      this.yatraService.findPath(depart, arrivee).subscribe(
+        (response) => {
+          // Traiter la réponse de l'API
+          this.isTyping = true;
+          let aiResponse = '';
+
+          if (response && response.trajets && response.trajets.length > 0) {
+            const trajet = response.trajets[0]; // Prendre le premier trajet trouvé
+            aiResponse = `Voici un trajet que j'ai trouvé pour vous : 
+              Vous pouvez partir de ${depart} et vous rendre à ${arrivee}. 
+              Le trajet dure environ ${trajet['durée (minutes)']} minutes. 
+              Le train s'appelle "${trajet.trajet}" (ID: ${trajet.trip_id}).`;
+          } else {
+            aiResponse = 'Aucun trajet trouvé pour cette demande.';
+          }
+
+          this.simulateTyping(aiResponse, this.messages.length - 1);
+        },
+        (error) => {
+          // Gérer les erreurs
+          console.error(error);
+          this.isTyping = true;
+          const errorResponse =
+            "Une erreur s'est produite, veuillez réessayer.";
+          this.simulateTyping(errorResponse, this.messages.length - 1);
+        }
+      );
+
+      this.userMessage = ''; // Réinitialiser l'input
+      this.displayWarningMessage(); // Afficher l'avertissement
     }
   }
 
@@ -70,7 +107,7 @@ export class YatraGptComponent {
         clearInterval(this.typingInterval);
         this.isTyping = false;
       }
-    }, 100);
+    }, 50);
   }
 
   stopTyping() {
