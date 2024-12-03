@@ -1,169 +1,122 @@
+import os
 import random
 import pandas as pd
-import numpy as np
-import os
-from langdetect import detect
-from tqdm import tqdm 
+from tqdm import tqdm
+
 
 class TextClassificationGenerator:
-    
     def __init__(self):
-        self.load_files()
-
-    def load_files(self):
-        self.departures = self.load_departures('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/sentences_samples_dataset.csv')
+        print("Initializing...")
+        # Charger les données depuis les fichiers
+        self.departures = self.load_places('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/urban_geodata_basic_v1.0.txt')
         self.arrivals = self.departures.copy()
-        self.random_sentences = self.load_random_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/stochastic_sentence_collection.csv')
-        self.correct_sentences = self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/validated_text_sequences/validated_text_sequences.txt')
-        self.wrong_sentences = {
-            "only_departure_fr": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/departure_statements_without_arrivals.txt'),
-            "only_arrival_fr": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/arrival_statements_without_departures.txt'),
-        }
-        self.names = self.load_names('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/urban_geodata_basic_v1.0.txt')
-        self.error_phrases = self.load_error_phrases('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/anomalous_text_sequences.txt')
         
-
-    def load_sentences(self, filepath):
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return [line.strip() for line in f.readlines()]
-
-    def load_departures(self, filepath):
-        df = pd.read_csv(filepath, sep=';', header=None, dtype={0: str})
-        return df[0].tolist()
-
-    def load_random_sentences(self, filepath):
-        df = pd.read_csv(filepath, sep=';', header=None, dtype={0: str})
-        return df[0].tolist()
-
-    def load_names(self, filepath):
-        df = pd.read_csv(filepath)
-        return df['name'].tolist()
-
-    def load_error_phrases(self, filepath):
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return [line.strip() for line in f.readlines()]
-
-    def create_object_text_label(self, sentence, departure, arrival, prefix, name, correct, not_french, not_trip, unknown):
-        if "{dup_departure}" in sentence:
-            sentence = sentence.replace("{dup_departure}", "{arrival}")
-            arrival = departure
-        elif "{dup_arrival}" in sentence:
-            sentence = sentence.replace("{dup_arrival}", "{departure}")
-            departure = arrival
-
-        option = self.get_random_option(departure, arrival, prefix)
-
-        departure_prefix = f"{prefix}{departure}"
-        arrival_prefix = f"{prefix}{arrival}"
-
-        f_dict = {
-            "departure": departure_prefix if option != 1 else departure,
-            "arrival": arrival_prefix if option != 0 else arrival,
-            "name": name
+        # Chargement des phrases correctes et incorrectes (Français)
+        self.correct_sentences_fr = self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/validated_text_sequences/validated_text_sequences.txt')
+        self.correct_sentences_fr += self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/validated_text_sequences/validated_text_sequences_en.txt')
+        
+        self.wrong_sentences_fr = {
+            "only_departure": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/departure_statements_without_arrivals.txt'),
+            "only_arrival": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/arrival_statements_without_departures.txt')
+        }
+        
+        # Chargement des phrases correctes et incorrectes (Anglais)
+        self.correct_sentences_en = self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/validated_text_sequences/validated_text_sequences_en.txt')
+        self.wrong_sentences_en = {
+            "only_departure": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences_en/departure_statements_without_arrivals_en.txt'),
+            "only_arrival": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences_en/arrival_statements_without_departures_en.txt')
         }
 
-        sentence = sentence.format(**f_dict)
+        # Vérification des phrases chargées (Français et Anglais)
+        print(f"Français - Phrases correctes chargées: {len(self.correct_sentences_fr)}")
+        print(f"Anglais - Phrases correctes chargées: {len(self.correct_sentences_en)}")
+        
+        # Chargement des noms
+        self.names = self.load_names('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/fr_personal_identifiers_dataset_v1.0.csv')
 
-        return {
-            "text": sentence,
-            "CORRECT": correct,
-            "NOT_FRENCH": not_french,
-            "NOT_TRIP": not_trip,
-            "UNKNOWN": unknown
-        }
-
-    def get_random_option(self, departure, arrival, prefix):
-        if not arrival:
-            return 0
-        elif not departure:
-            return 1
-        else:
-            return np.random.randint(0, 3)
-
-    def fill_sentences_templates(self, departure, arrival):
-        correct_sentences = []
-        wrong_sentences = []
-
-        correct_sentences.extend([ 
-            self.create_object_text_label(sentence, departure, arrival, "", "", 1, 0, 0, 0)
-            for sentence in self.correct_sentences
-        ])
-
-        random_names = np.random.choice(self.names, len(self.correct_sentences))
-        correct_sentences.extend([
-            self.create_object_text_label(sentence, departure, arrival, "", random_names[i], 1, 0, 0, 0)
-            for i, sentence in enumerate(self.correct_sentences)
-        ])
-
-        wrong_sentences.extend([ 
-            self.create_object_text_label(sentence, departure, "", "", "", 0, 0, 1, 0)
-            for sentence in self.wrong_sentences["only_departure_fr"]
-        ])
-
-        wrong_sentences.extend([ 
-            self.create_object_text_label(sentence, "", arrival, "", "", 0, 0, 1, 0)
-            for sentence in self.wrong_sentences["only_arrival_fr"]
-        ])
-
-        return correct_sentences + wrong_sentences
-
-    def generate_unknown_sentences(self, number):
-        sentences = []
-        for _ in range(int(number / 2)):
-            sentences.append(random.choice(self.error_phrases))
-
-        return [{"text": sentence, "CORRECT": 0, "NOT_FRENCH": 0, "NOT_TRIP": 0, "UNKNOWN": 1} for sentence in sentences]
-
-    def detect_language(self, sentence):
+    @staticmethod
+    def load_sentences(filepath):
         try:
-            language = detect(sentence)
-            return language != 'fr'
-        except:
-            return True 
+            with open(filepath, 'r', encoding='utf-8') as file:
+                sentences = [line.strip() for line in file.readlines()]
+                if not sentences:
+                    print(f"Aucune phrase trouvée dans le fichier: {filepath}")
+                return sentences
+        except Exception as e:
+            print(f"Error loading sentences from {filepath}: {e}")
+            return []
 
-    def get_batch_sentences(self, departure, arrival):
-        data = []
-        for _ in range(1):
-            data.extend(self.fill_sentences_templates(departure, arrival))
-        return data
+    @staticmethod
+    def load_places(filepath):
+        try:
+            with open(filepath, 'r', encoding='utf-8') as file:
+                return [line.strip() for line in file.readlines()]
+        except Exception as e:
+            print(f"Error loading places from {filepath}: {e}")
+            return []
 
-    def generate(self, regenerate=False):
-        path = "C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/dataset/raw/generated_dataset/"
+    @staticmethod
+    def load_names(filepath):
+        try:
+            df = pd.read_csv(filepath)
+            return df['name'].dropna().tolist()
+        except Exception as e:
+            print(f"Error loading names from {filepath}: {e}")
+            return []
 
-        if os.path.exists(path) and not regenerate:
-            print("Folder already exists, skipping generation.")
-            return
+    def create_object_text_label(self, sentence, departure, arrival, name, language, correct, not_french, not_trip, unknown):
+        try:
+            f_dict = {"departure": departure, "arrival": arrival, "name": name}
+            sentence = sentence.format(**f_dict)
+            return {
+                "text": sentence,
+                "Language": language,
+                "CORRECT": correct,
+                "NOT_FRENCH": not_french,
+                "NOT_TRIP": not_trip,
+                "UNKNOWN": unknown
+            }
+        except KeyError as e:
+            print(f"KeyError: Missing key '{e}' in sentence '{sentence}'")
+            return None
 
-        os.makedirs(path, exist_ok=True)
+    def shuffle_places(self):
+        random.shuffle(self.departures)
+        random.shuffle(self.arrivals)
+
+    def generate_dataset(self, output_path, num_samples=1000):
+        if not os.path.exists(output_path):
+            os.makedirs(output_path, exist_ok=True)
 
         dataset = []
-        arrivals = self.arrivals.copy()
+        for _ in tqdm(range(num_samples), desc="Generating dataset"):
+            self.shuffle_places()  # Mélanger les villes aléatoirement
 
-        for i, departure in enumerate(tqdm(self.departures, desc="Generating dataset")):
-            arrival = np.random.choice(arrivals)
-            arrivals.remove(arrival)
-            dataset.extend(self.get_batch_sentences(departure, arrival))
+            for departure, arrival in zip(self.departures, self.arrivals):
+                name = random.choice(self.names) if self.names else "Unknown"
 
-        df = pd.DataFrame(dataset)
-        print(f"Generated {len(df)} sentences.")
-        df = df.drop_duplicates(subset=["text"])
+                # Générer des phrases correctes et incorrectes en français
+                for sentence in self.correct_sentences_fr:
+                    dataset.append(self.create_object_text_label(sentence, departure, arrival, name, "fr", 1, 0, 0, 0))
+                for key, wrong_sentences in self.wrong_sentences_fr.items():
+                    for sentence in wrong_sentences:
+                        dataset.append(self.create_object_text_label(sentence, departure, arrival, name, "fr", 0, 0, 1 if key == "only_departure" else 0, 0))
 
-        random_sentences = random.sample(self.random_sentences, len(df) // 2)
-        unknown_sentences = self.generate_unknown_sentences(len(df))
+                # Générer des phrases correctes et incorrectes en anglais
+                for sentence in self.correct_sentences_en:
+                    dataset.append(self.create_object_text_label(sentence, departure, arrival, name, "eng", 1, 0, 0, 0))
+                for key, wrong_sentences in self.wrong_sentences_en.items():
+                    for sentence in wrong_sentences:
+                        dataset.append(self.create_object_text_label(sentence, departure, arrival, name, "eng", 0, 0, 1 if key == "only_departure" else 0, 0))
 
-        df['NOT_FRENCH'] = df['text'].apply(lambda x: 1 if self.detect_language(x) else 0)
-
-        df = pd.concat([df, pd.DataFrame(random_sentences), pd.DataFrame(unknown_sentences)])
-        df = df.drop_duplicates(subset=["text"])
-        df = df.sample(frac=1).reset_index(drop=True)
-
-        number_files = 4
-        for id, df_i in enumerate(np.array_split(df, number_files)):
-            df_i.to_csv(f"{path}text{id + 1}.csv", index=False, sep=";")
-            print(f"File {id + 1} saved.")
-        print(f"Dataset generated with {len(df)} sentences.")
+        # Convertir en DataFrame et sauvegarder
+        df = pd.DataFrame(filter(None, dataset)).drop_duplicates(subset=["text"])
+        output_file = os.path.join(output_path, "generated_dataset.csv")
+        df.to_csv(output_file, sep=';', index=False)
+        print(f"Dataset generated and saved to {output_file}.")
+        print(f"Total sentences: {len(df)} (French: {len(df[df['Language'] == 'fr'])}, English: {len(df[df['Language'] == 'eng'])})")
 
 
 if __name__ == "__main__":
-    token_classification_generator = TextClassificationGenerator()
-    token_classification_generator.generate(True)
+    generator = TextClassificationGenerator()
+    generator.generate_dataset("output_texts", num_samples=1000)
