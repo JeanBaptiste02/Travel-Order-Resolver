@@ -1,13 +1,3 @@
-I want to arrive at {arrival}.
-My journey ends at {arrival}.
-Head towards {arrival} from another city.
-I'm looking for a way to arrive at {arrival}.
-Find a way to reach {arrival}.
-Meet at {arrival}, it's my destination.
-Arrive at {arrival}, that's where I want to go.
-The arrival at {arrival} is scheduled.
-I'm planning an arrival at {arrival}.
-Let's head towards {arrival}, that's where I want to be.
 Je veux arriver à {arrival}.
 Mon trajet se termine à {arrival}.
 Dirigez-vous vers {arrival} depuis une autre ville.

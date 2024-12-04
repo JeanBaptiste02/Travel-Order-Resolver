@@ -23,8 +23,8 @@ class TextClassificationGenerator:
         # Chargement des phrases correctes et incorrectes (Anglais)
         self.correct_sentences_en = self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/validated_text_sequences/validated_text_sequences_en.txt')
         self.wrong_sentences_en = {
-            "only_departure": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences_en/departure_statements_without_arrivals_en.txt'),
-            "only_arrival": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences_en/arrival_statements_without_departures_en.txt')
+            "only_departure": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/departure_statements_without_arrivals_en.txt'),
+            "only_arrival": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/arrival_statements_without_departures_en.txt')
         }
 
         # Vérification des phrases chargées (Français et Anglais)
@@ -68,14 +68,14 @@ class TextClassificationGenerator:
         try:
             f_dict = {"departure": departure, "arrival": arrival, "name": name}
             sentence = sentence.format(**f_dict)
-            return {
-                "text": sentence,
-                "Language": language,
-                "CORRECT": correct,
-                "NOT_FRENCH": not_french,
-                "NOT_TRIP": not_trip,
-                "UNKNOWN": unknown
+            {
+                "sentence": sentence,
+                "is_correct": correct,
+                "is_not_french": not_french,
+                "is_not_trip": not_trip,
+                "is_unknown": unknown
             }
+
         except KeyError as e:
             print(f"KeyError: Missing key '{e}' in sentence '{sentence}'")
             return None
