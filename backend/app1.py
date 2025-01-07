@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
 lang_model_path = r"C:\Users\vikne\Documents\Master 2\Semestre 9\Intelligence artificielle\Travel-Order-Resolver\ai\nlp\models\text_classification\lang_detector\naive_bayes_lang_detection.pkl"
 lang_pipeline = joblib.load(lang_model_path)
 
-intention_model_path = r'C:\Users\vikne\Documents\Master 2\Semestre 9\Intelligence artificielle\Travel-Order-Resolver\ai\nlp\models\text_classification\intention_detector\tfidf_bigram_naive_bayes.joblib'
+intention_model_path = r'C:\Users\vikne\Documents\Master 2\Semestre 9\Intelligence artificielle\Travel-Order-Resolver\ai\nlp\models\text_classification\intention_detector\bow_bigram_naive_bayes.joblib'
 intention_pipeline = joblib.load(intention_model_path)
 
 spacy_model_path = r"C:\Users\vikne\Documents\Master 2\Semestre 9\Intelligence artificielle\Travel-Order-Resolver\ai\nlp\models\tokens_classification\spacy_sm"
