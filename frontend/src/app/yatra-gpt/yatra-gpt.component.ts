@@ -20,6 +20,20 @@ export class YatraGptComponent {
   interval: any;
   private mediaStream: MediaStream | null = null;
 
+  // Définir les phrases d'erreur à un niveau global dans le composant
+  errorPhrases = [
+    "Je n'ai pas tout compris, pourrais-tu reformuler ta demande ?",
+    "Désolé, je n'arrive pas à saisir ce que tu veux dire. Peux-tu expliquer autrement ?",
+    'Hmm, il semble y avoir un malentendu. Pourrais-tu préciser ?',
+    "Oups, je n'ai pas bien saisi. Peux-tu reformuler ta phrase ?",
+    'Je crois que je ne comprends pas tout. Pourrais-tu clarifier ?',
+    'Désolé, je ne suis pas sûr de ce que tu demandes. Peux-tu être plus précis ?',
+    "Je n'ai pas bien saisi. Peux-tu reformuler ta question, s'il te plaît ?",
+    'Je suis un peu perdu. Pourrais-tu être plus clair ?',
+    'Je ne suis pas sûr de comprendre. Est-ce que tu peux expliquer différemment ?',
+    "Désolé, je n'ai pas compris. Tu pourrais reformuler ta demande ?",
+  ];
+
   constructor(private yatraService: YatraService) {}
 
   modelDescriptions: { [key: string]: string } = {
@@ -86,20 +100,6 @@ export class YatraGptComponent {
           )}. Cela prendra environ ${totalDuration} minutes.`,
         ];
 
-        // Liste des phrases possibles pour les incompréhensions
-        const errorPhrases = [
-          "Je n'ai pas tout compris, pourrais-tu reformuler ta demande ?",
-          "Désolé, je n'arrive pas à saisir ce que tu veux dire. Peux-tu expliquer autrement ?",
-          'Hmm, il semble y avoir un malentendu. Pourrais-tu préciser ?',
-          "Oups, je n'ai pas bien saisi. Peux-tu reformuler ta phrase ?",
-          'Je crois que je ne comprends pas tout. Pourrais-tu clarifier ?',
-          'Désolé, je ne suis pas sûr de ce que tu demandes. Peux-tu être plus précis ?',
-          "Je n'ai pas bien saisi. Peux-tu reformuler ta question, s'il te plaît ?",
-          'Je suis un peu perdu. Pourrais-tu être plus clair ?',
-          'Je ne suis pas sûr de comprendre. Est-ce que tu peux expliquer différemment ?',
-          "Désolé, je n'ai pas compris. Tu pourrais reformuler ta demande ?",
-        ];
-
         // Si un chemin est trouvé, choisir une phrase parmi les phrases de succès
         let aiResponse = '';
         if (path && path.length > 0) {
@@ -109,7 +109,9 @@ export class YatraGptComponent {
         } else {
           // Sinon, choisir une phrase parmi les phrases d'erreur
           const randomErrorPhrase =
-            errorPhrases[Math.floor(Math.random() * errorPhrases.length)];
+            this.errorPhrases[
+              Math.floor(Math.random() * this.errorPhrases.length)
+            ];
           aiResponse = randomErrorPhrase;
         }
 
@@ -126,8 +128,18 @@ export class YatraGptComponent {
       error: (err) => {
         console.error('Erreur de traitement:', err);
         this.isTyping = false;
-        this.messages[this.messages.length - 1].ai =
-          'Désolé, quelque chose ne va pas. Laisse-moi essayer à nouveau.';
+
+        // Vérifier si c'est une erreur 404
+        if (err.status === 404) {
+          const randomErrorPhrase =
+            this.errorPhrases[
+              Math.floor(Math.random() * this.errorPhrases.length)
+            ];
+          this.simulateTyping(randomErrorPhrase, this.messages.length - 1);
+        } else {
+          this.messages[this.messages.length - 1].ai =
+            'Désolé, quelque chose ne va pas. Laisse-moi essayer à nouveau.';
+        }
       },
     });
   }
