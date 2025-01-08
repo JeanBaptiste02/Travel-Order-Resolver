@@ -26,6 +26,14 @@ id2label = {
 # Flask app initialization
 app = Flask(__name__)
 
+# Load the list of cities from the txt file
+def load_cities_from_txt(txt_path: str) -> set:
+    with open(txt_path, 'r', encoding='utf-8') as file:
+        cities = {line.strip().upper() for line in file.readlines()}
+    return cities
+
+cities_set = load_cities_from_txt(r'C:\Users\vikne\Documents\Master 2\Semestre 9\Intelligence artificielle\Travel-Order-Resolver\ai\nlp\utils\supporting_datas\urban_geodata_masterlist_v1.0.txt')
+
 # Helper functions
 def load_graph_from_parquet(parquet_path: str) -> nx.Graph:
     graph_df = pd.read_parquet(parquet_path)
@@ -65,11 +73,28 @@ def add_cors_headers(response):
     response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
     return response
 
+# Function to convert cities in sentence to uppercase if they match any city from the list
+def convert_cities_to_uppercase(sentence: str, cities: set) -> str:
+    words = sentence.split()  # Split the sentence into words
+    converted_sentence = []
+
+    for word in words:
+        # If the word (case-insensitive) matches a city, convert it to uppercase
+        if word.upper() in cities:
+            converted_sentence.append(word.upper())
+        else:
+            converted_sentence.append(word)
+
+    return ' '.join(converted_sentence)
+
 # Endpoints
 @app.route('/process_message', methods=['POST'])
 def process_message():
     data = request.json
     sentence = data.get('sentence', '')
+
+    # Convert cities in the sentence to uppercase
+    sentence = convert_cities_to_uppercase(sentence, cities_set)
 
     # Detect Language
     lang_prediction = lang_pipeline.predict([sentence])
