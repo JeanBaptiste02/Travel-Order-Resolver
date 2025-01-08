@@ -6,15 +6,28 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class YatraService {
-  private apiUrl = 'http://127.0.0.1:5000/find_path';
+  private baseUrl = 'http://127.0.0.1:5000';
 
   constructor(private http: HttpClient) {}
 
+  detectLanguage(sentence: string): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/detect_language`, { sentence });
+  }
+
+  detectIntention(sentence: string): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/detect_intention`, {
+      sentence,
+    });
+  }
+
+  predictEntities(sentence: string): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/predict_entities`, {
+      sentence,
+    });
+  }
+
   findPath(depart: string, arrivee: string): Observable<any> {
-    const body = {
-      depart: depart,
-      arrivée: arrivee,
-    };
-    return this.http.post<any>(this.apiUrl, body);
+    const body = { depart, arrivée: arrivee };
+    return this.http.post<any>(`${this.baseUrl}/find_path`, body);
   }
 }

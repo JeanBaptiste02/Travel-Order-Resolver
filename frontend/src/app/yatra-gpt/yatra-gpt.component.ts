@@ -22,7 +22,6 @@ export class YatraGptComponent {
 
   constructor(private yatraService: YatraService) {}
 
-  // Ajoutez l'objet modelDescriptions
   modelDescriptions: { [key: string]: string } = {
     'Yatra Core':
       'Le modèle essentiel, conçu pour des tâches de base avec un dataset limité.',
@@ -34,7 +33,6 @@ export class YatraGptComponent {
       'Modèle très rapide avec des données complètes (non disponible actuellement).',
   };
 
-  // Méthode pour mettre à jour la description du modèle
   updateModelDescription(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     const selectedModel = selectElement.value;
@@ -43,52 +41,103 @@ export class YatraGptComponent {
 
   sendMessage() {
     if (this.userMessage.trim()) {
-      // Ajouter le message de l'utilisateur
-      if (this.editingIndex !== null) {
-        this.messages[this.editingIndex].user = this.userMessage;
-        this.editingIndex = null;
-      } else {
-        this.messages.push({ user: this.userMessage, ai: '' });
-      }
+      // Ajouter le message de l'utilisateur dans les messages
+      const userMessageIndex = this.messages.length;
+      this.messages.push({
+        user: this.userMessage,
+        ai: 'Traitement en cours...',
+      });
 
-      // Formater le message pour l'API
-      const messageParts = this.userMessage
-        .split(';')
-        .map((part) => part.trim());
-      const depart = messageParts[0];
-      const arrivee = messageParts[1];
+      console.log("Message de l'utilisateur:", this.userMessage); // Log du message initial
 
-      // Envoyer la requête à l'API
-      this.yatraService.findPath(depart, arrivee).subscribe(
-        (response) => {
-          // Traiter la réponse de l'API
-          this.isTyping = true;
-          let aiResponse = '';
+      // Appeler l'endpoint `detect_language`
+      this.yatraService.detectLanguage(this.userMessage).subscribe(
+        (languageResponse) => {
+          const detectedLanguage = languageResponse.language;
 
-          if (response && response.trajets && response.trajets.length > 0) {
-            const trajet = response.trajets[0]; // Prendre le premier trajet trouvé
-            aiResponse = `Voici un trajet que j'ai trouvé pour vous : 
-              Vous pouvez partir de ${depart} et vous rendre à ${arrivee}. 
-              Le trajet dure environ ${trajet['durée (minutes)']} minutes. 
-              Le train s'appelle "${trajet.trajet}" (ID: ${trajet.trip_id}).`;
-          } else {
-            aiResponse = 'Aucun trajet trouvé pour cette demande.';
+          // Mettre à jour la réponse AI avec la langue détectée
+          this.messages[userMessageIndex].ai =
+            `Langue détectée : ${detectedLanguage}\n` + this.userMessage;
+
+          // Vérifier si la langue est bien le français
+          if (detectedLanguage !== 'French') {
+            this.messages[
+              userMessageIndex
+            ].ai += `\nLa langue détectée n'est pas le français. Arrêt.\n`;
+            return;
           }
 
-          this.simulateTyping(aiResponse, this.messages.length - 1);
+          console.log(
+            'Message après détection de la langue:',
+            this.userMessage
+          ); // Toujours le même message
+
+          // Passer directement à la détection des entités
+          this.yatraService.predictEntities(this.userMessage).subscribe(
+            (entitiesResponse) => {
+              const entities = entitiesResponse.entities || [];
+              this.messages[
+                userMessageIndex
+              ].ai += `Entités détectées : ${entities.join(', ')}\n`;
+
+              // Si 2 entités sont détectées, trouver le trajet
+              if (entities.length >= 2) {
+                const depart = entities[0];
+                const arrivee = entities[1];
+
+                // Trouver le chemin entre les deux entités
+                this.yatraService.findPath(depart, arrivee).subscribe(
+                  (pathResponse) => {
+                    if (pathResponse.path && pathResponse.path.length > 0) {
+                      this.messages[
+                        userMessageIndex
+                      ].ai += `Trajet trouvé : ${pathResponse.path.join(
+                        ' -> '
+                      )}\n`;
+                      this.messages[
+                        userMessageIndex
+                      ].ai += `Durée totale : ${pathResponse.total_duration} minutes\n`;
+                    } else {
+                      this.messages[
+                        userMessageIndex
+                      ].ai += `Aucun trajet trouvé entre ${depart} et ${arrivee}.\n`;
+                    }
+                  },
+                  (error) => {
+                    console.error(
+                      'Erreur lors de la recherche de chemin :',
+                      error
+                    );
+                    this.messages[
+                      userMessageIndex
+                    ].ai += `Erreur lors de la recherche de chemin.\n`;
+                  }
+                );
+              } else {
+                this.messages[
+                  userMessageIndex
+                ].ai += `Pas assez d'entités détectées pour trouver un trajet.\n`;
+              }
+            },
+            (error) => {
+              console.error('Erreur lors de la détection des entités :', error);
+              this.messages[
+                userMessageIndex
+              ].ai += `Erreur lors de la détection des entités.\n`;
+            }
+          );
         },
         (error) => {
-          // Gérer les erreurs
-          console.error(error);
-          this.isTyping = true;
-          const errorResponse =
-            "Une erreur s'est produite, veuillez réessayer.";
-          this.simulateTyping(errorResponse, this.messages.length - 1);
+          console.error('Erreur lors de la détection de la langue :', error);
+          this.messages[
+            userMessageIndex
+          ].ai += `Erreur lors de la détection de la langue.\n`;
         }
       );
 
-      this.userMessage = ''; // Réinitialiser l'input
+      // Réinitialiser l'input après tout le traitement (après les appels API)
       this.displayWarningMessage(); // Afficher l'avertissement
+      this.userMessage = ''; // Réinitialiser l'input après tout le processus
     }
   }
 

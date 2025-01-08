@@ -30,12 +30,14 @@
   importantes.
 </div>
 
-<div class="messages-container" style="backgoud-color: #131313">
+<div class="messages-container">
   <div class="message" *ngFor="let msg of messages; let i = index">
     <div class="user-message">
       {{ msg.user }}
     </div>
-    <div class="ai-message">{{ msg.ai }}</div>
+    <div class="ai-message">
+      <pre>{{ msg.ai }}</pre>
+    </div>
   </div>
 </div>
 
