@@ -4,9 +4,6 @@ import spacy
 import warnings
 import pandas as pd
 import networkx as nx
-import matplotlib.pyplot as plt
-import io
-import base64
 
 warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
 
@@ -28,23 +25,6 @@ id2label = {
 
 # Flask app initialization
 app = Flask(__name__)
-
-# Add CORS headers to all responses
-@app.after_request
-def add_cors_headers(response):
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
-    return response
-
-# Handle OPTIONS requests
-@app.route('/<path:path>', methods=['OPTIONS'])
-def handle_options(path):
-    response = jsonify({})
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
-    return response
 
 # Helper functions
 def load_graph_from_parquet(parquet_path: str) -> nx.Graph:
@@ -77,60 +57,58 @@ def find_shortest_path(graph: nx.Graph, start: str, end: str) -> dict:
 parquet_path = r"C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\path_algorithm\\dataset\\graph.parquet"
 graph = load_graph_from_parquet(parquet_path)
 
+# Add CORS headers to all responses
+@app.after_request
+def add_cors_headers(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
+    return response
+
 # Endpoints
-@app.route('/detect_language', methods=['POST'])
-def detect_language():
+@app.route('/process_message', methods=['POST'])
+def process_message():
     data = request.json
     sentence = data.get('sentence', '')
-    prediction = lang_pipeline.predict([sentence])
-    language = "French" if prediction == 0 else "Not French"
-    return jsonify({"language": language})
 
-@app.route('/detect_intention', methods=['POST'])
-def detect_intention():
-    data = request.json
-    sentence = data.get('sentence', '')
-    predicted_labels = intention_pipeline.predict([sentence])
-    predicted_proba = intention_pipeline.predict_proba([sentence])
+    # Detect Language
+    lang_prediction = lang_pipeline.predict([sentence])
+    language = "French" if lang_prediction == 0 else "Not French"
 
-    intention_scores = {
-        id2label[i]: round(predicted_proba[0][i] * 100, 1)
-        for i in range(len(id2label))
-    }
-    max_prob_idx = predicted_proba.argmax()
-    return jsonify({
-        "intention": id2label[max_prob_idx],
-        "probability": intention_scores
-    })
+    if language != "French":
+        return jsonify({"message": "La langue détectée n'est pas le français", "language": language})
 
-@app.route('/predict_entities', methods=['POST'])
-def predict_entities():
-    data = request.json
-    sentence = data.get('sentence', '')
+    # Detect Entities
     doc = nlp(sentence)
-    entities = [{
-        "text": ent.text,
-        "label": ent.label_,
-        "start_char": ent.start_char,
-        "end_char": ent.end_char
-    } for ent in doc.ents]
-    return jsonify({"entities": entities})
+    entities = [{"text": ent.text, "label": ent.label_} for ent in doc.ents]
 
-@app.route('/shortest_path', methods=['POST'])
-def shortest_path():
-    data = request.json
-    start_city = data.get('start_city', '')
-    end_city = data.get('end_city', '')
+    # If at least two entities are detected, find the shortest path
+    if len(entities) >= 2:
+        depart = entities[0]['text']
+        arrivee = entities[1]['text']
 
-    result = find_shortest_path(graph, start_city, end_city)
+        # Find the path between the two entities
+        result = find_shortest_path(graph, depart, arrivee)
 
-    if result['path'][0] == "No path found":
-        return jsonify({"message": "No path found", "path": result['path'], "total_duration": result['total_duration']})
+        if result['path'][0] == "No path found":
+            return jsonify({
+                "message": f"Aucun trajet trouvé entre {depart} et {arrivee}.",
+                "path": result['path'],
+                "total_duration": result['total_duration']
+            })
 
-    return jsonify({
-        "path": result['path'],
-        "total_duration": result['total_duration'],
-    })
+        return jsonify({
+            "message": "",
+            "path": result['path'],
+            "total_duration": result['total_duration'],
+            "entities": entities
+        })
+
+    else:
+        return jsonify({
+            "message": "Pas assez d'entités détectées pour trouver un trajet.",
+            "entities": entities
+        })
 
 if __name__ == '__main__':
     app.run(debug=True)
