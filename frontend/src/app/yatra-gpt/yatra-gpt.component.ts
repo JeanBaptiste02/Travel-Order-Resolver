@@ -56,11 +56,16 @@ export class YatraGptComponent {
   sendMessage() {
     if (!this.userMessage.trim()) return;
 
+    // Ajout du message utilisateur au tableau messages
     this.messages.push({ user: this.userMessage, ai: '' });
     this.isTyping = true;
 
+    // Réinitialisation de la barre de saisie après l'envoi du message
+    const userMessageCopy = this.userMessage; // Optionnel, au cas où vous en avez besoin pour d'autres traitements.
+    this.userMessage = ''; // Vide la barre de saisie.
+
     // Appel du service pour envoyer la requête au backend
-    this.yatraService.processMessage(this.userMessage).subscribe({
+    this.yatraService.processMessage(userMessageCopy).subscribe({
       next: (response) => {
         const entities = response.entities;
         const path = response.path;
@@ -122,7 +127,7 @@ export class YatraGptComponent {
           aiResponse += `\nHmm, je n'ai pas pu estimer la durée pour le moment.`;
         }
 
-        // Ajout de la réponse au tableau de messages
+        // Ajout de la réponse de l'IA au tableau de messages
         this.simulateTyping(aiResponse, this.messages.length - 1);
       },
       error: (err) => {
