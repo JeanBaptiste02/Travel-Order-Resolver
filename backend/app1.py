@@ -105,13 +105,13 @@ def main():
         language = detect_language(sentence)
         if language != "French":
             print("[INFO] Arrêt du programme : la phrase n'est pas en français.")
-            break
+            # break
 
         intention, prob = detect_intention(sentence)
 
         if intention != 'is_correct' and not (40 <= prob <= 60):
             print("[INFO] Arrêt du programme : ce n'est pas un Travel Order.")
-            break
+            # break
 
         print("[INFO] Travel Order détecté, classification par tokens en cours...")
         
