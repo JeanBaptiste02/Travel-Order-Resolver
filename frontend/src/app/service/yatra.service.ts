@@ -10,24 +10,7 @@ export class YatraService {
 
   constructor(private http: HttpClient) {}
 
-  detectLanguage(sentence: string): Observable<any> {
-    return this.http.post<any>(`${this.baseUrl}/detect_language`, { sentence });
-  }
-
-  detectIntention(sentence: string): Observable<any> {
-    return this.http.post<any>(`${this.baseUrl}/detect_intention`, {
-      sentence,
-    });
-  }
-
-  predictEntities(sentence: string): Observable<any> {
-    return this.http.post<any>(`${this.baseUrl}/predict_entities`, {
-      sentence,
-    });
-  }
-
-  findPath(depart: string, arrivee: string): Observable<any> {
-    const body = { depart, arrivée: arrivee };
-    return this.http.post<any>(`${this.baseUrl}/find_path`, body);
+  processMessage(sentence: string): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/process_message`, { sentence });
   }
 }

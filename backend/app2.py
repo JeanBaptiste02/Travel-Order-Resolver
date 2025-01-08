@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, abort
 import joblib
 import spacy
 import warnings
@@ -104,11 +104,9 @@ def process_message():
             "entities": entities
         })
 
+    # If not enough entities detected, return a 404 error with an appropriate message
     else:
-        return jsonify({
-            "message": "Pas assez d'entités détectées pour trouver un trajet.",
-            "entities": entities
-        })
+        abort(404, description="Pas assez d'entités détectées pour trouver un trajet.")
 
 if __name__ == '__main__':
     app.run(debug=True)

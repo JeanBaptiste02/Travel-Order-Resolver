@@ -40,105 +40,96 @@ export class YatraGptComponent {
   }
 
   sendMessage() {
-    if (this.userMessage.trim()) {
-      // Ajouter le message de l'utilisateur dans les messages
-      const userMessageIndex = this.messages.length;
-      this.messages.push({
-        user: this.userMessage,
-        ai: 'Traitement en cours...',
-      });
+    if (!this.userMessage.trim()) return;
 
-      console.log("Message de l'utilisateur:", this.userMessage); // Log du message initial
+    this.messages.push({ user: this.userMessage, ai: '' });
+    this.isTyping = true;
 
-      // Appeler l'endpoint `detect_language`
-      this.yatraService.detectLanguage(this.userMessage).subscribe(
-        (languageResponse) => {
-          const detectedLanguage = languageResponse.language;
+    // Appel du service pour envoyer la requête au backend
+    this.yatraService.processMessage(this.userMessage).subscribe({
+      next: (response) => {
+        const entities = response.entities;
+        const path = response.path;
+        const totalDuration = response.total_duration;
 
-          // Mettre à jour la réponse AI avec la langue détectée
-          this.messages[userMessageIndex].ai =
-            `Langue détectée : ${detectedLanguage}\n` + this.userMessage;
+        // Liste des phrases possibles pour une compréhension réussie
+        const successPhrases = [
+          `Super, j'ai trouvé un itinéraire pour toi : ${path.join(
+            ' -> '
+          )}. Ça prendra environ ${totalDuration} minutes.`,
+          `Voilà ce que j'ai trouvé comme itinéraire : ${path.join(
+            ' -> '
+          )}. Tu seras à destination en environ ${totalDuration} minutes.`,
+          `Je t'ai déniché un trajet : ${path.join(
+            ' -> '
+          )}. Compte environ ${totalDuration} minutes pour le parcours.`,
+          `Check ça ! Voici un trajet : ${path.join(
+            ' -> '
+          )}. Il te faudra environ ${totalDuration} minutes.`,
+          `C'est tout bon, voici le chemin : ${path.join(
+            ' -> '
+          )}. Cela prendra environ ${totalDuration} minutes.`,
+          `Voici ce que j'ai trouvé pour toi : ${path.join(
+            ' -> '
+          )}. Prépare-toi à environ ${totalDuration} minutes de trajet.`,
+          `Tu peux suivre ce parcours : ${path.join(
+            ' -> '
+          )}. La durée totale sera d'environ ${totalDuration} minutes.`,
+          `J'ai trouvé un itinéraire : ${path.join(
+            ' -> '
+          )}. Attends-toi à environ ${totalDuration} minutes pour le trajet.`,
+          `Voici l'itinéraire que j'ai trouvé : ${path.join(
+            ' -> '
+          )}. Le trajet devrait durer environ ${totalDuration} minutes.`,
+          `J'ai une suggestion pour toi : ${path.join(
+            ' -> '
+          )}. Cela prendra environ ${totalDuration} minutes.`,
+        ];
 
-          // Vérifier si la langue est bien le français
-          if (detectedLanguage !== 'French') {
-            this.messages[
-              userMessageIndex
-            ].ai += `\nLa langue détectée n'est pas le français. Arrêt.\n`;
-            return;
-          }
+        // Liste des phrases possibles pour les incompréhensions
+        const errorPhrases = [
+          "Je n'ai pas tout compris, pourrais-tu reformuler ta demande ?",
+          "Désolé, je n'arrive pas à saisir ce que tu veux dire. Peux-tu expliquer autrement ?",
+          'Hmm, il semble y avoir un malentendu. Pourrais-tu préciser ?',
+          "Oups, je n'ai pas bien saisi. Peux-tu reformuler ta phrase ?",
+          'Je crois que je ne comprends pas tout. Pourrais-tu clarifier ?',
+          'Désolé, je ne suis pas sûr de ce que tu demandes. Peux-tu être plus précis ?',
+          "Je n'ai pas bien saisi. Peux-tu reformuler ta question, s'il te plaît ?",
+          'Je suis un peu perdu. Pourrais-tu être plus clair ?',
+          'Je ne suis pas sûr de comprendre. Est-ce que tu peux expliquer différemment ?',
+          "Désolé, je n'ai pas compris. Tu pourrais reformuler ta demande ?",
+        ];
 
-          console.log(
-            'Message après détection de la langue:',
-            this.userMessage
-          ); // Toujours le même message
-
-          // Passer directement à la détection des entités
-          this.yatraService.predictEntities(this.userMessage).subscribe(
-            (entitiesResponse) => {
-              const entities = entitiesResponse.entities || [];
-              this.messages[
-                userMessageIndex
-              ].ai += `Entités détectées : ${entities.join(', ')}\n`;
-
-              // Si 2 entités sont détectées, trouver le trajet
-              if (entities.length >= 2) {
-                const depart = entities[0];
-                const arrivee = entities[1];
-
-                // Trouver le chemin entre les deux entités
-                this.yatraService.findPath(depart, arrivee).subscribe(
-                  (pathResponse) => {
-                    if (pathResponse.path && pathResponse.path.length > 0) {
-                      this.messages[
-                        userMessageIndex
-                      ].ai += `Trajet trouvé : ${pathResponse.path.join(
-                        ' -> '
-                      )}\n`;
-                      this.messages[
-                        userMessageIndex
-                      ].ai += `Durée totale : ${pathResponse.total_duration} minutes\n`;
-                    } else {
-                      this.messages[
-                        userMessageIndex
-                      ].ai += `Aucun trajet trouvé entre ${depart} et ${arrivee}.\n`;
-                    }
-                  },
-                  (error) => {
-                    console.error(
-                      'Erreur lors de la recherche de chemin :',
-                      error
-                    );
-                    this.messages[
-                      userMessageIndex
-                    ].ai += `Erreur lors de la recherche de chemin.\n`;
-                  }
-                );
-              } else {
-                this.messages[
-                  userMessageIndex
-                ].ai += `Pas assez d'entités détectées pour trouver un trajet.\n`;
-              }
-            },
-            (error) => {
-              console.error('Erreur lors de la détection des entités :', error);
-              this.messages[
-                userMessageIndex
-              ].ai += `Erreur lors de la détection des entités.\n`;
-            }
-          );
-        },
-        (error) => {
-          console.error('Erreur lors de la détection de la langue :', error);
-          this.messages[
-            userMessageIndex
-          ].ai += `Erreur lors de la détection de la langue.\n`;
+        // Si un chemin est trouvé, choisir une phrase parmi les phrases de succès
+        let aiResponse = '';
+        if (path && path.length > 0) {
+          const randomPhrase =
+            successPhrases[Math.floor(Math.random() * successPhrases.length)];
+          aiResponse += `\n${randomPhrase}`;
+        } else {
+          // Sinon, choisir une phrase parmi les phrases d'erreur
+          const randomErrorPhrase =
+            errorPhrases[Math.floor(Math.random() * errorPhrases.length)];
+          aiResponse = randomErrorPhrase;
         }
-      );
 
-      // Réinitialiser l'input après tout le traitement (après les appels API)
-      this.displayWarningMessage(); // Afficher l'avertissement
-      this.userMessage = ''; // Réinitialiser l'input après tout le processus
-    }
+        // Ajout de la durée de trajet si le chemin existe, sans répéter
+        if (totalDuration !== null && path && path.length > 0) {
+          // La durée est déjà incluse dans la phrase choisie dans successPhrases, donc pas besoin de l'ajouter à nouveau
+        } else {
+          aiResponse += `\nHmm, je n'ai pas pu estimer la durée pour le moment.`;
+        }
+
+        // Ajout de la réponse au tableau de messages
+        this.simulateTyping(aiResponse, this.messages.length - 1);
+      },
+      error: (err) => {
+        console.error('Erreur de traitement:', err);
+        this.isTyping = false;
+        this.messages[this.messages.length - 1].ai =
+          'Désolé, quelque chose ne va pas. Laisse-moi essayer à nouveau.';
+      },
+    });
   }
 
   editMessage(index: number) {
