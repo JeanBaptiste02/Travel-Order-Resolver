@@ -4,6 +4,7 @@ import spacy
 import warnings
 import pandas as pd
 import networkx as nx
+import random
 
 warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
 
@@ -32,7 +33,7 @@ def load_cities_from_txt(txt_path: str) -> set:
         cities = {line.strip().upper() for line in file.readlines()}
     return cities
 
-cities_set = load_cities_from_txt(r'C:\Users\vikne\Documents\Master 2\Semestre 9\Intelligence artificielle\Travel-Order-Resolver\ai\nlp\utils\supporting_datas\urban_geodata_masterlist_v1.0.txt')
+cities_set = load_cities_from_txt(r'C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\nlp\\utils\\supporting_datas\\urban_geodata_masterlist_v1.0.txt')
 
 # Helper functions
 def load_graph_from_parquet(parquet_path: str) -> nx.Graph:
@@ -87,6 +88,33 @@ def convert_cities_to_uppercase(sentence: str, cities: set) -> str:
 
     return ' '.join(converted_sentence)
 
+# Predefined responses for errors and success
+error_responses = [
+    "Je n'ai pas tout compris, pourrais-tu reformuler ta demande ?",
+    "Désolé, je n'arrive pas à saisir ce que tu veux dire. Peux-tu expliquer autrement ?",
+    "Hmm, il semble y avoir un malentendu. Pourrais-tu préciser ?",
+    "Oups, je n'ai pas bien saisi. Peux-tu reformuler ta phrase ?",
+    "Je crois que je ne comprends pas tout. Pourrais-tu clarifier ?",
+    "Désolé, je ne suis pas sûr de ce que tu demandes. Peux-tu être plus précis ?",
+    "Je n'ai pas bien saisi. Peux-tu reformuler ta question, s'il te plaît ?",
+    "Je suis un peu perdu. Pourrais-tu être plus clair ?",
+    "Je ne suis pas sûr de comprendre. Est-ce que tu peux expliquer différemment ?",
+    "Désolé, je n'ai pas compris. Tu pourrais reformuler ta demande ?",
+]
+
+success_responses = [
+    "Super, j'ai trouvé un itinéraire pour toi : {path}. Ça prendra environ {duration} minutes.",
+    "Voilà ce que j'ai trouvé comme itinéraire : {path}. Tu seras à destination en environ {duration} minutes.",
+    "Je t'ai déniché un trajet : {path}. Compte environ {duration} minutes pour le parcours.",
+    "Check ça ! Voici un trajet : {path}. Il te faudra environ {duration} minutes.",
+    "C'est tout bon, voici le chemin : {path}. Cela prendra environ {duration} minutes.",
+    "Voici ce que j'ai trouvé pour toi : {path}. Prépare-toi à environ {duration} minutes de trajet.",
+    "Tu peux suivre ce parcours : {path}. La durée totale sera d'environ {duration} minutes.",
+    "J'ai trouvé un itinéraire : {path}. Attends-toi à environ {duration} minutes pour le trajet.",
+    "Voici l'itinéraire que j'ai trouvé : {path}. Le trajet devrait durer environ {duration} minutes.",
+    "J'ai une suggestion pour toi : {path}. Cela prendra environ {duration} minutes.",
+]
+
 # Endpoints
 @app.route('/process_message', methods=['POST'])
 def process_message():
@@ -101,7 +129,7 @@ def process_message():
     language = "French" if lang_prediction == 0 else "Not French"
 
     if language != "French":
-        return jsonify({"message": "La langue détectée n'est pas le français", "language": language})
+        return jsonify({"message": random.choice(error_responses), "language": language})
 
     # Detect Entities
     doc = nlp(sentence)
@@ -122,8 +150,10 @@ def process_message():
                 "total_duration": result['total_duration']
             })
 
+        path = " -> ".join(result['path'])
+        total_duration = result['total_duration']
         return jsonify({
-            "message": "",
+            "message": random.choice(success_responses).format(path=path, duration=total_duration),
             "path": result['path'],
             "total_duration": result['total_duration'],
             "entities": entities
@@ -131,7 +161,7 @@ def process_message():
 
     # If not enough entities detected, return a 404 error with an appropriate message
     else:
-        abort(404, description="Pas assez d'entités détectées pour trouver un trajet.")
+        return jsonify({"message": random.choice(error_responses)})
 
 if __name__ == '__main__':
     app.run(debug=True)
