@@ -20,20 +20,6 @@ export class YatraGptComponent {
   interval: any;
   private mediaStream: MediaStream | null = null;
 
-  // Définir les phrases d'erreur à un niveau global dans le composant
-  errorPhrases = [
-    "Je n'ai pas tout compris, pourrais-tu reformuler ta demande ?",
-    "Désolé, je n'arrive pas à saisir ce que tu veux dire. Peux-tu expliquer autrement ?",
-    'Hmm, il semble y avoir un malentendu. Pourrais-tu préciser ?',
-    "Oups, je n'ai pas bien saisi. Peux-tu reformuler ta phrase ?",
-    'Je crois que je ne comprends pas tout. Pourrais-tu clarifier ?',
-    'Désolé, je ne suis pas sûr de ce que tu demandes. Peux-tu être plus précis ?',
-    "Je n'ai pas bien saisi. Peux-tu reformuler ta question, s'il te plaît ?",
-    'Je suis un peu perdu. Pourrais-tu être plus clair ?',
-    'Je ne suis pas sûr de comprendre. Est-ce que tu peux expliquer différemment ?',
-    "Désolé, je n'ai pas compris. Tu pourrais reformuler ta demande ?",
-  ];
-
   constructor(private yatraService: YatraService) {}
 
   modelDescriptions: { [key: string]: string } = {
@@ -56,95 +42,23 @@ export class YatraGptComponent {
   sendMessage() {
     if (!this.userMessage.trim()) return;
 
-    // Ajout du message utilisateur au tableau messages
     this.messages.push({ user: this.userMessage, ai: '' });
     this.isTyping = true;
 
-    // Réinitialisation de la barre de saisie après l'envoi du message
-    const userMessageCopy = this.userMessage; // Optionnel, au cas où vous en avez besoin pour d'autres traitements.
-    this.userMessage = ''; // Vide la barre de saisie.
+    const userMessageCopy = this.userMessage;
+    this.userMessage = '';
 
-    // Appel du service pour envoyer la requête au backend
     this.yatraService.processMessage(userMessageCopy).subscribe({
       next: (response) => {
-        const entities = response.entities;
-        const path = response.path;
-        const totalDuration = response.total_duration;
-
-        // Liste des phrases possibles pour une compréhension réussie
-        const successPhrases = [
-          `Super, j'ai trouvé un itinéraire pour toi : ${path.join(
-            ' -> '
-          )}. Ça prendra environ ${totalDuration} minutes.`,
-          `Voilà ce que j'ai trouvé comme itinéraire : ${path.join(
-            ' -> '
-          )}. Tu seras à destination en environ ${totalDuration} minutes.`,
-          `Je t'ai déniché un trajet : ${path.join(
-            ' -> '
-          )}. Compte environ ${totalDuration} minutes pour le parcours.`,
-          `Check ça ! Voici un trajet : ${path.join(
-            ' -> '
-          )}. Il te faudra environ ${totalDuration} minutes.`,
-          `C'est tout bon, voici le chemin : ${path.join(
-            ' -> '
-          )}. Cela prendra environ ${totalDuration} minutes.`,
-          `Voici ce que j'ai trouvé pour toi : ${path.join(
-            ' -> '
-          )}. Prépare-toi à environ ${totalDuration} minutes de trajet.`,
-          `Tu peux suivre ce parcours : ${path.join(
-            ' -> '
-          )}. La durée totale sera d'environ ${totalDuration} minutes.`,
-          `J'ai trouvé un itinéraire : ${path.join(
-            ' -> '
-          )}. Attends-toi à environ ${totalDuration} minutes pour le trajet.`,
-          `Voici l'itinéraire que j'ai trouvé : ${path.join(
-            ' -> '
-          )}. Le trajet devrait durer environ ${totalDuration} minutes.`,
-          `J'ai une suggestion pour toi : ${path.join(
-            ' -> '
-          )}. Cela prendra environ ${totalDuration} minutes.`,
-        ];
-
-        // Si un chemin est trouvé, choisir une phrase parmi les phrases de succès
-        let aiResponse = '';
-        if (path && path.length > 0) {
-          const randomPhrase =
-            successPhrases[Math.floor(Math.random() * successPhrases.length)];
-          aiResponse += `\n${randomPhrase}`;
-        } else {
-          // Sinon, choisir une phrase parmi les phrases d'erreur
-          const randomErrorPhrase =
-            this.errorPhrases[
-              Math.floor(Math.random() * this.errorPhrases.length)
-            ];
-          aiResponse = randomErrorPhrase;
-        }
-
-        // Ajout de la durée de trajet si le chemin existe, sans répéter
-        if (totalDuration !== null && path && path.length > 0) {
-          // La durée est déjà incluse dans la phrase choisie dans successPhrases, donc pas besoin de l'ajouter à nouveau
-        } else {
-          aiResponse += `\nHmm, je n'ai pas pu estimer la durée pour le moment.`;
-        }
-
-        // Ajout de la réponse de l'IA au tableau de messages
+        const aiResponse = response.message;
         this.simulateTyping(aiResponse, this.messages.length - 1);
       },
       error: (err) => {
         console.error('Erreur de traitement:', err);
         this.isTyping = false;
 
-        // Vérifier si c'est une erreur 404
-        if (err.status === 404) {
-          const randomErrorPhrase =
-            this.errorPhrases[
-              Math.floor(Math.random() * this.errorPhrases.length)
-            ];
-          this.simulateTyping(randomErrorPhrase, this.messages.length - 1);
-        } else {
-          this.messages[this.messages.length - 1].ai =
-            'Désolé, quelque chose ne va pas. Laisse-moi essayer à nouveau.';
-        }
+        this.messages[this.messages.length - 1].ai =
+          "Désolé, une erreur s'est produite. Veuillez réessayer.";
       },
     });
   }
