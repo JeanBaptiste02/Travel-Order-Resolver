@@ -102,6 +102,14 @@ error_responses = [
     "Désolé, je n'ai pas compris. Tu pourrais reformuler ta demande ?",
 ]
 
+non_french_responses = [
+    "Je ne comprends que le français, pourrais-tu reformuler dans cette langue ?",
+    "Désolé, mon intelligence est limitée au français. Peux-tu m'écrire en français ?",
+    "Je ne parle que français. Essaie de me poser la question en français.",
+    "Malheureusement, je ne peux répondre qu'en français. Reformule dans cette langue, s'il te plaît.",
+    "Je suis désolé, mais je ne comprends que le français. Peux-tu essayer à nouveau en français ?"
+]
+
 success_responses = [
     "Super, j'ai trouvé un itinéraire pour toi : {path}. Ça prendra environ {duration} minutes.",
     "Voilà ce que j'ai trouvé comme itinéraire : {path}. Tu seras à destination en environ {duration} minutes.",
@@ -129,7 +137,10 @@ def process_message():
     language = "French" if lang_prediction == 0 else "Not French"
 
     if language != "French":
-        return jsonify({"message": random.choice(error_responses), "language": language})
+        return jsonify({
+            "message": random.choice(non_french_responses),
+            "language": language
+        })
 
     # Detect Entities
     doc = nlp(sentence)
@@ -159,7 +170,7 @@ def process_message():
             "entities": entities
         })
 
-    # If not enough entities detected, return a 404 error with an appropriate message
+    # If not enough entities detected, return an error
     else:
         return jsonify({"message": random.choice(error_responses)})
 
