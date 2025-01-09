@@ -8,7 +8,6 @@ import random
 
 warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
 
-# Load models and resources
 lang_model_path = r"C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\nlp\\models\\text_classification\\lang_detector\\naive_bayes_lang_detection.pkl"
 lang_pipeline = joblib.load(lang_model_path)
 
@@ -24,10 +23,23 @@ id2label = {
     2: 'is_unknown'
 }
 
-# Flask app initialization
 app = Flask(__name__)
 
-# Load the list of cities from the txt file
+special_cities = {
+    "saint-germain-en-laye", "saint-denis", "saint-etienne", "saint-nazaire", "saint-quentin", 
+    "saint-brieuc", "saint-raphael", "saint-lo", "saint-paul", "saint-malo", "saint-tropez", 
+    "saint-louis", "saint-pierre", "saint-joseph", "saint-saulve", "saint-helier", "saint-brevin-les-pins", 
+    "saint-gilles", "saint-martin", "saint-leu", "saint-barthelemy", "saint-augustin", "saint-claude", 
+    "saint-jean-de-la-ruisse", "saint-pierre-des-corps", "saint-ines", "saint-michel", "saint-emilion", 
+    "saint-cyr-sur-loire", "saint-remy-de-provence", "saint-raphael-de-la-rose", "saint-aubin", 
+    "saint-augustin-de-desmaures", "saint-andre", "saint-ambroise", "saint-julien-en-genevois", 
+    "saint-doulchard", "saint-laurent-du-var", "saint-martin-de-seignanx", "saint-thierry", "saint-roch", 
+    "saint-leger-de-la-montagne", "saint-herblain", "saint-francois", "saint-paul-de-vence", 
+    "saint-sauveur", "saint-jean-de-luz", "saint-tropez-le-rouge", "saint-michel-de-latour", 
+    "saint-remy-de-provence", "saint-arnoult-en-yvelines", "saint-leger-les-domart", "saint-pierre-et-miquelon",
+    "saint-georges", "saint-dizier"
+}
+
 def load_cities_from_txt(txt_path: str) -> set:
     with open(txt_path, 'r', encoding='utf-8') as file:
         cities = {line.strip().upper() for line in file.readlines()}
@@ -35,7 +47,6 @@ def load_cities_from_txt(txt_path: str) -> set:
 
 cities_set = load_cities_from_txt(r'C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\nlp\\utils\\supporting_datas\\urban_geodata_masterlist_v1.0.txt')
 
-# Helper functions
 def load_graph_from_parquet(parquet_path: str) -> nx.Graph:
     graph_df = pd.read_parquet(parquet_path)
     G = nx.Graph()
@@ -62,11 +73,9 @@ def find_shortest_path(graph: nx.Graph, start: str, end: str) -> dict:
             'total_duration': None
         }
 
-# Load graph
 parquet_path = r"C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\path_algorithm\\dataset\\graph.parquet"
 graph = load_graph_from_parquet(parquet_path)
 
-# Add CORS headers to all responses
 @app.after_request
 def add_cors_headers(response):
     response.headers["Access-Control-Allow-Origin"] = "*"
@@ -74,21 +83,20 @@ def add_cors_headers(response):
     response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
     return response
 
-# Function to convert cities in sentence to uppercase if they match any city from the list
 def convert_cities_to_uppercase(sentence: str, cities: set) -> str:
-    words = sentence.split()  # Split the sentence into words
+    words = sentence.split()
     converted_sentence = []
 
     for word in words:
-        # If the word (case-insensitive) matches a city, convert it to uppercase
-        if word.upper() in cities:
+        if word.lower() in special_cities:
+            converted_sentence.append(word.upper())
+        elif word.upper() in cities:
             converted_sentence.append(word.upper())
         else:
             converted_sentence.append(word)
 
     return ' '.join(converted_sentence)
 
-# Predefined responses for errors and success
 error_responses = [
     "Je n'ai pas tout compris, pourrais-tu reformuler ta demande ?",
     "Désolé, je n'arrive pas à saisir ce que tu veux dire. Peux-tu expliquer autrement ?",
@@ -123,16 +131,13 @@ success_responses = [
     "J'ai une suggestion pour toi : {path}. Cela prendra environ {duration} minutes.",
 ]
 
-# Endpoints
 @app.route('/process_message', methods=['POST'])
 def process_message():
     data = request.json
     sentence = data.get('sentence', '')
 
-    # Convert cities in the sentence to uppercase
     sentence = convert_cities_to_uppercase(sentence, cities_set)
 
-    # Detect Language
     lang_prediction = lang_pipeline.predict([sentence])
     language = "French" if lang_prediction == 0 else "Not French"
 
@@ -142,16 +147,13 @@ def process_message():
             "language": language
         })
 
-    # Detect Entities
     doc = nlp(sentence)
     entities = [{"text": ent.text, "label": ent.label_} for ent in doc.ents]
 
-    # If at least two entities are detected, find the shortest path
     if len(entities) >= 2:
         depart = entities[0]['text']
         arrivee = entities[1]['text']
 
-        # Find the path between the two entities
         result = find_shortest_path(graph, depart, arrivee)
 
         if result['path'][0] == "No path found":
@@ -170,7 +172,6 @@ def process_message():
             "entities": entities
         })
 
-    # If not enough entities detected, return an error
     else:
         return jsonify({"message": random.choice(error_responses)})
 
