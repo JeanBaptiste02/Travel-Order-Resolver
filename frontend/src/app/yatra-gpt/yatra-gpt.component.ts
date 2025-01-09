@@ -20,6 +20,11 @@ export class YatraGptComponent {
   interval: any;
   private mediaStream: MediaStream | null = null;
 
+  recognition: any; // Déclaration pour la reconnaissance vocale
+
+  // Ajoutez la propriété recordedPhrase
+  recordedPhrase: string = ''; // Nouvelle propriété pour stocker la phrase reconnue
+
   constructor(private yatraService: YatraService) {}
 
   modelDescriptions: { [key: string]: string } = {
@@ -121,26 +126,43 @@ export class YatraGptComponent {
       this.timer += 1;
     }, 1000);
 
-    navigator.mediaDevices
-      .getUserMedia({ audio: true })
-      .then((stream) => {
-        this.mediaStream = stream;
-        console.log('Microphone is on', stream);
-      })
-      .catch((err) => {
-        console.error('Error accessing the microphone', err);
-        this.stopRecording();
-      });
+    // Initialisation de la reconnaissance vocale
+    this.recognition = new (window as any).webkitSpeechRecognition();
+    this.recognition.lang = 'fr-FR'; // Définir la langue (ici en français)
+    this.recognition.continuous = true;
+    this.recognition.interimResults = true;
+
+    // Fonction pour mettre à jour le texte de l'utilisateur en temps réel
+    this.recognition.onresult = (event: any) => {
+      let transcript = '';
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        transcript += event.results[i][0].transcript;
+      }
+      this.userMessage = transcript;
+    };
+
+    this.recognition.onerror = (event: any) => {
+      console.error('Erreur de reconnaissance vocale:', event.error);
+      this.stopRecording();
+    };
+
+    this.recognition.start();
   }
 
   stopRecording() {
     this.recording = false;
     clearInterval(this.interval);
-    if (this.mediaStream) {
-      const tracks = this.mediaStream.getTracks();
-      tracks.forEach((track) => track.stop());
-      this.mediaStream = null;
+    if (this.recognition) {
+      this.recognition.stop();
     }
     this.showModal = false;
+
+    // Mise à jour de la phrase enregistrée après l'arrêt de l'enregistrement
+    this.recordedPhrase = this.userMessage.trim(); // Assurez-vous de mettre à jour recordedPhrase ici
+
+    // Une fois l'enregistrement arrêté, envoyer la phrase au backend
+    if (this.recordedPhrase) {
+      this.sendMessage();
+    }
   }
 }
