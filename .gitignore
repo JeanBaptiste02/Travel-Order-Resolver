@@ -1,4 +1,5 @@
-ai/nlp/dataset
+ai/nlp/dataset/text
+ai/nlp/dataset/tokens
 ai/nlp/models
 ai/nlp/utils/supporting_datas
 ai/path_algorithm/dataset
