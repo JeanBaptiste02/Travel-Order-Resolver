@@ -4,6 +4,7 @@ import warnings
 import pandas as pd
 import networkx as nx
 import random
+import speech_recognition as sr
 
 warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
 
@@ -161,9 +162,30 @@ def process_message(sentence: str):
     else:
         return {"message": random.choice(error_responses)}
 
+def get_user_input():
+    while True:
+        choice = input("Voulez-vous écrire ou parler ? (écrire/parler) : ").strip().lower()
+        if choice == "écrire":
+            return input("Veuillez entrer une phrase : ")
+        elif choice == "parler":
+            recognizer = sr.Recognizer()
+            with sr.Microphone() as source:
+                print("Parlez maintenant...")
+                audio = recognizer.listen(source)
+                try:
+                    return recognizer.recognize_google(audio, language="fr-FR")
+                except sr.UnknownValueError:
+                    print("Je n'ai pas compris ce que vous avez dit. Veuillez réessayer.")
+                except sr.RequestError:
+                    print("Erreur de service de reconnaissance vocale. Veuillez réessayer.")
+        elif choice == "exit(program)":
+            return "exit(program)"
+        else:
+            print("Choix invalide. Veuillez entrer 'écrire' ou 'parler'.")
+
 if __name__ == '__main__':
     while True:
-        sentence = input("Veuillez entrer une phrase (ou tapez 'exit(program)' pour quitter) : ")
+        sentence = get_user_input()
         if sentence.lower() == "exit(program)":
             break
         result = process_message(sentence)
