@@ -73,7 +73,7 @@ def find_shortest_path(graph: nx.Graph, start: str, end: str) -> dict:
             'total_duration': None
         }
 
-parquet_path = r"C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\path_algorithm\\dataset\\graph.parquet"
+parquet_path = r"C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\path_algorithm\\dataset\\graph_old.parquet"
 graph = load_graph_from_parquet(parquet_path)
 
 @app.after_request
@@ -131,10 +131,45 @@ success_responses = [
     "J'ai une suggestion pour toi : {path}. Cela prendra environ {duration} minutes.",
 ]
 
+greeting_responses = [
+    "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+    "Salut ! Que puis-je faire pour vous ?",
+    "Hello ! Comment puis-je vous assister ?",
+    "Coucou ! Que puis-je faire pour vous aujourd'hui ?",
+    "Salut ! Comment ça va ?",
+    "Bonjour ! En quoi puis-je vous être utile ?",
+    "Salut ! Qu'est-ce que je peux faire pour vous ?",
+    "Hello ! N'hésitez pas à me dire comment je peux vous aider.",
+    "Coucou ! Besoin de quelque chose ?",
+    "Salut ! Je suis là pour vous aider. Que puis-je faire ?",
+    "Bonjour ! Quelles sont vos attentes aujourd'hui ?",
+    "Hello ! Vous avez une question ?",
+    "Salut ! Prêt à vous aider. Que voulez-vous savoir ?",
+    "Coucou ! Comment puis-je vous rendre service ?",
+    "Bonjour ! Je suis à votre disposition. Que puis-je faire ?",
+    "Hello ! Que puis-je faire pour vous aujourd'hui ?",
+    "Salut ! En quoi puis-je faciliter votre journée ?"
+]
+
+
+insult_responses = [
+    "Je vous prie de rester poli.",
+    "Ce n'est pas très gentil.",
+    "Je préfère ne pas répondre à cela.",
+    "Essayons de rester courtois.",
+    "Je ne répondrai pas à ce genre de langage."
+]
+
 @app.route('/process_message', methods=['POST'])
 def process_message():
     data = request.json
-    sentence = data.get('sentence', '')
+    sentence = data.get('sentence', '').strip().lower()
+
+    if sentence in ["hello", "salut", "bonjour", "coucou", "hi", "hé", "salutations", "yo", "quoi de neuf", "bienvenue", "bonsoir", "ça va", "salut tout le monde", "allo", "bien le bonjour", "re", "hola", "saluut", "ça roule", "comment ça va", "salam", "salut à tous", "salut mon pote", "bon matin", "salut les amis", "yo les gars", "hello tout le monde", "ça va bien", "bonne journée", "bonjour tout le monde", "bonjour tout le monde!", "salut salut", "salut bien", "hey", "ça gaze", "ça roule ma poule", "ça va bien et toi", "le bonjour", "good morning", "comment tu vas", "bonjour à vous", "toute ma salutations", "salut mon ami", "coucou toi", "bienvenue à vous", "salut frérot", "salut l’ami", "saluut mon frère", "ça baigne", "salut mon vieux", "salut tout", "coucou les amis", "allô tout le monde", "hello à toi"]:
+        return jsonify({"message": random.choice(greeting_responses)})
+
+    if any(insult in sentence for insult in ["idiot", "stupide", "imbécile", "con", "nul"]):
+        return jsonify({"message": random.choice(insult_responses)})
 
     sentence = convert_cities_to_uppercase(sentence, cities_set)
 
