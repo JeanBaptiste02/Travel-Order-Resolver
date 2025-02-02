@@ -254,6 +254,125 @@
     </div>
   </section>
 
+  <h2 style="font-size: 2.8rem; text-align: center">Yatra AI capabilities</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Characteristic/Metric</th>
+        <th>Yatra AI</th>
+        <th>ChatGPT-4</th>
+        <th>DeepSeek V2.5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Architecture</td>
+        <td>
+          - Classical (Naive Bayes + BOW)<br />
+          - SpaCy (CNN for NER)
+        </td>
+        <td>Transformer (Dense)</td>
+        <td>MoE (Mixture of Experts)</td>
+      </tr>
+      <tr>
+        <td># Activated Parameters</td>
+        <td>10k - 500k (depending on the model for the ai)</td>
+        <td>~1.8 trillion</td>
+        <td>21B</td>
+      </tr>
+      <tr>
+        <td># Total Parameters</td>
+        <td>10k - 500k (depending on the model for the ai)</td>
+        <td>~1.8 trillion</td>
+        <td>236B</td>
+      </tr>
+      <tr>
+        <td>Specific Tasks</td>
+        <td>
+          - Language detection (0.95 F1)<br />
+          - Intent classification<br />
+          - NER (DEP/ARR)
+        </td>
+        <td>General-purpose</td>
+        <td>General-purpose</td>
+      </tr>
+      <tr>
+        <td>MMLU (EM)</td>
+        <td>N/A (not evaluated)</td>
+        <td>86.4%</td>
+        <td>80.6%</td>
+      </tr>
+      <tr>
+        <td>Travel Accuracy</td>
+        <td>85-92% (depending on the task)</td>
+        <td>~89% (on targeted prompts)</td>
+        <td>~83%</td>
+      </tr>
+      <tr>
+        <td>Specific Training</td>
+        <td>3M lines dedicated to transportation</td>
+        <td>Generic data</td>
+        <td>Multilingual data</td>
+      </tr>
+      <tr>
+        <td>Latency (ms/request)</td>
+        <td>5-20 ms</td>
+        <td>200-500 ms</td>
+        <td>150-300 ms</td>
+      </tr>
+      <tr>
+        <td>Deployment Cost</td>
+        <td>Low (CPU)</td>
+        <td>High (GPU/TPU)</td>
+        <td>Very high</td>
+      </tr>
+      <tr>
+        <td>Adaptability</td>
+        <td>High (modifiable)</td>
+        <td>Limited</td>
+        <td>Moderate</td>
+      </tr>
+      <tr>
+        <td>Multilingual Support</td>
+        <td>French/English</td>
+        <td>50+ languages</td>
+        <td>10+ languages</td>
+      </tr>
+    </tbody>
+    <caption>
+      Comparison based on extracted information and published estimates.
+    </caption>
+  </table>
+
+  <style>
+    table {
+      width: 100%;
+      max-width: 900px; /* Réduction de la largeur */
+      margin: 0 auto;
+      border-collapse: collapse;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      font-size: 12px; /* Réduction de la taille de la police dans le tableau */
+      background-color: #1c1c1c;
+    }
+    th,
+    td {
+      padding: 8px 12px; /* Réduction de l'espacement */
+      text-align: left;
+      border-bottom: 1px solid #464646;
+    }
+    th {
+      background-color: #00bfff;
+      color: #fff;
+      font-size: 14px; /* Réduction de la taille de la police pour les titres de colonnes */
+    }
+    caption {
+      caption-side: bottom;
+      padding: 8px;
+      font-size: 10px; /* Réduction de la taille de la police du caption */
+      color: #666;
+    }
+  </style>
+
   <footer>
     <div class="footer-main">
       <div class="footer-detail">
