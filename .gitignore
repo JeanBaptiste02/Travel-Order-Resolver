@@ -4,3 +4,4 @@ ai/nlp/models
 ai/nlp/utils/supporting_datas
 ai/path_algorithm/dataset
 frontend/src/app/service/gemini.service.ts
+frontend/src/app/yatra-gpt/yatra-gpt.component.ts
