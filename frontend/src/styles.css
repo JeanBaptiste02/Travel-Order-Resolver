@@ -12,11 +12,16 @@ html,
 body {
   margin: 0;
   background: var(--background);
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
 html,
 body {
   height: 100%;
