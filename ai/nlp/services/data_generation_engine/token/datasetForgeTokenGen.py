@@ -128,8 +128,8 @@ if __name__ == '__main__':
         "validated_text_sequences_txt": "validated_text_sequences.txt",
         "validated_sentences_with_identifiers_txt": "validated_sentences_with_identifiers.txt",
         "validated_ordered_text_sequences_txt": "validated_ordered_text_sequences.txt",
-        "french_cities_txt": "french_cities.txt",
-        "french_national_names_csv": "french_national_names.csv",
+        "french_cities_txt": "urban_geodata_basic_v1.0.txt",
+        "french_national_names_csv": "fr_personal_identifiers_dataset_v1.0.csv",
     }
 
     generator = TokenClassificationGenerator(files)

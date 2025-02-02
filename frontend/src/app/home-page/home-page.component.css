@@ -45,19 +45,37 @@ nav ul li a:hover {
 
 /* Welcome Section */
 .welcome {
+  position: relative; /* Nécessaire pour que le ::before fonctionne correctement */
   height: 70vh;
-  background-image: url("../../img/welcome.jpg"); /* Utilisez background-image pour une image */
-  background-size: cover; /* Pour que l'image couvre toute la zone */
-  background-position: center; /* Pour centrer l'image */
+  background-image: url("../../img/welcome.jpg"); /* Image d'arrière-plan */
+  background-size: cover; /* L'image couvre toute la zone */
+  background-position: center; /* Centre l'image */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #ffffff;
   padding: 0 20px;
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   margin: 30px;
+  overflow: hidden; /* Pour éviter que le ::before dépasse */
+}
+
+.welcome::before {
+  content: ""; /* Nécessaire pour un pseudo-élément */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Couleur noire semi-transparente */
+  z-index: 1; /* Place le ::before sous le contenu */
+  border-radius: 30px; /* Identique au conteneur principal */
+}
+
+.welcome > * {
+  position: relative; /* Pour que le texte reste au-dessus de ::before */
+  z-index: 2; /* Place le texte au-dessus du ::before */
 }
 
 .welcome h1 {
