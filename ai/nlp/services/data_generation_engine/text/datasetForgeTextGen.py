@@ -24,8 +24,11 @@ class TextClassificationGenerator:
             "only_arrival": self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/missing_tags/arrival_statements_without_departures_en.txt')
         }
 
+        self.anomalous_sentences = self.load_sentences('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/sentences/erroneous_text_sequences/anomalous_text_sequences.txt')
+
         print(f"Français - Phrases correctes chargées: {len(self.correct_sentences_fr)}")
         print(f"Anglais - Phrases correctes chargées: {len(self.correct_sentences_en)}")
+        print(f"Anomalous sentences loaded: {len(self.anomalous_sentences)}")
 
         self.names = self.load_names('C:/Users/vikne/Documents/Master 2/Semestre 9/Intelligence artificielle/Travel-Order-Resolver/ai/nlp/utils/supporting_datas/fr_personal_identifiers_dataset_v1.0.csv')
 
@@ -110,6 +113,10 @@ class TextClassificationGenerator:
                     incorrect_sentences = random.sample(wrong_sentences, min(len(wrong_sentences), max_sentences_per_combination))
                     for sentence in incorrect_sentences:
                         dataset.append(self.create_object_text_label(sentence, departure, arrival, name, "eng", 0, 1, 0, 0))
+
+                anomalous_sentences = random.sample(self.anomalous_sentences, min(len(self.anomalous_sentences), max_sentences_per_combination))
+                for sentence in anomalous_sentences:
+                    dataset.append(self.create_object_text_label(sentence, departure, arrival, name, "unknown", 0, 0, 0, 1))
 
             if len(dataset) >= chunk_size:
                 chunk_df = pd.DataFrame(filter(None, dataset)).drop_duplicates(subset=["sentence"])
