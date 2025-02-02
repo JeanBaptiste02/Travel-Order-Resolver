@@ -17,8 +17,8 @@ class TokenClassificationGenerator:
         self.correct_sentences = self._load_sentences(files["validated_text_sequences_txt"])
         self.correct_sentences_with_names = self._load_sentences(files["validated_sentences_with_identifiers_txt"])
         self.ordered_sentences = self._load_sentences(files["validated_ordered_text_sequences_txt"])
-        self.french_cities = self._load_cities(files["french_cities_txt"])
-        self.names = pd.read_csv(files["french_national_names_csv"], header=None).iloc[:, 0].tolist()
+        self.french_cities = self._load_cities(files["fr_cities_names_txt"])
+        self.names = pd.read_csv(files["fr_personal_names_txt"], header=None).iloc[:, 0].tolist()
 
     def _load_sentences(self, filename: str) -> List[str]:
         with open(filename, 'r', encoding='utf-8') as f:
@@ -92,15 +92,15 @@ class TokenClassificationGenerator:
 
         return pd.DataFrame(data, columns=["text", "tokens", "ner_tags", "spacy_ner_tags"])
 
-    def save_datasets(self, spacy_data: pd.DataFrame, path: str, num_files: int = 1) -> None:
+    def save_dataset(self, spacy_data: pd.DataFrame, path: str) -> None:
         os.makedirs(path, exist_ok=True)
-        sentences_split = np.array_split(spacy_data, num_files)
         
-        with tqdm(total=num_files, desc="Saving Datasets") as pbar:
-            for idx, current_data in enumerate(sentences_split, start=1):
-                current_data = current_data.drop_duplicates(subset=["text"]).sample(frac=1).reset_index(drop=True)
-                current_data.to_csv(os.path.join(path, f"dataset_token_classification_spacy_{idx}.csv"), index=False, sep=";")
-                pbar.update(1)
+        # Supprimer les doublons et mélanger les données
+        spacy_data = spacy_data.drop_duplicates(subset=["text"]).sample(frac=1).reset_index(drop=True)
+        
+        # Enregistrer dans un seul fichier CSV nommé "token.csv"
+        spacy_data.to_csv(os.path.join(path, "token.csv"), index=False, sep=";")
+        print(f"Dataset saved to {os.path.join(path, 'token.csv')}")
 
     def generate(self, steps: Dict[str, str], path: str, regenerate: bool = False) -> None:
         print("Generating token classification dataset with spaCy NER tags...")
@@ -119,17 +119,16 @@ class TokenClassificationGenerator:
             futures.append(executor.submit(self.generate_spacy_ner_tags, sentences, names, city_pairs))
             spacy_data = futures[0].result()
 
-        self.save_datasets(spacy_data, path)
+        self.save_dataset(spacy_data, path)
         print(f"Dataset generated and saved to {path}.")
 
-# Exemple d'utilisation
 if __name__ == '__main__':
     files = {
         "validated_text_sequences_txt": "validated_text_sequences.txt",
         "validated_sentences_with_identifiers_txt": "validated_sentences_with_identifiers.txt",
         "validated_ordered_text_sequences_txt": "validated_ordered_text_sequences.txt",
-        "french_cities_txt": "urban_geodata_basic_v1.0.txt",
-        "french_national_names_csv": "fr_personal_identifiers_dataset_v1.0.csv",
+        "fr_cities_names_txt": "urban_geodata_basic_v1.0.txt",
+        "fr_personal_names_txt": "fr_personal_identifiers_dataset_v1.0.csv",
     }
 
     generator = TokenClassificationGenerator(files)
