@@ -11,6 +11,8 @@
   margin-right: 170px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .messages-container::-webkit-scrollbar {
@@ -82,10 +84,10 @@
   flex: 1;
   padding: 12px 16px;
   border: none;
-  border-radius: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
   font-size: 16px;
   color: #ffffff;
-  background-color: #222222;
   outline: none;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   margin: 0 10px;
@@ -96,7 +98,7 @@
 }
 
 .text-input:focus {
-  background-color: #131313;
+  color: white;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
 }
 
