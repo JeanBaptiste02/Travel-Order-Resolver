@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { YatraService } from '../service/yatra.service';
+import { GeminiService } from '../service/gemini.service';
 
 @Component({
   selector: 'app-yatra-gpt',
@@ -13,6 +14,7 @@ export class YatraGptComponent {
   private typingInterval: any;
   isTyping: boolean = false;
   showWarningMessage: boolean = false;
+  isReasoningActive: boolean = true;
 
   showModal: boolean = false;
   recording: boolean = false;
@@ -20,12 +22,13 @@ export class YatraGptComponent {
   interval: any;
   private mediaStream: MediaStream | null = null;
 
-  recognition: any; // Déclaration pour la reconnaissance vocale
+  recognition: any;
+  recordedPhrase: string = '';
 
-  // Ajoutez la propriété recordedPhrase
-  recordedPhrase: string = ''; // Nouvelle propriété pour stocker la phrase reconnue
-
-  constructor(private yatraService: YatraService) {}
+  constructor(
+    private yatraService: YatraService,
+    private geminiService: GeminiService
+  ) {}
 
   modelDescriptions: { [key: string]: string } = {
     'Yatra Core':
@@ -53,19 +56,35 @@ export class YatraGptComponent {
     const userMessageCopy = this.userMessage;
     this.userMessage = '';
 
-    this.yatraService.processMessage(userMessageCopy).subscribe({
-      next: (response) => {
-        const aiResponse = response.message;
-        this.simulateTyping(aiResponse, this.messages.length - 1);
-      },
-      error: (err) => {
-        console.error('Erreur de traitement:', err);
-        this.isTyping = false;
-
-        this.messages[this.messages.length - 1].ai =
-          "Désolé, une erreur s'est produite. Veuillez réessayer.";
-      },
-    });
+    if (this.isReasoningActive) {
+      this.geminiService.generateResponse(userMessageCopy).subscribe({
+        next: (response) => {
+          const aiResponse =
+            response.candidates[0]?.content?.parts[0]?.text ||
+            'Pas de réponse.';
+          this.simulateTyping(aiResponse, this.messages.length - 1);
+        },
+        error: (err) => {
+          console.error('Erreur API Gemini:', err);
+          this.isTyping = false;
+          this.messages[this.messages.length - 1].ai =
+            'Erreur lors de la génération du texte.';
+        },
+      });
+    } else {
+      this.yatraService.processMessage(userMessageCopy).subscribe({
+        next: (response) => {
+          const aiResponse = response.message;
+          this.simulateTyping(aiResponse, this.messages.length - 1);
+        },
+        error: (err) => {
+          console.error('Erreur de traitement:', err);
+          this.isTyping = false;
+          this.messages[this.messages.length - 1].ai =
+            "Désolé, une erreur s'est produite. Veuillez réessayer.";
+        },
+      });
+    }
   }
 
   editMessage(index: number) {
@@ -105,6 +124,17 @@ export class YatraGptComponent {
     }, 2000);
   }
 
+  getLastUserMessage(): string | null {
+    if (this.messages.length > 0) {
+      return this.messages[this.messages.length - 1].user;
+    }
+    return null;
+  }
+
+  onReasonY1Click() {
+    this.isReasoningActive = !this.isReasoningActive;
+  }
+
   setFeatureMessage(feature: string) {
     this.userMessage = feature;
   }
@@ -126,13 +156,11 @@ export class YatraGptComponent {
       this.timer += 1;
     }, 1000);
 
-    // Initialisation de la reconnaissance vocale
     this.recognition = new (window as any).webkitSpeechRecognition();
-    this.recognition.lang = 'fr-FR'; // Définir la langue (ici en français)
+    this.recognition.lang = 'fr-FR';
     this.recognition.continuous = true;
     this.recognition.interimResults = true;
 
-    // Fonction pour mettre à jour le texte de l'utilisateur en temps réel
     this.recognition.onresult = (event: any) => {
       let transcript = '';
       for (let i = event.resultIndex; i < event.results.length; i++) {
@@ -157,10 +185,8 @@ export class YatraGptComponent {
     }
     this.showModal = false;
 
-    // Mise à jour de la phrase enregistrée après l'arrêt de l'enregistrement
-    this.recordedPhrase = this.userMessage.trim(); // Assurez-vous de mettre à jour recordedPhrase ici
+    this.recordedPhrase = this.userMessage.trim();
 
-    // Une fois l'enregistrement arrêté, envoyer la phrase au backend
     if (this.recordedPhrase) {
       this.sendMessage();
     }
