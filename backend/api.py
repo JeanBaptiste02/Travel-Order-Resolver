@@ -73,7 +73,7 @@ def find_shortest_path(graph: nx.Graph, start: str, end: str) -> dict:
             'total_duration': None
         }
 
-parquet_path = r"C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\path_algorithm\\dataset\\graph_old.parquet"
+parquet_path = r"C:\\Users\\vikne\\Documents\\Master 2\\Semestre 9\\Intelligence artificielle\\Travel-Order-Resolver\\ai\\path_algorithm\\dataset\\graph.parquet"
 graph = load_graph_from_parquet(parquet_path)
 
 @app.after_request
