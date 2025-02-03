@@ -1,5 +1,10 @@
 <div class="header">
   <div class="header-content">
+    <!-- Message en haut à droite -->
+    <p class="disclaimer-message-top-right">
+      Yatra AI peut parfois se tromper. Il est recommandé de valider les
+      informations cruciales.
+    </p>
     <select class="model-dropdown" (change)="updateModelDescription($event)">
       <option value="Yatra Core" [matTooltip]="modelDescriptions['Yatra Core']">
         Yatra Core
@@ -59,11 +64,6 @@
   </div>
 </div>
 
-<div class="warning-message" *ngIf="showWarningMessage">
-  Yatra AI peut faire des erreurs. Envisagez de vérifier les informations
-  importantes.
-</div>
-
 <div class="messages-container">
   <div class="message" *ngFor="let msg of messages; let i = index">
     <div class="user-message">
@@ -78,7 +78,7 @@
   <div class="input-bar">
     <input
       type="text"
-      placeholder="Message Yatra AI"
+      placeholder="Commencez une conversation avec Yatra AI"
       class="text-input"
       [(ngModel)]="userMessage"
       (keydown.enter)="sendMessage()"
@@ -88,7 +88,23 @@
   <!-- Section des boutons en bas -->
   <div class="input-buttons-container">
     <div class="input-left-buttons">
-      <button class="input-button">
+      <button
+        class="input-button"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: transparent;
+          border: 1px solid 00bfff;
+          color: #5d5d5d;
+          font-size: 15px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        "
+      >
         <i class="fas fa-plus"></i>
       </button>
       <button class="input-button"><i class="fas fa-globe"></i> Search</button>
@@ -97,7 +113,7 @@
         [class.active]="isReasoningActive"
         (click)="onReasonY1Click()"
       >
-        <i class="fas fa-lightbulb"></i> Reason (Y-1)
+        <i class="fas fa-bolt"></i> Thunder Mode (T1)
       </button>
     </div>
 
@@ -162,6 +178,7 @@
     border-radius: 8px;
     font-size: 14px;
     color: #444;
+    margin-top: -20px;
   }
 
   /* Autres styles inchangés */
@@ -180,7 +197,10 @@
     background: #181818;
     padding-left: 24px;
     padding-right: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 34px;
+    border-radius: 24px;
+    max-width: 700px;
+    margin-left: 250px;
   }
 
   .input-bar {
@@ -204,12 +224,22 @@
   .input-buttons-container {
     display: flex;
     justify-content: space-between;
-    gap: 6px; /* Réduire l'espace entre les boutons */
+    gap: 6px;
     width: 100%;
-    padding: 6px 0; /* Réduire le padding pour les boutons */
+    padding: 6px 0;
   }
 
-  /* Boutons à gauche */
+  .disclaimer-message-top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #2b2b2b;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    z-index: 1001;
+  }
+
   .input-left-buttons {
     display: flex;
     gap: 8px;

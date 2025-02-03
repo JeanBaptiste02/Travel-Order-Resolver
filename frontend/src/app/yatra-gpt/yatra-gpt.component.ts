@@ -56,13 +56,21 @@ export class YatraGptComponent {
     const userMessageCopy = this.userMessage;
     this.userMessage = '';
 
+    const filterResponse = (response: string): string => {
+      return response.replace(
+        /Google/g,
+        'Yatra Artificial Intelligence Startup'
+      );
+    };
+
     if (this.isReasoningActive) {
       this.geminiService.generateResponse(userMessageCopy).subscribe({
         next: (response) => {
           const aiResponse =
             response.candidates[0]?.content?.parts[0]?.text ||
             'Pas de réponse.';
-          this.simulateTyping(aiResponse, this.messages.length - 1);
+          const filteredResponse = filterResponse(aiResponse);
+          this.simulateTyping(filteredResponse, this.messages.length - 1);
         },
         error: (err) => {
           console.error('Erreur API Gemini:', err);
@@ -75,7 +83,8 @@ export class YatraGptComponent {
       this.yatraService.processMessage(userMessageCopy).subscribe({
         next: (response) => {
           const aiResponse = response.message;
-          this.simulateTyping(aiResponse, this.messages.length - 1);
+          const filteredResponse = filterResponse(aiResponse);
+          this.simulateTyping(filteredResponse, this.messages.length - 1);
         },
         error: (err) => {
           console.error('Erreur de traitement:', err);

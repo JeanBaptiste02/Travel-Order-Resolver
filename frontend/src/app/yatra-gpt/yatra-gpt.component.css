@@ -7,8 +7,8 @@
   flex-direction: column;
   gap: 10px;
   border-radius: 10px;
-  margin-left: 145px;
-  margin-right: 170px;
+  margin-left: 240px;
+  margin-right: 240px;
   scrollbar-width: none;
   -ms-overflow-style: none;
   max-height: 400px;
@@ -182,19 +182,6 @@
   margin-bottom: 20px;
   margin-left: 40px;
   position: relative;
-}
-
-.warning-message {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: #494949;
-  background-color: #1b1b1b;
-  padding: 10px 20px;
-  border-radius: 5px;
-  z-index: 1000;
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
 }
 
 @keyframes fadeIn {
