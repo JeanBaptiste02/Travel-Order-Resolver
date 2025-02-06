@@ -5,3 +5,4 @@ ai/nlp/utils/supporting_datas
 ai/path_algorithm/dataset
 frontend/src/app/service/gemini.service.ts
 backend/api_prpnm.py
+backend/cli_prepnm.py
