@@ -1,10 +1,46 @@
-<div class="header">
-  <div class="header-content">
-    <!-- Message en haut à droite -->
-    <p class="disclaimer-message-top-right">
-      Yatra AI peut parfois se tromper. Il est recommandé de valider les
-      informations cruciales.
-    </p>
+<div class="welcome-message-container" *ngIf="messages.length === 0">
+  <div class="logo-container"></div>
+  <p class="welcome-message">
+    How can I assist you in optimizing your next journey?
+  </p>
+  <div class="feature-bubbles">
+    <div
+      class="feature-bubble"
+      (click)="setFeatureMessage('Plan my trip efficiently')"
+    >
+      Plan my trip efficiently
+    </div>
+    <div
+      class="feature-bubble"
+      (click)="setFeatureMessage('Destination recommendations')"
+    >
+      Destination recommendations
+    </div>
+    <div
+      class="feature-bubble"
+      (click)="setFeatureMessage('Quick route suggestions')"
+    >
+      Quick route suggestions
+    </div>
+  </div>
+</div>
+
+<div class="warning-message" *ngIf="showWarningMessage">
+  Yatra AI peut faire des erreurs. Envisagez de vérifier les informations
+  importantes.
+</div>
+
+<div class="messages-container">
+  <div class="message" *ngFor="let msg of messages; let i = index">
+    <div class="user-message">
+      {{ msg.user }}
+    </div>
+    <div class="ai-message">{{ msg.ai }}</div>
+  </div>
+</div>
+
+<div class="text-input-container">
+  <div class="model-selection-container">
     <select class="model-dropdown" (change)="updateModelDescription($event)">
       <option value="Yatra Core" [matTooltip]="modelDescriptions['Yatra Core']">
         Yatra Core
@@ -35,107 +71,43 @@
       </option>
     </select>
   </div>
-</div>
 
-<div class="welcome-message-container" *ngIf="messages.length === 0">
-  <div class="logo-container"></div>
-  <p class="welcome-message">
-    How can I assist you in optimizing your next journey?
-  </p>
-  <div class="feature-bubbles">
-    <div
-      class="feature-bubble"
-      (click)="setFeatureMessage('Plan my trip efficiently')"
+  <input
+    type="text"
+    placeholder="Message Yatra AI"
+    class="text-input"
+    [(ngModel)]="userMessage"
+    (keydown.enter)="sendMessage()"
+  />
+  <button class="send-button" (click)="sendMessage()">
+    <i class="fas fa-paper-plane"></i>
+  </button>
+
+  <span *ngIf="isTyping" class="edit-stop-container">
+    <button
+      class="send-button"
+      (click)="stopTyping()"
+      style="background-color: #c0392b"
     >
-      Plan my trip efficiently
-    </div>
-    <div
-      class="feature-bubble"
-      (click)="setFeatureMessage('Destination recommendations')"
-    >
-      Destination recommendations
-    </div>
-    <div
-      class="feature-bubble"
-      (click)="setFeatureMessage('Quick route suggestions')"
-    >
-      Quick route suggestions
-    </div>
-  </div>
-</div>
+      <i class="fas fa-square"></i>
+    </button>
+  </span>
 
-<div class="messages-container">
-  <div class="message" *ngFor="let msg of messages; let i = index">
-    <div class="user-message">
-      {{ msg.user }}
-    </div>
-    <div class="ai-message">{{ msg.ai }}</div>
-  </div>
-</div>
+  <button class="micro-button" (click)="openMicrophoneModal()">
+    <i class="fas fa-microphone"></i>
+  </button>
 
-<div class="text-input-container">
-  <!-- Section inférieure : Barre de saisie avec boutons -->
-  <div class="input-bar">
-    <input
-      type="text"
-      placeholder="Commencez une conversation avec Yatra AI"
-      class="text-input"
-      [(ngModel)]="userMessage"
-      (keydown.enter)="sendMessage()"
-    />
-  </div>
-
-  <!-- Section des boutons en bas -->
-  <div class="input-buttons-container">
-    <div class="input-left-buttons">
-      <button
-        class="input-button"
-        style="
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          background-color: transparent;
-          border: 1px solid 00bfff;
-          color: #5d5d5d;
-          font-size: 15px;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-        "
-      >
-        <i class="fas fa-plus"></i>
-      </button>
-      <button class="input-button"><i class="fas fa-globe"></i> Search</button>
-      <button
-        class="input-button"
-        [class.active]="isReasoningActive"
-        (click)="onReasonY1Click()"
-      >
-        <i class="fas fa-bolt"></i> Thunder Mode (T1)
-      </button>
-    </div>
-
-    <!-- Boutons à droite (Envoyer et Micro) -->
-    <div class="input-right-buttons">
-      <button class="micro-button" (click)="openMicrophoneModal()">
-        <i class="fas fa-microphone"></i>
-      </button>
-      <button class="send-button" (click)="sendMessage()">
-        <i class="fas fa-paper-plane"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Modal pour la saisie vocale -->
+  <!-- Modal for Voice Input -->
   <div class="modal" *ngIf="showModal">
     <div class="modal-content">
       <span class="close" (click)="closeMicrophoneModal()">&times;</span>
       <h2>Recording...</h2>
       <p>Yatra AI is listening...</p>
       <p>Time: {{ timer }} seconds</p>
+
+      <!-- Display the recorded phrase here -->
       <p *ngIf="recordedPhrase">You said: {{ recordedPhrase }}</p>
+
       <div class="wave-container">
         <div class="wave"></div>
         <div class="wave"></div>
@@ -152,237 +124,3 @@
     <button class="stop-button" (click)="stopRecording()">Stop</button>
   </div>
 </div>
-
-<style>
-  /* Style pour le header */
-  .header {
-    display: flex;
-    position: fixed;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 16px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-
-  .header-content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-  }
-
-  .model-dropdown {
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #444;
-    margin-top: -20px;
-  }
-
-  /* Autres styles inchangés */
-  .input-bar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border-radius: 12px;
-  }
-
-  .text-input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 8px 16px;
-    background: #181818;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 34px;
-    border-radius: 24px;
-    max-width: 700px;
-    margin-left: 250px;
-  }
-
-  .input-bar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    border-radius: 8px;
-    padding: 6px 12px;
-  }
-
-  .text-input {
-    flex: 1;
-    border: none;
-    padding: 6px 0; /* Réduire le padding intérieur */
-    font-size: 14px; /* Réduire la taille de la police */
-    outline: none;
-    background: transparent;
-  }
-
-  .input-buttons-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 6px;
-    width: 100%;
-    padding: 6px 0;
-  }
-
-  .disclaimer-message-top-right {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    color: #2b2b2b;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 8px;
-    z-index: 1001;
-  }
-
-  .input-left-buttons {
-    display: flex;
-    gap: 8px;
-  }
-
-  .input-button {
-    background: transparent;
-    border: 0.2px solid rgba(224, 224, 224, 0.3);
-    padding: 8px;
-    color: #a6a6a6;
-    cursor: pointer;
-    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
-    border-radius: 100px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  /* Au survol, rendre la bordure légèrement plus visible */
-  .input-button:hover {
-    color: #00bfff;
-    border-color: rgba(0, 195, 255, 0.5);
-  }
-
-  .input-button input {
-    display: none;
-  }
-
-  .input-button input:checked + span {
-    color: #00bfff;
-    border-color: rgba(0, 195, 255, 0.5);
-    background-color: rgba(0, 195, 255, 0.1);
-  }
-
-  .input-button:hover {
-    color: #00bfff;
-  }
-
-  /* Boutons à droite */
-  .input-right-buttons {
-    display: flex;
-    gap: 12px;
-  }
-
-  .input-button.active {
-    background-color: rgba(0, 191, 255, 0.1);
-    color: white; /* Texte blanc */
-    border-color: rgba(0, 195, 255, 0.7); /* Bordure bleue plus marquée */
-  }
-
-  .input-button:focus-within,
-  .input-button:active {
-    color: #00bfff;
-    border-color: rgba(0, 195, 255, 0.5);
-    background-color: rgba(0, 195, 255, 0.1);
-  }
-
-  .input-button:focus-within {
-    outline: none;
-  }
-
-  .send-button {
-    border: none;
-    padding: 10px 14px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-
-  .send-button:hover {
-    background: #00bfff;
-  }
-
-  .micro-button {
-    background: transparent;
-    border: none;
-    padding: 8px;
-    color: #666;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-
-  .micro-button:hover {
-    color: #00bfff;
-  }
-
-  .model-dropdown {
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #444;
-  }
-
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .modal-content {
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  .close {
-    font-size: 25px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-  }
-
-  .wave-container {
-    display: flex;
-    gap: 5px;
-  }
-
-  .wave {
-    width: 5px;
-    height: 20px;
-    background-color: #00bfff;
-    animation: wave 1.5s infinite;
-  }
-
-  @keyframes wave {
-    0% {
-      height: 20px;
-    }
-    50% {
-      height: 30px;
-    }
-    100% {
-      height: 20px;
-    }
-  }
-</style>
